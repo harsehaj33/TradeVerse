@@ -3,13 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="TradeVerse - Direct Business. Real Connections. Connect with verified manufacturers, wholesalers, distributors and exporters without middlemen or unwanted sales calls.">
+<meta name="description" content="Find manufacturers, suppliers, wholesalers and exporters across India. Contact businesses directly and request quotations.">
 <meta name="keywords" content="B2B marketplace, manufacturers, wholesalers, distributors, exporters, suppliers, India, trade, business">
 <meta property="og:title" content="TradeVerse — Direct Business. Real Connections.">
 <meta property="og:description" content="Find suppliers, manufacturers, wholesalers and resellers without middlemen or unwanted sales calls.">
 <meta property="og:type" content="website">
 <meta property="og:image" content="https://tradeverse.in/og-image.jpg">
-<title>TradeVerse — Direct Business. Real Connections.</title>
+<title>TradeVerse | Manufacturer Directory India</title>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -850,133 +850,6 @@ footer {
 }
 .profile-footer { display: flex; gap: 10px; padding-top: 20px; border-top: 1px solid var(--tv-border); }
 
-/* ---- CHAT ---- */
-#chat-overlay {
-  position: fixed; bottom: 90px; right: 24px; z-index: 1500;
-  width: 380px; height: 540px;
-  background: var(--tv-surface); border-radius: var(--tv-radius-xl);
-  border: 1.5px solid var(--tv-border);
-  box-shadow: var(--tv-shadow-xl);
-  display: flex; flex-direction: column; overflow: hidden;
-  transform: scale(.9) translateY(20px); opacity: 0; pointer-events: none;
-  transition: all .3s cubic-bezier(.34,1.56,.64,1);
-}
-#chat-overlay.open { transform: scale(1) translateY(0); opacity: 1; pointer-events: all; }
-.chat-header {
-  background: var(--tv-gradient-1); padding: 16px 20px;
-  display: flex; align-items: center; justify-content: space-between;
-}
-.chat-header-left { display: flex; align-items: center; gap: 12px; }
-.chat-avatar {
-  width: 38px; height: 38px; border-radius: 50%;
-  background: rgba(255,255,255,.2); border: 2px solid rgba(255,255,255,.3);
-  display: flex; align-items: center; justify-content: center; font-size: 1rem;
-}
-.chat-header-info { }
-.chat-header-name { font-weight: 700; font-size: .9rem; color: #fff; }
-.chat-header-status { font-size: .72rem; color: rgba(255,255,255,.7); display: flex; align-items: center; gap: 4px; }
-.chat-header-status::before {
-  content: ''; width: 6px; height: 6px; border-radius: 50%; background: #4ade80;
-}
-.chat-close-btn {
-  background: rgba(255,255,255,.15); border: none; border-radius: 50%;
-  width: 30px; height: 30px; display: flex; align-items: center; justify-content: center;
-  color: #fff; cursor: pointer; font-size: 1rem; transition: background var(--tv-transition);
-}
-.chat-close-btn:hover { background: rgba(255,255,255,.25); }
-
-/* Chat list view */
-.chat-list { flex: 1; overflow-y: auto; }
-.chat-list-item {
-  display: flex; align-items: center; gap: 12px;
-  padding: 14px 20px; border-bottom: 1px solid var(--tv-border);
-  cursor: pointer; transition: background var(--tv-transition);
-}
-.chat-list-item:hover { background: var(--tv-surface-2); }
-.chat-list-avatar {
-  width: 42px; height: 42px; border-radius: 50%;
-  display: flex; align-items: center; justify-content: center;
-  font-size: 1.1rem; font-weight: 700; color: #fff; flex-shrink: 0;
-}
-.chat-list-info { flex: 1; min-width: 0; }
-.chat-list-name { font-weight: 600; font-size: .88rem; color: var(--tv-text); margin-bottom: 2px; }
-.chat-list-preview { font-size: .78rem; color: var(--tv-text-4); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-.chat-list-time { font-size: .72rem; color: var(--tv-text-4); flex-shrink: 0; }
-
-/* Chat messages view */
-#chat-messages-view { display: none; flex-direction: column; flex: 1; overflow: hidden; }
-#chat-messages-view.active { display: flex; }
-.chat-back-btn {
-  background: rgba(255,255,255,.15); border: none;
-  color: #fff; cursor: pointer; font-size: .85rem; padding: 4px 8px;
-  border-radius: 6px; display: flex; align-items: center; gap: 4px;
-  transition: background var(--tv-transition);
-}
-.chat-back-btn:hover { background: rgba(255,255,255,.25); }
-.messages-area {
-  flex: 1; overflow-y: auto; padding: 16px;
-  display: flex; flex-direction: column; gap: 10px;
-  background: var(--tv-surface-2);
-}
-.msg { display: flex; gap: 8px; max-width: 78%; }
-.msg.sent { margin-left: auto; flex-direction: row-reverse; }
-.msg-avatar {
-  width: 28px; height: 28px; border-radius: 50%; flex-shrink: 0;
-  display: flex; align-items: center; justify-content: center;
-  font-size: .65rem; font-weight: 700; color: #fff; margin-top: 2px;
-}
-.msg-content { }
-.msg-bubble {
-  padding: 9px 14px; border-radius: 18px;
-  font-size: .84rem; line-height: 1.5; color: var(--tv-text);
-  background: var(--tv-surface); border: 1px solid var(--tv-border);
-  border-bottom-left-radius: 4px;
-}
-.msg.sent .msg-bubble {
-  background: var(--tv-gradient-1); color: #fff; border: none;
-  border-bottom-right-radius: 4px; border-bottom-left-radius: 18px;
-}
-.msg-time { font-size: .68rem; color: var(--tv-text-4); margin-top: 4px; text-align: right; }
-.msg.sent .msg-time { text-align: right; color: rgba(255,255,255,.6); }
-.chat-input-area {
-  display: flex; gap: 8px; padding: 12px 16px;
-  border-top: 1px solid var(--tv-border); background: var(--tv-surface);
-}
-.chat-input {
-  flex: 1; padding: 9px 14px; border-radius: 99px;
-  border: 1.5px solid var(--tv-border); background: var(--tv-surface-2);
-  font-family: var(--tv-font-body); font-size: .87rem; color: var(--tv-text);
-  outline: none; transition: border-color var(--tv-transition);
-}
-.chat-input:focus { border-color: var(--tv-accent-2); }
-.chat-send-btn {
-  width: 36px; height: 36px; border-radius: 50%;
-  background: var(--tv-gradient-1); border: none;
-  color: #fff; cursor: pointer; display: flex; align-items: center;
-  justify-content: center; font-size: .9rem; transition: transform var(--tv-transition);
-  flex-shrink: 0;
-}
-.chat-send-btn:hover { transform: scale(1.1); }
-
-/* ---- CHAT TRIGGER ---- */
-#chat-trigger {
-  position: fixed; bottom: 24px; right: 24px; z-index: 1400;
-  width: 54px; height: 54px; border-radius: 50%;
-  background: var(--tv-gradient-1); border: none;
-  color: #fff; font-size: 1.4rem; cursor: pointer;
-  box-shadow: 0 8px 24px rgba(29,78,216,.4);
-  display: flex; align-items: center; justify-content: center;
-  transition: all var(--tv-transition);
-}
-#chat-trigger:hover { transform: scale(1.1); box-shadow: 0 10px 30px rgba(29,78,216,.5); }
-.chat-notif-badge {
-  position: absolute; top: -4px; right: -4px;
-  width: 18px; height: 18px; border-radius: 50%;
-  background: var(--tv-red); color: #fff;
-  font-size: .7rem; font-weight: 700; display: flex; align-items: center; justify-content: center;
-}
-
-/* ---- DASHBOARD ---- */
 #dashboard-overlay {
   position: fixed; inset: 0; z-index: 1800;
   background: var(--tv-surface); overflow-y: auto;
@@ -1239,13 +1112,13 @@ footer {
   <div class="container">
     <div class="hero-inner">
       <div class="hero-content">
-        <div class="hero-eyebrow fade-in-up">🇮🇳 India's Fastest Growing B2B Platform</div>
+        <div class="hero-eyebrow fade-in-up">🇮🇳 India's Verified Manufacturer Directory</div>
         <h1 class="hero-title fade-in-up">
-          Connect Directly With<br>
-          <span class="highlight">Manufacturers & Buyers</span>
+          Discover Manufacturers,<br>
+          <span class="highlight">Suppliers & Exporters</span>
         </h1>
         <p class="hero-subtitle fade-in-up">
-          Find suppliers, manufacturers, wholesalers and resellers without middlemen or unwanted sales calls. Real connections, real business.
+          Browse India's most trusted B2B directory. Find verified manufacturers, wholesalers, and exporters — contact them directly and request quotations.
         </p>
         <div class="hero-actions fade-in-up">
           <button class="btn btn-primary btn-lg" onclick="scrollTo('#search-section')">
@@ -1257,7 +1130,7 @@ footer {
         </div>
         <div class="hero-trust fade-in-up">
           <div class="trust-item"><div class="icon">✅</div> Verified Suppliers</div>
-          <div class="trust-item"><div class="icon">💬</div> Direct Messaging</div>
+          <div class="trust-item"><div class="icon">📞</div> Direct Contact</div>
           <div class="trust-item"><div class="icon">🚫</div> No Spam Calls</div>
           <div class="trust-item"><div class="icon">🆓</div> Free Registration</div>
         </div>
@@ -1383,7 +1256,37 @@ footer {
     </div>
   </div>
 </section>
-
+<!-- DIRECTORY INTRO SECTION -->
+<section style="padding:60px 0;background:var(--tv-ink-2);background-image:radial-gradient(ellipse 80% 50% at 50% -20%,rgba(29,78,216,.15),transparent);">
+  <div class="container">
+    <div class="section-header fade-in-up" style="margin-bottom:32px;">
+      <div class="section-eyebrow" style="color:#60a5fa;">Verified Manufacturer Directory</div>
+      <h2 class="section-title" style="color:#fff;">India's Most Trusted B2B<br>Manufacturer Directory</h2>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:20px;" class="fade-in-up">
+      <div style="background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:var(--tv-radius-md);padding:24px;text-align:center;">
+        <div style="font-size:2rem;margin-bottom:10px;">🔍</div>
+        <div style="font-weight:700;color:#fff;margin-bottom:6px;font-family:var(--tv-font-display);">Discover Suppliers</div>
+        <div style="font-size:.82rem;color:rgba(255,255,255,.5);">Browse verified manufacturers and suppliers across every industry in India.</div>
+      </div>
+      <div style="background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:var(--tv-radius-md);padding:24px;text-align:center;">
+        <div style="font-size:2rem;margin-bottom:10px;">🏭</div>
+        <div style="font-weight:700;color:#fff;margin-bottom:6px;font-family:var(--tv-font-display);">Find Manufacturers</div>
+        <div style="font-size:.82rem;color:rgba(255,255,255,.5);">Connect directly with factories and production units — no middlemen.</div>
+      </div>
+      <div style="background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:var(--tv-radius-md);padding:24px;text-align:center;">
+        <div style="font-size:2rem;margin-bottom:10px;">📋</div>
+        <div style="font-weight:700;color:#fff;margin-bottom:6px;font-family:var(--tv-font-display);">Request Quotations</div>
+        <div style="font-size:.82rem;color:rgba(255,255,255,.5);">Send RFQs to multiple suppliers and compare quotes in one place.</div>
+      </div>
+      <div style="background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:var(--tv-radius-md);padding:24px;text-align:center;">
+        <div style="font-size:2rem;margin-bottom:10px;">📞</div>
+        <div style="font-weight:700;color:#fff;margin-bottom:6px;font-family:var(--tv-font-display);">Contact Directly</div>
+        <div style="font-size:.82rem;color:rgba(255,255,255,.5);">Get phone, email, and website of every listed company — no gatekeeping.</div>
+      </div>
+    </div>
+  </div>
+</section>
 <!-- SEARCH SECTION -->
 <section id="search-section" aria-label="Search suppliers">
   <div class="container" style="padding: 60px 24px 40px;">
@@ -1622,37 +1525,7 @@ footer {
 </footer>
 
 <!-- CHAT TRIGGER -->
-<button id="chat-trigger" onclick="toggleChat()" aria-label="Open chat">
-  💬
-  <span class="chat-notif-badge" id="chat-notif-badge" style="display:none;">3</span>
-</button>
 
-<!-- CHAT OVERLAY -->
-<div id="chat-overlay" role="dialog" aria-label="Chat">
-  <div class="chat-header" id="chat-header">
-    <div class="chat-header-left">
-      <div class="chat-avatar" id="chat-header-avatar">💬</div>
-      <div class="chat-header-info">
-        <div class="chat-header-name" id="chat-header-name">TradeVerse Chat</div>
-        <div class="chat-header-status" id="chat-header-status">All Conversations</div>
-      </div>
-    </div>
-    <div style="display:flex;gap:6px;align-items:center;">
-      <button class="chat-back-btn" id="chat-back-btn" onclick="backToChatList()" style="display:none;">← Back</button>
-      <button class="chat-close-btn" onclick="toggleChat()" aria-label="Close chat">✕</button>
-    </div>
-  </div>
-  <!-- Chat list -->
-  <div class="chat-list" id="chat-list-view"></div>
-  <!-- Messages view -->
-  <div id="chat-messages-view">
-    <div class="messages-area" id="messages-area"></div>
-    <div class="chat-input-area">
-      <input type="text" class="chat-input" id="chat-message-input" placeholder="Type a message..." autocomplete="off">
-      <button class="chat-send-btn" onclick="sendMessage()" aria-label="Send message">➤</button>
-    </div>
-  </div>
-</div>
 
 <!-- TOAST CONTAINER -->
 <div id="toast-container" aria-live="polite"></div>
@@ -1815,6 +1688,95 @@ footer {
     </div>
   </div>
 </div>
+<!-- REQUEST QUOTE MODAL -->
+<div class="modal-overlay" id="quote-modal" role="dialog" aria-modal="true" aria-label="Request Quote">
+  <div class="modal">
+    <div class="modal-header">
+      <div class="modal-title">📋 Request Quote</div>
+      <button class="modal-close" onclick="closeModal('quote-modal')" aria-label="Close">✕</button>
+    </div>
+    <div class="modal-body">
+      <div class="form-grid">
+        <div class="form-group">
+          <label class="form-label">Your Name *</label>
+          <input type="text" class="form-input" id="quote-name" placeholder="Rajesh Kumar">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Email *</label>
+          <input type="email" class="form-input" id="quote-email" placeholder="you@company.com">
+        </div>
+      </div>
+      <div class="form-grid">
+        <div class="form-group">
+          <label class="form-label">Phone</label>
+          <input type="text" class="form-input" id="quote-phone" placeholder="+91 98765 43210">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Location</label>
+          <input type="text" class="form-input" id="quote-location" placeholder="Mumbai, Maharashtra">
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="form-label">Requirement *</label>
+        <input type="text" class="form-input" id="quote-requirement" placeholder="e.g., SS Pipes 304 Grade, 100 MT">
+      </div>
+      <div class="form-grid">
+        <div class="form-group">
+          <label class="form-label">Quantity</label>
+          <input type="text" class="form-input" id="quote-quantity" placeholder="e.g., 500 units/month">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Budget</label>
+          <input type="text" class="form-input" id="quote-budget" placeholder="e.g., ₹2–5 Lakhs">
+        </div>
+      </div>
+      <button class="btn btn-primary w-full" onclick="submitQuote()">Send Quote Request →</button>
+    </div>
+  </div>
+</div>
+
+<!-- CLAIM BUSINESS MODAL -->
+<div class="modal-overlay" id="claim-modal" role="dialog" aria-modal="true" aria-label="Claim Business">
+  <div class="modal">
+    <div class="modal-header">
+      <div class="modal-title">🏷️ Claim Your Business Profile</div>
+      <button class="modal-close" onclick="closeModal('claim-modal')" aria-label="Close">✕</button>
+    </div>
+    <div class="modal-body">
+      <p style="font-size:.88rem;color:var(--tv-text-3);margin-bottom:20px;">Claim your profile for FREE and start receiving buyer inquiries directly.</p>
+      <div class="form-grid">
+        <div class="form-group">
+          <label class="form-label">Full Name *</label>
+          <input type="text" class="form-input" id="claim-name" placeholder="Your Full Name">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Position *</label>
+          <input type="text" class="form-input" id="claim-position" placeholder="e.g., Owner, Director">
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="form-label">Company Name *</label>
+        <input type="text" class="form-input" id="claim-company" placeholder="Your Company Pvt. Ltd.">
+      </div>
+      <div class="form-grid">
+        <div class="form-group">
+          <label class="form-label">Email *</label>
+          <input type="email" class="form-input" id="claim-email" placeholder="you@company.com">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Phone *</label>
+          <input type="text" class="form-input" id="claim-phone" placeholder="+91 98765 43210">
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="form-label">Website</label>
+        <input type="text" class="form-input" id="claim-website" placeholder="yourcompany.com">
+      </div>
+      <input type="hidden" id="claim-company-id">
+      <button class="btn btn-primary w-full" onclick="submitClaim()">Submit Claim Request →</button>
+    </div>
+  </div>
+</div>
 
 <!-- DASHBOARD -->
 <div id="dashboard-overlay" role="dialog" aria-label="User Dashboard">
@@ -1848,9 +1810,7 @@ footer {
           <div class="dash-nav-item" data-page="requirements" onclick="switchDashPage('requirements')">
             <span class="icon">📋</span> My Requirements
           </div>
-          <div class="dash-nav-item" data-page="chats" onclick="switchDashPage('chats')">
-            <span class="icon">💬</span> My Chats <span class="count">2</span>
-          </div>
+          
         </div>
         <div class="dash-nav-group">
           <div class="dash-nav-group-title">Seller Tools</div>
@@ -1984,17 +1944,6 @@ footer {
           <p style="color:var(--tv-text-3);font-size:.88rem;">No requirements posted yet.</p>
         </div>
       </div>
-
-      <!-- CHATS -->
-      <div class="dash-page" id="page-chats">
-        <h1 class="dash-page-title">My Chats</h1>
-        <div class="dash-card">
-          <div id="dash-chat-list">
-            <p style="color:var(--tv-text-3);font-size:.88rem;">No chats yet. Open a company profile and click "Chat" to start a conversation.</p>
-          </div>
-        </div>
-      </div>
-
       <!-- PRODUCTS -->
       <div class="dash-page" id="page-products">
         <h1 class="dash-page-title">My Products</h1>
@@ -2026,23 +1975,13 @@ footer {
 
       <!-- LEADS -->
       <div class="dash-page" id="page-leads">
-        <h1 class="dash-page-title">Leads &amp; Inquiries</h1>
-        <div class="dash-card">
-          <table class="admin-table">
-            <thead>
-              <tr>
-                <th>Buyer</th>
-                <th>Product Interest</th>
-                <th>Location</th>
-                <th>Date</th>
-                <th>Action</th>
-              </tr>
-            </thead>
-            <tbody id="leads-table-body">
-            </tbody>
-          </table>
+        <div class="dash-page-title">Supplier Portal</div>
+          <div style="text-align:center;padding:60px 20px;background:var(--tv-surface-2);border-radius:var(--tv-radius-lg);border:2px dashed var(--tv-border);">
+            <div style="font-size:3rem;margin-bottom:16px;">🏭</div>
+              <div style="font-family:var(--tv-font-display);font-weight:800;font-size:1.3rem;margin-bottom:10px;">Supplier Portal Coming Soon</div>
+                <div style="color:var(--tv-text-3);font-size:.9rem;">The supplier dashboard is currently under development. Check back soon.</div>
+            </div>
         </div>
-      </div>
 
       <!-- NOTIFICATIONS -->
       <div class="dash-page" id="page-notifications">
@@ -2100,7 +2039,8 @@ footer {
       <div style="display:flex;gap:8px;margin-bottom:20px;flex-wrap:wrap;">
         <button class="filter-tag active" onclick="switchAdminTab(this,'admin-users')">Users</button>
         <button class="filter-tag" onclick="switchAdminTab(this,'admin-companies')">Companies</button>
-        <button class="filter-tag" onclick="switchAdminTab(this,'admin-requirements')">Requirements</button>
+        <button class="filter-tag" onclick="switchAdminTab(this,'admin-claim-reqs')">Claim Requests</button>
+        <button class="filter-tag" onclick="switchAdminTab(this,'admin-leads')">Buyer Leads</button>
         <button class="filter-tag" onclick="switchAdminTab(this,'admin-stats')">Statistics</button>
       </div>
       <div id="admin-users" class="admin-tab-content">
@@ -2110,22 +2050,64 @@ footer {
         </table>
       </div>
       <div id="admin-companies" class="admin-tab-content" style="display:none;">
+        <div style="display:flex;gap:8px;margin-bottom:14px;flex-wrap:wrap;align-items:center;">
+          <input type="text" class="form-input" id="adm-company-search" placeholder="Search companies..." style="max-width:260px;" oninput="renderAdminCompanies()">
+          <button class="btn btn-primary btn-sm" onclick="openAddCompanyForm()">+ Add Company</button>
+        </div>
+        <div id="add-company-form" style="display:none;background:var(--tv-surface-2);border:1px solid var(--tv-border);border-radius:var(--tv-radius-md);padding:20px;margin-bottom:16px;">
+          <div style="font-weight:700;margin-bottom:14px;font-family:var(--tv-font-display);" id="add-company-form-title">Add New Company</div>
+          <div class="form-grid">
+            <div class="form-group"><label class="form-label">Company Name *</label><input type="text" class="form-input" id="fc-name" placeholder="Company Name"></div>
+            <div class="form-group"><label class="form-label">Industry *</label><input type="text" class="form-input" id="fc-industry" placeholder="e.g., Steel & Metals"></div>
+          </div>
+          <div class="form-grid">
+            <div class="form-group"><label class="form-label">City</label><input type="text" class="form-input" id="fc-city" placeholder="Mumbai"></div>
+            <div class="form-group"><label class="form-label">State</label><input type="text" class="form-input" id="fc-state" placeholder="Maharashtra"></div>
+          </div>
+          <div class="form-grid">
+            <div class="form-group"><label class="form-label">Phone</label><input type="text" class="form-input" id="fc-phone" placeholder="+91 98000 00000"></div>
+            <div class="form-group"><label class="form-label">Email</label><input type="email" class="form-input" id="fc-email" placeholder="info@company.com"></div>
+          </div>
+          <div class="form-group"><label class="form-label">Website</label><input type="text" class="form-input" id="fc-website" placeholder="company.com"></div>
+          <div class="form-group"><label class="form-label">Description</label><textarea class="form-textarea" id="fc-desc" rows="3" placeholder="Brief company description..."></textarea></div>
+          <div class="form-group"><label class="form-label">Products (comma separated)</label><input type="text" class="form-input" id="fc-products" placeholder="Product A, Product B"></div>
+          <div class="form-group"><label class="form-label">Logo (emoji or URL)</label><input type="text" class="form-input" id="fc-logo" placeholder="🏭 or https://..."></div>
+          <div class="form-group"><label class="form-label">Verification Badge</label>
+            <select class="form-select" id="fc-badge">
+              <option value="listed">Listed Business</option>
+              <option value="verified">Verified Business</option>
+              <option value="premium">Premium Verified</option>
+            </select>
+          </div>
+          <input type="hidden" id="fc-edit-id">
+          <div style="display:flex;gap:8px;margin-top:4px;">
+            <button class="btn btn-primary btn-sm" onclick="saveCompanyForm()">Save Company</button>
+            <button class="btn btn-secondary btn-sm" onclick="cancelCompanyForm()">Cancel</button>
+          </div>
+        </div>
         <table class="admin-table">
-          <thead><tr><th>#</th><th>Company</th><th>Industry</th><th>Location</th><th>Type</th><th>Status</th></tr></thead>
+          <thead><tr><th>#</th><th>Company</th><th>Industry</th><th>Location</th><th>Badge</th><th>Actions</th></tr></thead>
           <tbody id="admin-companies-body"></tbody>
         </table>
       </div>
-      <div id="admin-requirements" class="admin-tab-content" style="display:none;">
+      <div id="admin-claim-reqs" class="admin-tab-content" style="display:none;">
         <table class="admin-table">
-          <thead><tr><th>#</th><th>Product</th><th>Qty</th><th>Budget</th><th>Location</th><th>Timeline</th></tr></thead>
-          <tbody id="admin-reqs-body"></tbody>
+          <thead><tr><th>#</th><th>Name</th><th>Company</th><th>Email</th><th>Phone</th><th>Position</th><th>Date</th></tr></thead>
+          <tbody id="admin-claims-body"></tbody>
+        </table>
+      </div>
+      <div id="admin-leads" class="admin-tab-content" style="display:none;">
+        <table class="admin-table">
+          <thead><tr><th>#</th><th>Name</th><th>Requirement</th><th>Quantity</th><th>Budget</th><th>Location</th><th>Date</th></tr></thead>
+          <tbody id="admin-buyer-leads-body"></tbody>
         </table>
       </div>
       <div id="admin-stats" class="admin-tab-content" style="display:none;">
         <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px;">
           <div class="dash-stat-card"><div class="dash-stat-num" id="adm-users-count">0</div><div class="dash-stat-label">Registered Users</div></div>
-          <div class="dash-stat-card"><div class="dash-stat-num">48,000+</div><div class="dash-stat-label">Companies</div></div>
-          <div class="dash-stat-card"><div class="dash-stat-num" id="adm-reqs-count">0</div><div class="dash-stat-label">Requirements Posted</div></div>
+          <div class="dash-stat-card"><div class="dash-stat-num" id="adm-companies-count">0</div><div class="dash-stat-label">Companies Listed</div></div>
+          <div class="dash-stat-card"><div class="dash-stat-num" id="adm-leads-count">0</div><div class="dash-stat-label">Buyer Leads</div></div>
+          <div class="dash-stat-card"><div class="dash-stat-num" id="adm-claims-count">0</div><div class="dash-stat-label">Claim Requests</div></div>
         </div>
         <div style="margin-top:20px;" class="dash-card">
           <div class="dash-card-title">Platform Overview</div>
@@ -2198,7 +2180,7 @@ const FAQS = [
 
 // ---- STATE ----
 let currentUser = null;
-let allCompanies = [...COMPANIES];
+let allCompanies = [];
 let displayedCount = 20;
 let activeFilter = 'all';
 let activeLocation = '';
@@ -2213,6 +2195,7 @@ let chatConversations = {};
 document.addEventListener('DOMContentLoaded', () => {
   initTheme();
   loadFromStorage();
+  allCompanies = getAdminCompanies();
   renderCompanies();
   renderIndustries();
   renderTestimonials();
@@ -2222,7 +2205,6 @@ document.addEventListener('DOMContentLoaded', () => {
   initCounterAnimations();
   initFilterTags();
   initSearchInput();
-  initChatListView();
   updateNavAuth();
   animateHeroCounters();
 });
@@ -2252,13 +2234,11 @@ function loadFromStorage() {
   savedCompanies = JSON.parse(localStorage.getItem('tv_saved') || '[]');
   myRequirements = JSON.parse(localStorage.getItem('tv_requirements') || '[]');
   myProducts = JSON.parse(localStorage.getItem('tv_products') || '[]');
-  chatConversations = JSON.parse(localStorage.getItem('tv_chats') || '{}');
 }
 function saveToStorage() {
   localStorage.setItem('tv_saved', JSON.stringify(savedCompanies));
   localStorage.setItem('tv_requirements', JSON.stringify(myRequirements));
   localStorage.setItem('tv_products', JSON.stringify(myProducts));
-  localStorage.setItem('tv_chats', JSON.stringify(chatConversations));
 }
 function getUsers() {
   return JSON.parse(localStorage.getItem('tv_users') || '[]');
@@ -2393,7 +2373,6 @@ function renderCompanies() {
   const sort = document.getElementById('sort-select')?.value || 'relevance';
   if (sort === 'rating') filtered.sort((a,b) => b.rating - a.rating);
   else if (sort === 'newest') filtered.sort((a,b) => a.yearsInBusiness - b.yearsInBusiness);
-  allCompanies = filtered;
   const toShow = filtered.slice(0, Math.min(displayedCount, filtered.length));
   document.getElementById('results-info').textContent = `Showing ${toShow.length} of ${filtered.length} verified businesses`;
   const grid = document.getElementById('companies-grid');
@@ -2452,7 +2431,7 @@ function companyCardHTML(c) {
       </div>
       <div class="card-footer">
         <button class="btn btn-primary btn-sm" style="flex:1;" onclick="event.stopPropagation();openCompanyProfile(${c.id})">View Profile</button>
-        <button class="btn btn-secondary btn-sm" onclick="event.stopPropagation();startChat(${c.id})" aria-label="Chat">💬</button>
+        <button class="btn btn-secondary btn-sm" onclick="event.stopPropagation();openCompanyProfile(${c.id})">📋 Details</button>
       </div>
     </div>
   </div>`;
@@ -2559,9 +2538,18 @@ function openCompanyProfile(id) {
       <div class="products-grid-mini">${products}</div>
       <div class="profile-section-title">Certifications</div>
       <div class="cert-list">${certs}</div>
-      <div class="profile-footer">
-        <button class="btn btn-primary" style="flex:1;" onclick="startChat(${c.id});closeModal('profile-modal')">💬 Chat with ${c.name.split(' ')[0]}</button>
-        <button class="btn btn-secondary" onclick="closeModal('profile-modal');setTimeout(()=>openModal('req-modal'),200)">📋 Send RFQ</button>
+      <div class="profile-footer" style="flex-direction:column;gap:12px;">
+        <div style="display:flex;gap:8px;flex-wrap:wrap;">
+          <a class="btn btn-primary" style="flex:1;" href="tel:${c.phone}">📞 Call Supplier</a>
+          <a class="btn btn-secondary" style="flex:1;" href="mailto:${c.email}">✉️ Send Email</a>
+          <a class="btn btn-secondary" href="https://${c.website}" target="_blank" rel="noopener">🌐 Visit Website</a>
+        </div>
+        <button class="btn btn-secondary w-full" onclick="closeModal('profile-modal');setTimeout(()=>openModal('req-modal'),200)">📋 Request Quote</button>
+        <div style="background:var(--tv-accent-light);border:2px dashed var(--tv-accent-2);border-radius:var(--tv-radius-md);padding:18px;text-align:center;margin-top:4px;">
+          <div style="font-weight:700;font-size:.95rem;color:var(--tv-text);margin-bottom:6px;">Is this your business?</div>
+          <div style="font-size:.82rem;color:var(--tv-text-3);margin-bottom:12px;">Claim this profile for FREE and start receiving buyer inquiries.</div>
+          <button class="btn btn-primary btn-sm" onclick="openClaimModal(${c.id})">🏷️ Claim Business</button>
+        </div>
       </div>
     </div>
   `;
@@ -2704,7 +2692,6 @@ function switchDashPage(page) {
   if (page === 'requirements') renderRequirements();
   if (page === 'leads') renderLeads();
   if (page === 'notifications' || page === 'overview') renderNotifications();
-  if (page === 'chats') renderDashChats();
 }
 function populateDashboard() {
   if (!currentUser) return;
@@ -3046,16 +3033,23 @@ function openAdmin() {
 }
 function populateAdminPanel() {
   const users = getUsers();
+  const companies = getAdminCompanies();
+  const leads = JSON.parse(localStorage.getItem('tv_buyer_leads') || '[]');
+  const claims = JSON.parse(localStorage.getItem('tv_claim_requests') || '[]');
   document.getElementById('adm-users-count').textContent = users.length;
-  document.getElementById('adm-reqs-count').textContent = myRequirements.length;
+  document.getElementById('adm-companies-count').textContent = companies.length;
+  document.getElementById('adm-leads-count').textContent = leads.length;
+  document.getElementById('adm-claims-count').textContent = claims.length;
   document.getElementById('admin-users-body').innerHTML = users.length ? users.map((u,i) => `
     <tr><td>${i+1}</td><td>${u.fname||''} ${u.lname||''}</td><td>${u.email}</td><td><span class="badge badge-blue">${u.businessType||'N/A'}</span></td><td>${u.location||'N/A'}</td><td>${u.joined||'N/A'}</td></tr>`).join('') :
-    '<tr><td colspan="6" style="text-align:center;color:var(--tv-text-3);">No registered users yet (demo accounts not counted).</td></tr>';
-  document.getElementById('admin-companies-body').innerHTML = COMPANIES.slice(0,10).map((c,i) => `
-    <tr><td>${i+1}</td><td>${c.logo} ${c.name}</td><td>${c.industry}</td><td>${c.location}</td><td><span class="badge badge-blue">${c.type}</span></td><td><span class="badge badge-green">Active</span></td></tr>`).join('');
-  document.getElementById('admin-reqs-body').innerHTML = myRequirements.length ? myRequirements.map((r,i) => `
-    <tr><td>${i+1}</td><td>${r.product}</td><td>${r.quantity||'N/A'}</td><td>${r.budget||'N/A'}</td><td>${r.location}</td><td>${r.timeline||'N/A'}</td></tr>`).join('') :
-    '<tr><td colspan="6" style="text-align:center;color:var(--tv-text-3);">No requirements posted yet.</td></tr>';
+    '<tr><td colspan="6" style="text-align:center;color:var(--tv-text-3);">No registered users yet.</td></tr>';
+  renderAdminCompanies();
+  document.getElementById('admin-claims-body').innerHTML = claims.length ? claims.map((c,i) => `
+    <tr><td>${i+1}</td><td>${c.name}</td><td>${c.company}</td><td>${c.email}</td><td>${c.phone}</td><td>${c.position||'N/A'}</td><td>${c.date}</td></tr>`).join('') :
+    '<tr><td colspan="7" style="text-align:center;color:var(--tv-text-3);">No claim requests yet.</td></tr>';
+  document.getElementById('admin-buyer-leads-body').innerHTML = leads.length ? leads.map((l,i) => `
+    <tr><td>${i+1}</td><td>${l.name}</td><td>${l.requirement}</td><td>${l.quantity||'N/A'}</td><td>${l.budget||'N/A'}</td><td>${l.location||'N/A'}</td><td>${l.date}</td></tr>`).join('') :
+    '<tr><td colspan="7" style="text-align:center;color:var(--tv-text-3);">No buyer leads yet.</td></tr>';
   setTimeout(renderAdminChart, 100);
 }
 function switchAdminTab(el, id) {
@@ -3119,12 +3113,7 @@ function showToast(msg, type='info') {
   }, 3200);
 }
 
-// Show chat notification badge if logged in
-setTimeout(() => {
-  if (!currentUser) {
-    document.getElementById('chat-notif-badge').style.display = 'flex';
-  }
-}, 3000);
+
 
 // ---- ACCESSIBILITY ----
 document.querySelectorAll('[onclick]').forEach(el => {
@@ -3134,6 +3123,158 @@ document.querySelectorAll('[onclick]').forEach(el => {
     el.addEventListener('keydown', e => { if(e.key==='Enter'||e.key===' ') el.click(); });
   }
 });
+// ---- QUOTE REQUEST ----
+function submitQuote() {
+  const name = document.getElementById('quote-name').value.trim();
+  const email = document.getElementById('quote-email').value.trim();
+  const phone = document.getElementById('quote-phone').value.trim();
+  const requirement = document.getElementById('quote-requirement').value.trim();
+  const quantity = document.getElementById('quote-quantity').value.trim();
+  const budget = document.getElementById('quote-budget').value.trim();
+  const location = document.getElementById('quote-location').value.trim();
+  if (!name || !email || !requirement) { showToast('Name, email and requirement are required.', 'error'); return; }
+  const leads = JSON.parse(localStorage.getItem('tv_buyer_leads') || '[]');
+  leads.push({ name, email, phone, requirement, quantity, budget, location, date: new Date().toLocaleDateString() });
+  localStorage.setItem('tv_buyer_leads', JSON.stringify(leads));
+  closeModal('quote-modal');
+  showToast('Quote request submitted successfully! ✓', 'success');
+  ['quote-name','quote-email','quote-phone','quote-requirement','quote-quantity','quote-budget','quote-location'].forEach(id => { document.getElementById(id).value = ''; });
+}
+
+// ---- CLAIM BUSINESS ----
+function openClaimModal(companyId) {
+  document.getElementById('claim-company-id').value = companyId || '';
+  const c = companyId ? COMPANIES.find(x => x.id === companyId) : null;
+  if (c) document.getElementById('claim-company').value = c.name;
+  openModal('claim-modal');
+}
+function submitClaim() {
+  const name = document.getElementById('claim-name').value.trim();
+  const company = document.getElementById('claim-company').value.trim();
+  const email = document.getElementById('claim-email').value.trim();
+  const phone = document.getElementById('claim-phone').value.trim();
+  const position = document.getElementById('claim-position').value.trim();
+  const website = document.getElementById('claim-website').value.trim();
+  if (!name || !company || !email || !phone) { showToast('Please fill all required fields.', 'error'); return; }
+  const claims = JSON.parse(localStorage.getItem('tv_claim_requests') || '[]');
+  claims.push({ name, company, email, phone, position, website, date: new Date().toLocaleDateString() });
+  localStorage.setItem('tv_claim_requests', JSON.stringify(claims));
+  closeModal('claim-modal');
+  showToast('Claim request submitted successfully. Our team will contact you.', 'success');
+  ['claim-name','claim-company','claim-email','claim-phone','claim-position','claim-website'].forEach(id => { document.getElementById(id).value = ''; });
+}
+
+// ---- ADMIN COMPANY MANAGEMENT ----
+function getAdminCompanies() {
+  return JSON.parse(localStorage.getItem('tv_admin_companies') || 'null') || COMPANIES;
+}
+function saveAdminCompanies(companies) {
+  localStorage.setItem('tv_admin_companies', JSON.stringify(companies));
+}
+function renderAdminCompanies() {
+  const search = (document.getElementById('adm-company-search')?.value || '').toLowerCase();
+  const companies = getAdminCompanies().filter(c =>
+    !search || c.name.toLowerCase().includes(search) || c.industry.toLowerCase().includes(search)
+  );
+  document.getElementById('admin-companies-body').innerHTML = companies.map((c, i) => `
+    <tr>
+      <td>${i+1}</td>
+      <td><strong>${c.logo || '🏭'} ${c.name}</strong></td>
+      <td>${c.industry}</td>
+      <td>${c.location}</td>
+      <td><span class="badge badge-${c.badge === 'premium' ? 'purple' : c.badge === 'verified' ? 'green' : 'blue'}">${c.badge === 'premium' ? '⭐ Premium Verified' : c.badge === 'verified' ? '✅ Verified' : '📋 Listed'}</span></td>
+      <td style="display:flex;gap:6px;">
+        <button class="btn btn-sm btn-secondary" onclick="editCompany(${c.id})">Edit</button>
+        <button class="btn btn-sm btn-danger" onclick="deleteCompany(${c.id})">Delete</button>
+      </td>
+    </tr>`).join('') || '<tr><td colspan="6" style="text-align:center;color:var(--tv-text-3);">No companies found.</td></tr>';
+}
+function openAddCompanyForm() {
+  document.getElementById('add-company-form').style.display = 'block';
+  document.getElementById('add-company-form-title').textContent = 'Add New Company';
+  document.getElementById('fc-edit-id').value = '';
+  ['fc-name','fc-industry','fc-city','fc-state','fc-phone','fc-email','fc-website','fc-desc','fc-products','fc-logo'].forEach(id => document.getElementById(id).value = '');
+  document.getElementById('fc-badge').value = 'listed';
+}
+function cancelCompanyForm() {
+  document.getElementById('add-company-form').style.display = 'none';
+}
+function editCompany(id) {
+  const companies = getAdminCompanies();
+  const c = companies.find(x => x.id === id);
+  if (!c) return;
+  document.getElementById('add-company-form').style.display = 'block';
+  document.getElementById('add-company-form-title').textContent = 'Edit Company';
+  document.getElementById('fc-edit-id').value = c.id;
+  const locParts = (c.location || '').split(', ');
+  document.getElementById('fc-name').value = c.name || '';
+  document.getElementById('fc-industry').value = c.industry || '';
+  document.getElementById('fc-city').value = locParts[0] || '';
+  document.getElementById('fc-state').value = locParts[1] || '';
+  document.getElementById('fc-phone').value = c.phone || '';
+  document.getElementById('fc-email').value = c.email || '';
+  document.getElementById('fc-website').value = c.website || '';
+  document.getElementById('fc-desc').value = c.description || '';
+  document.getElementById('fc-products').value = (c.products || []).join(', ');
+  document.getElementById('fc-logo').value = c.logo || '';
+  document.getElementById('fc-badge').value = c.badge || (c.premium ? 'premium' : c.verified ? 'verified' : 'listed');
+}
+function saveCompanyForm() {
+  const name = document.getElementById('fc-name').value.trim();
+  const industry = document.getElementById('fc-industry').value.trim();
+  if (!name || !industry) { showToast('Company name and industry are required.', 'error'); return; }
+  const city = document.getElementById('fc-city').value.trim();
+  const state = document.getElementById('fc-state').value.trim();
+  const location = [city, state].filter(Boolean).join(', ') || 'India';
+  const editId = document.getElementById('fc-edit-id').value;
+  const badge = document.getElementById('fc-badge').value;
+  const companies = getAdminCompanies();
+  if (editId) {
+    const idx = companies.findIndex(x => x.id == editId);
+    if (idx !== -1) {
+      companies[idx] = { ...companies[idx], name, industry, location,
+        phone: document.getElementById('fc-phone').value.trim(),
+        email: document.getElementById('fc-email').value.trim(),
+        website: document.getElementById('fc-website').value.trim(),
+        description: document.getElementById('fc-desc').value.trim(),
+        products: document.getElementById('fc-products').value.split(',').map(s=>s.trim()).filter(Boolean),
+        logo: document.getElementById('fc-logo').value.trim() || '🏭',
+        badge, verified: badge !== 'listed', premium: badge === 'premium'
+      };
+    }
+    showToast('Company updated! ✓', 'success');
+  } else {
+    const newId = Math.max(...companies.map(c=>c.id), 0) + 1;
+    companies.push({
+      id: newId, name, industry, location, type: 'manufacturer',
+      phone: document.getElementById('fc-phone').value.trim(),
+      email: document.getElementById('fc-email').value.trim(),
+      website: document.getElementById('fc-website').value.trim(),
+      description: document.getElementById('fc-desc').value.trim(),
+      products: document.getElementById('fc-products').value.split(',').map(s=>s.trim()).filter(Boolean),
+      logo: document.getElementById('fc-logo').value.trim() || '🏭',
+      banner: 'linear-gradient(135deg,#1d4ed8,#7c3aed)',
+      badge, verified: badge !== 'listed', premium: badge === 'premium',
+      exporter: false, rating: 4.5, reviews: 0, response: '< 4 hours',
+      yearsInBusiness: 5, certs: [], employees: '10-50'
+    });
+    showToast('Company added! ✓', 'success');
+  }
+  saveAdminCompanies(companies);
+  allCompanies = getAdminCompanies();
+  cancelCompanyForm();
+  renderAdminCompanies();
+  renderCompanies();
+}
+function deleteCompany(id) {
+  if (!confirm('Delete this company?')) return;
+  const companies = getAdminCompanies().filter(c => c.id !== id);
+  saveAdminCompanies(companies);
+  allCompanies = getAdminCompanies();
+  renderAdminCompanies();
+  renderCompanies();
+  showToast('Company deleted.', 'info');
+}
 </script>
 </body>
 </html>
