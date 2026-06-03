@@ -1070,7 +1070,6 @@ footer {
       <li><a href="#marketplace">Marketplace</a></li>
       <li><a href="#industries">Industries</a></li>
       <li><a href="#how-it-works">How it Works</a></li>
-      <li><a href="#" onclick="openAdmin(); return false;">Admin</a></li>
     </ul>
     <div class="nav-actions">
       <button id="theme-btn" aria-label="Toggle dark mode" title="Toggle dark mode">🌙</button>
@@ -1826,9 +1825,6 @@ footer {
           <div class="dash-nav-item" data-page="settings" onclick="switchDashPage('settings')">
             <span class="icon">⚙️</span> Settings
           </div>
-          <div class="dash-nav-item" onclick="openAdmin()">
-            <span class="icon">🛡️</span> Admin Panel
-          </div>
           <div class="dash-nav-item" onclick="logout()">
             <span class="icon">🚪</span> Logout
           </div>
@@ -2208,7 +2204,10 @@ document.addEventListener('DOMContentLoaded', () => {
   updateNavAuth();
   animateHeroCounters();
 });
-
+// Secret admin access: press Ctrl+Shift+A
+document.addEventListener('keydown', e => {
+  if (e.ctrlKey && e.shiftKey && e.key === 'A') openAdmin();
+});
 // ---- THEME ----
 function initTheme() {
   const saved = localStorage.getItem('tv_theme') || 'light';
@@ -3027,7 +3026,15 @@ function getTime() {
 }
 
 // ---- ADMIN ----
+const ADMIN_PASSWORD = 'tradeverse@admin2025'; // Change this to your own password
+
 function openAdmin() {
+  const entered = prompt('Enter Admin Password:');
+  if (entered === null) return; // user cancelled
+  if (entered !== ADMIN_PASSWORD) {
+    showToast('Incorrect password. Access denied.', 'error');
+    return;
+  }
   populateAdminPanel();
   openModal('admin-modal');
 }
