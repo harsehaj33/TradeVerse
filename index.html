@@ -1,0 +1,3139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="TradeVerse - Direct Business. Real Connections. Connect with verified manufacturers, wholesalers, distributors and exporters without middlemen or unwanted sales calls.">
+<meta name="keywords" content="B2B marketplace, manufacturers, wholesalers, distributors, exporters, suppliers, India, trade, business">
+<meta property="og:title" content="TradeVerse — Direct Business. Real Connections.">
+<meta property="og:description" content="Find suppliers, manufacturers, wholesalers and resellers without middlemen or unwanted sales calls.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://tradeverse.in/og-image.jpg">
+<title>TradeVerse — Direct Business. Real Connections.</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "TradeVerse",
+  "url": "https://tradeverse.in",
+  "description": "B2B marketplace connecting manufacturers, wholesalers, and distributors directly.",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://tradeverse.in/search?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+/* ============================================
+   TRADEVERSE — CSS DESIGN SYSTEM
+   ============================================ */
+:root {
+  --tv-ink: #0a0f1e;
+  --tv-ink-2: #111827;
+  --tv-ink-3: #1e293b;
+  --tv-surface: #ffffff;
+  --tv-surface-2: #f8fafc;
+  --tv-surface-3: #f1f5f9;
+  --tv-border: #e2e8f0;
+  --tv-border-2: #cbd5e1;
+  --tv-text: #0f172a;
+  --tv-text-2: #334155;
+  --tv-text-3: #64748b;
+  --tv-text-4: #94a3b8;
+  --tv-accent: #1d4ed8;
+  --tv-accent-2: #2563eb;
+  --tv-accent-light: #dbeafe;
+  --tv-accent-hover: #1e40af;
+  --tv-orange: #f97316;
+  --tv-orange-light: #fff7ed;
+  --tv-green: #16a34a;
+  --tv-green-light: #dcfce7;
+  --tv-red: #dc2626;
+  --tv-yellow: #eab308;
+  --tv-yellow-light: #fefce8;
+  --tv-gradient-1: linear-gradient(135deg, #1d4ed8 0%, #7c3aed 100%);
+  --tv-gradient-2: linear-gradient(135deg, #0ea5e9 0%, #1d4ed8 100%);
+  --tv-gradient-hero: linear-gradient(160deg, #0a0f1e 0%, #0f172a 40%, #1e1b4b 100%);
+  --tv-shadow-sm: 0 1px 3px rgba(0,0,0,.08), 0 1px 2px rgba(0,0,0,.06);
+  --tv-shadow: 0 4px 6px -1px rgba(0,0,0,.1), 0 2px 4px -2px rgba(0,0,0,.1);
+  --tv-shadow-md: 0 10px 15px -3px rgba(0,0,0,.1), 0 4px 6px -4px rgba(0,0,0,.1);
+  --tv-shadow-lg: 0 20px 25px -5px rgba(0,0,0,.1), 0 8px 10px -6px rgba(0,0,0,.1);
+  --tv-shadow-xl: 0 25px 50px -12px rgba(0,0,0,.25);
+  --tv-radius-sm: 6px;
+  --tv-radius: 10px;
+  --tv-radius-md: 14px;
+  --tv-radius-lg: 20px;
+  --tv-radius-xl: 28px;
+  --tv-font-display: 'Syne', sans-serif;
+  --tv-font-body: 'DM Sans', sans-serif;
+  --tv-nav-h: 64px;
+  --tv-transition: 0.22s cubic-bezier(.4,0,.2,1);
+}
+
+[data-theme="dark"] {
+  --tv-surface: #0f172a;
+  --tv-surface-2: #1e293b;
+  --tv-surface-3: #334155;
+  --tv-border: #1e293b;
+  --tv-border-2: #334155;
+  --tv-text: #f1f5f9;
+  --tv-text-2: #cbd5e1;
+  --tv-text-3: #94a3b8;
+  --tv-text-4: #64748b;
+  --tv-accent-light: #1e3a8a;
+  --tv-orange-light: #431407;
+  --tv-green-light: #14532d;
+  --tv-yellow-light: #422006;
+  --tv-shadow-sm: 0 1px 3px rgba(0,0,0,.3), 0 1px 2px rgba(0,0,0,.2);
+  --tv-shadow: 0 4px 6px -1px rgba(0,0,0,.3), 0 2px 4px -2px rgba(0,0,0,.2);
+  --tv-shadow-md: 0 10px 15px -3px rgba(0,0,0,.4), 0 4px 6px -4px rgba(0,0,0,.3);
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; font-size: 16px; }
+body {
+  font-family: var(--tv-font-body);
+  background: var(--tv-surface);
+  color: var(--tv-text);
+  line-height: 1.6;
+  overflow-x: hidden;
+  transition: background var(--tv-transition), color var(--tv-transition);
+}
+
+/* ---- SCROLLBAR ---- */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--tv-surface-2); }
+::-webkit-scrollbar-thumb { background: var(--tv-border-2); border-radius: 99px; }
+
+/* ---- UTILITIES ---- */
+.container { max-width: 1280px; margin: 0 auto; padding: 0 24px; }
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0,0,0,0); }
+.flex { display: flex; }
+.flex-col { flex-direction: column; }
+.items-center { align-items: center; }
+.justify-between { justify-content: space-between; }
+.gap-2 { gap: 8px; }
+.gap-3 { gap: 12px; }
+.gap-4 { gap: 16px; }
+.grid { display: grid; }
+.hidden { display: none !important; }
+.text-accent { color: var(--tv-accent-2); }
+.text-sm { font-size: .875rem; }
+.text-xs { font-size: .75rem; }
+.fw-600 { font-weight: 600; }
+.fw-700 { font-weight: 700; }
+.mt-1 { margin-top: 4px; }
+.mt-2 { margin-top: 8px; }
+.mt-4 { margin-top: 16px; }
+.w-full { width: 100%; }
+.rounded { border-radius: var(--tv-radius); }
+.badge {
+  display: inline-flex; align-items: center; gap: 4px;
+  padding: 3px 10px; border-radius: 99px;
+  font-size: .72rem; font-weight: 600; letter-spacing: .4px;
+  text-transform: uppercase;
+}
+.badge-blue { background: var(--tv-accent-light); color: var(--tv-accent-2); }
+.badge-green { background: var(--tv-green-light); color: var(--tv-green); }
+.badge-orange { background: var(--tv-orange-light); color: var(--tv-orange); }
+.badge-yellow { background: var(--tv-yellow-light); color: #a16207; }
+.badge-purple { background: #f3e8ff; color: #7c3aed; }
+
+/* ---- BUTTONS ---- */
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+  padding: 10px 22px; border-radius: var(--tv-radius);
+  font-family: var(--tv-font-body); font-size: .9rem; font-weight: 600;
+  cursor: pointer; border: none; outline: none;
+  transition: all var(--tv-transition);
+  text-decoration: none; white-space: nowrap;
+}
+.btn-primary {
+  background: var(--tv-gradient-1); color: #fff;
+  box-shadow: 0 4px 14px rgba(29,78,216,.35);
+}
+.btn-primary:hover { transform: translateY(-1px); box-shadow: 0 6px 20px rgba(29,78,216,.45); }
+.btn-secondary {
+  background: var(--tv-surface); color: var(--tv-text);
+  border: 1.5px solid var(--tv-border-2);
+}
+.btn-secondary:hover { background: var(--tv-surface-2); border-color: var(--tv-accent-2); color: var(--tv-accent-2); }
+.btn-outline-white {
+  background: transparent; color: #fff;
+  border: 1.5px solid rgba(255,255,255,.35);
+}
+.btn-outline-white:hover { background: rgba(255,255,255,.1); border-color: rgba(255,255,255,.6); }
+.btn-ghost { background: transparent; color: var(--tv-text-2); padding: 8px 14px; }
+.btn-ghost:hover { background: var(--tv-surface-2); color: var(--tv-text); }
+.btn-sm { padding: 7px 16px; font-size: .82rem; }
+.btn-lg { padding: 13px 30px; font-size: 1rem; }
+.btn-icon { padding: 8px; border-radius: var(--tv-radius-sm); }
+.btn-danger { background: #fee2e2; color: var(--tv-red); }
+.btn-danger:hover { background: var(--tv-red); color: #fff; }
+
+/* ---- NAV ---- */
+#navbar {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+  height: var(--tv-nav-h);
+  background: rgba(255,255,255,.9);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid var(--tv-border);
+  transition: all var(--tv-transition);
+}
+[data-theme="dark"] #navbar {
+  background: rgba(15,23,42,.9);
+}
+#navbar.scrolled {
+  box-shadow: var(--tv-shadow-md);
+}
+.nav-inner {
+  display: flex; align-items: center; justify-content: space-between;
+  height: 100%;
+}
+.nav-logo {
+  display: flex; align-items: center; gap: 10px;
+  text-decoration: none; color: var(--tv-text);
+}
+.nav-logo-mark {
+  width: 34px; height: 34px; border-radius: 9px;
+  background: var(--tv-gradient-1);
+  display: flex; align-items: center; justify-content: center;
+  font-family: var(--tv-font-display); font-weight: 800; color: #fff; font-size: 1rem;
+  flex-shrink: 0;
+}
+.nav-logo-text {
+  font-family: var(--tv-font-display); font-weight: 800; font-size: 1.25rem;
+  letter-spacing: -.5px; color: var(--tv-text);
+}
+.nav-logo-text span { color: var(--tv-accent-2); }
+.nav-links {
+  display: flex; align-items: center; gap: 4px; list-style: none;
+}
+.nav-links a {
+  padding: 6px 12px; border-radius: var(--tv-radius-sm);
+  font-size: .88rem; font-weight: 500; color: var(--tv-text-2);
+  text-decoration: none; transition: all var(--tv-transition);
+}
+.nav-links a:hover { color: var(--tv-accent-2); background: var(--tv-accent-light); }
+.nav-actions { display: flex; align-items: center; gap: 8px; }
+#theme-btn {
+  width: 36px; height: 36px; border-radius: var(--tv-radius-sm);
+  display: flex; align-items: center; justify-content: center;
+  background: var(--tv-surface-2); border: 1px solid var(--tv-border);
+  cursor: pointer; font-size: 1rem; transition: all var(--tv-transition);
+  color: var(--tv-text-2);
+}
+#theme-btn:hover { background: var(--tv-surface-3); }
+.hamburger {
+  display: none; flex-direction: column; gap: 5px;
+  background: none; border: none; cursor: pointer; padding: 6px;
+}
+.hamburger span {
+  display: block; width: 22px; height: 2px;
+  background: var(--tv-text); border-radius: 2px;
+  transition: all var(--tv-transition);
+}
+
+/* ---- MOBILE NAV ---- */
+#mobile-nav {
+  display: none;
+  position: fixed; top: var(--tv-nav-h); left: 0; right: 0;
+  background: var(--tv-surface);
+  border-bottom: 1px solid var(--tv-border);
+  padding: 16px 24px 24px; z-index: 999;
+  box-shadow: var(--tv-shadow-lg);
+}
+#mobile-nav.open { display: block; }
+#mobile-nav a {
+  display: block; padding: 12px 0;
+  border-bottom: 1px solid var(--tv-border);
+  color: var(--tv-text-2); text-decoration: none;
+  font-weight: 500;
+}
+#mobile-nav a:last-child { border: none; }
+.mobile-nav-actions { display: flex; flex-direction: column; gap: 8px; margin-top: 16px; }
+
+/* ---- HERO ---- */
+#hero {
+  background: var(--tv-gradient-hero);
+  padding: calc(var(--tv-nav-h) + 80px) 0 100px;
+  position: relative; overflow: hidden;
+}
+.hero-grid {
+  position: absolute; inset: 0; opacity: .04;
+  background-image: linear-gradient(rgba(255,255,255,.4) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,.4) 1px, transparent 1px);
+  background-size: 60px 60px;
+}
+.hero-glow {
+  position: absolute; width: 600px; height: 600px; border-radius: 50%;
+  background: radial-gradient(circle, rgba(29,78,216,.4) 0%, transparent 70%);
+  top: -200px; right: -100px; pointer-events: none;
+}
+.hero-glow-2 {
+  position: absolute; width: 400px; height: 400px; border-radius: 50%;
+  background: radial-gradient(circle, rgba(124,58,237,.3) 0%, transparent 70%);
+  bottom: -100px; left: 5%; pointer-events: none;
+}
+.hero-inner {
+  position: relative; z-index: 2;
+  display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center;
+}
+.hero-eyebrow {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: rgba(255,255,255,.08); border: 1px solid rgba(255,255,255,.15);
+  padding: 6px 14px; border-radius: 99px;
+  font-size: .78rem; font-weight: 600; color: #93c5fd;
+  letter-spacing: .5px; text-transform: uppercase; margin-bottom: 24px;
+}
+.hero-eyebrow::before {
+  content: ''; width: 6px; height: 6px; border-radius: 50%; background: #4ade80;
+  animation: pulse-dot 2s infinite;
+}
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: .5; transform: scale(1.4); }
+}
+.hero-title {
+  font-family: var(--tv-font-display); font-weight: 800;
+  font-size: clamp(2.2rem, 4.5vw, 3.4rem); line-height: 1.12;
+  color: #fff; letter-spacing: -1.5px; margin-bottom: 20px;
+}
+.hero-title .highlight {
+  background: linear-gradient(90deg, #60a5fa, #a78bfa);
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.hero-subtitle {
+  font-size: 1.1rem; color: rgba(255,255,255,.65);
+  line-height: 1.7; margin-bottom: 36px; max-width: 480px;
+}
+.hero-actions { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 48px; }
+.hero-trust {
+  display: flex; gap: 24px; flex-wrap: wrap;
+}
+.trust-item {
+  display: flex; align-items: center; gap: 8px;
+  font-size: .82rem; color: rgba(255,255,255,.6); font-weight: 500;
+}
+.trust-item .icon {
+  width: 28px; height: 28px; border-radius: 50%;
+  background: rgba(255,255,255,.1); border: 1px solid rgba(255,255,255,.15);
+  display: flex; align-items: center; justify-content: center; font-size: .9rem;
+}
+
+/* Hero right — stats card */
+.hero-visual {
+  display: flex; flex-direction: column; gap: 16px;
+}
+.hero-stat-card {
+  background: rgba(255,255,255,.07);
+  border: 1px solid rgba(255,255,255,.12);
+  backdrop-filter: blur(20px);
+  border-radius: var(--tv-radius-lg);
+  padding: 24px 28px;
+  transition: transform var(--tv-transition);
+}
+.hero-stat-card:hover { transform: translateY(-3px); }
+.stat-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.stat-item { text-align: center; }
+.stat-num {
+  font-family: var(--tv-font-display); font-weight: 800;
+  font-size: 1.9rem; color: #fff; line-height: 1;
+  margin-bottom: 4px;
+}
+.stat-label { font-size: .75rem; color: rgba(255,255,255,.5); font-weight: 500; }
+.hero-mini-cards { display: flex; gap: 12px; }
+.mini-card {
+  flex: 1; background: rgba(255,255,255,.07);
+  border: 1px solid rgba(255,255,255,.1);
+  border-radius: var(--tv-radius-md); padding: 16px;
+  text-align: center;
+}
+.mini-card-icon { font-size: 1.5rem; margin-bottom: 8px; }
+.mini-card-label { font-size: .75rem; color: rgba(255,255,255,.55); font-weight: 500; }
+
+/* ---- MARQUEE ---- */
+.marquee-section {
+  background: var(--tv-surface-2); border-top: 1px solid var(--tv-border);
+  border-bottom: 1px solid var(--tv-border); padding: 20px 0; overflow: hidden;
+}
+.marquee-track {
+  display: flex; gap: 48px; width: max-content;
+  animation: marquee 30s linear infinite;
+}
+@keyframes marquee { to { transform: translateX(-50%); } }
+.marquee-item {
+  display: flex; align-items: center; gap: 10px;
+  font-size: .82rem; font-weight: 600; color: var(--tv-text-3);
+  white-space: nowrap;
+}
+.marquee-item span { font-size: 1rem; }
+
+/* ---- SECTION HEADERS ---- */
+.section-header {
+  text-align: center; margin-bottom: 56px;
+}
+.section-eyebrow {
+  display: inline-block; font-size: .75rem; font-weight: 700;
+  letter-spacing: 1.5px; text-transform: uppercase;
+  color: var(--tv-accent-2); margin-bottom: 12px;
+}
+.section-title {
+  font-family: var(--tv-font-display); font-weight: 800;
+  font-size: clamp(1.8rem, 3vw, 2.5rem); letter-spacing: -1px;
+  color: var(--tv-text); margin-bottom: 16px; line-height: 1.2;
+}
+.section-subtitle { color: var(--tv-text-3); font-size: 1.05rem; max-width: 560px; margin: 0 auto; }
+
+/* ---- FEATURES ---- */
+#features { padding: 100px 0; background: var(--tv-surface); }
+.features-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+.feature-card {
+  padding: 28px 24px; border-radius: var(--tv-radius-md);
+  border: 1.5px solid var(--tv-border);
+  background: var(--tv-surface);
+  transition: all var(--tv-transition);
+  position: relative; overflow: hidden;
+}
+.feature-card::before {
+  content: ''; position: absolute; inset: 0;
+  background: var(--tv-gradient-1); opacity: 0;
+  transition: opacity var(--tv-transition);
+  border-radius: inherit;
+}
+.feature-card:hover { border-color: var(--tv-accent-2); transform: translateY(-4px); box-shadow: var(--tv-shadow-lg); }
+.feature-card:hover::before { opacity: .04; }
+.feature-icon {
+  width: 48px; height: 48px; border-radius: var(--tv-radius);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.4rem; margin-bottom: 16px;
+  background: var(--tv-surface-2); border: 1px solid var(--tv-border);
+  transition: all var(--tv-transition);
+}
+.feature-card:hover .feature-icon {
+  background: var(--tv-accent-light); border-color: var(--tv-accent-2);
+}
+.feature-card h3 {
+  font-family: var(--tv-font-display); font-weight: 700; font-size: 1rem;
+  margin-bottom: 8px; color: var(--tv-text);
+}
+.feature-card p { font-size: .85rem; color: var(--tv-text-3); line-height: 1.6; }
+
+/* ---- SEARCH SECTION ---- */
+#search-section { padding: 80px 0; background: var(--tv-surface-2); }
+.search-bar-wrap {
+  background: var(--tv-surface); border-radius: var(--tv-radius-lg);
+  border: 2px solid var(--tv-border); padding: 8px;
+  display: flex; gap: 8px; align-items: center;
+  box-shadow: var(--tv-shadow-lg); margin-bottom: 24px;
+  transition: border-color var(--tv-transition);
+}
+.search-bar-wrap:focus-within { border-color: var(--tv-accent-2); }
+.search-select {
+  flex: 0 0 160px; padding: 10px 14px;
+  background: var(--tv-surface-2); border: none; outline: none;
+  border-radius: var(--tv-radius); font-family: var(--tv-font-body);
+  font-size: .88rem; color: var(--tv-text); cursor: pointer;
+  border-right: 1px solid var(--tv-border);
+}
+.search-input {
+  flex: 1; padding: 10px 16px; border: none; outline: none;
+  background: transparent; font-family: var(--tv-font-body);
+  font-size: .95rem; color: var(--tv-text);
+}
+.search-input::placeholder { color: var(--tv-text-4); }
+.search-btn {
+  flex-shrink: 0; padding: 10px 24px;
+  background: var(--tv-gradient-1); color: #fff;
+  border: none; border-radius: var(--tv-radius);
+  font-family: var(--tv-font-body); font-weight: 600; font-size: .9rem;
+  cursor: pointer; transition: all var(--tv-transition);
+  display: flex; align-items: center; gap: 8px;
+}
+.search-btn:hover { opacity: .92; }
+.filter-tags { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 16px; }
+.filter-tag {
+  padding: 6px 14px; border-radius: 99px;
+  border: 1.5px solid var(--tv-border); background: var(--tv-surface);
+  font-size: .8rem; font-weight: 500; color: var(--tv-text-2);
+  cursor: pointer; transition: all var(--tv-transition);
+}
+.filter-tag:hover, .filter-tag.active {
+  border-color: var(--tv-accent-2); background: var(--tv-accent-light);
+  color: var(--tv-accent-2);
+}
+
+/* ---- MARKETPLACE ---- */
+#marketplace { padding: 80px 0 100px; }
+.marketplace-header {
+  display: flex; align-items: center; justify-content: space-between;
+  margin-bottom: 32px;
+}
+.marketplace-header h2 {
+  font-family: var(--tv-font-display); font-weight: 800;
+  font-size: 1.5rem; letter-spacing: -.5px;
+}
+.results-info { font-size: .85rem; color: var(--tv-text-3); }
+.companies-grid {
+  display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px;
+}
+.company-card {
+  background: var(--tv-surface); border: 1.5px solid var(--tv-border);
+  border-radius: var(--tv-radius-md); overflow: hidden;
+  transition: all var(--tv-transition); cursor: pointer;
+}
+.company-card:hover {
+  border-color: var(--tv-accent-2); transform: translateY(-3px);
+  box-shadow: var(--tv-shadow-lg);
+}
+.card-banner {
+  height: 80px; position: relative;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+.card-banner .card-logo {
+  position: absolute; bottom: -24px; left: 20px;
+  width: 48px; height: 48px; border-radius: 10px;
+  border: 2.5px solid var(--tv-surface);
+  background: var(--tv-surface); display: flex; align-items: center;
+  justify-content: center; font-size: 1.4rem; font-weight: 700;
+  box-shadow: var(--tv-shadow);
+}
+.card-body { padding: 36px 20px 20px; }
+.card-header-row {
+  display: flex; align-items: flex-start; justify-content: space-between;
+  margin-bottom: 8px;
+}
+.card-name {
+  font-family: var(--tv-font-display); font-weight: 700;
+  font-size: .95rem; color: var(--tv-text); line-height: 1.3;
+}
+.card-industry { font-size: .78rem; color: var(--tv-text-3); margin-bottom: 10px; }
+.card-tags { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 14px; }
+.card-tag {
+  font-size: .7rem; padding: 3px 8px; border-radius: 4px;
+  background: var(--tv-surface-2); color: var(--tv-text-3);
+  border: 1px solid var(--tv-border);
+}
+.card-meta {
+  display: flex; justify-content: space-between; align-items: center;
+  font-size: .75rem; color: var(--tv-text-3); margin-bottom: 14px;
+}
+.card-location { display: flex; align-items: center; gap: 4px; }
+.card-response { color: var(--tv-green); font-weight: 500; }
+.card-footer { display: flex; gap: 8px; }
+
+/* ---- SKELETON ---- */
+.skeleton {
+  background: linear-gradient(90deg, var(--tv-surface-2) 25%, var(--tv-surface-3) 50%, var(--tv-surface-2) 75%);
+  background-size: 200% 100%;
+  animation: skeleton-anim 1.4s ease-in-out infinite;
+  border-radius: 4px;
+}
+@keyframes skeleton-anim {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+.skeleton-card {
+  background: var(--tv-surface); border: 1.5px solid var(--tv-border);
+  border-radius: var(--tv-radius-md); overflow: hidden; padding: 0 0 20px;
+}
+.skeleton-banner { height: 80px; }
+.skeleton-body { padding: 36px 20px 0; }
+.skeleton-line { height: 12px; margin-bottom: 8px; }
+.skeleton-line.w-80 { width: 80%; }
+.skeleton-line.w-60 { width: 60%; }
+.skeleton-line.w-40 { width: 40%; }
+.load-more-wrap { text-align: center; margin-top: 40px; }
+
+/* ---- INDUSTRIES ---- */
+#industries { padding: 80px 0; background: var(--tv-surface-2); }
+.industries-grid {
+  display: grid; grid-template-columns: repeat(6, 1fr); gap: 16px;
+}
+.industry-card {
+  background: var(--tv-surface); border: 1.5px solid var(--tv-border);
+  border-radius: var(--tv-radius-md); padding: 24px 16px;
+  text-align: center; cursor: pointer;
+  transition: all var(--tv-transition);
+}
+.industry-card:hover {
+  border-color: var(--tv-accent-2); transform: translateY(-3px);
+  box-shadow: var(--tv-shadow-md); background: var(--tv-accent-light);
+}
+.industry-icon { font-size: 2rem; margin-bottom: 10px; }
+.industry-name { font-size: .82rem; font-weight: 600; color: var(--tv-text-2); margin-bottom: 4px; }
+.industry-count { font-size: .72rem; color: var(--tv-text-4); }
+
+/* ---- STATS ---- */
+#stats {
+  padding: 80px 0;
+  background: var(--tv-ink-2);
+  background-image: radial-gradient(ellipse 80% 50% at 50% -20%, rgba(29,78,216,.15), transparent);
+}
+.stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: rgba(255,255,255,.06); border-radius: var(--tv-radius-md); overflow: hidden; }
+.stat-block {
+  background: var(--tv-ink-2); padding: 40px 32px; text-align: center;
+}
+.stat-block-num {
+  font-family: var(--tv-font-display); font-weight: 800;
+  font-size: 2.8rem; color: #fff; line-height: 1; margin-bottom: 8px;
+  letter-spacing: -1.5px;
+}
+.stat-block-num .accent { color: #60a5fa; }
+.stat-block-label { font-size: .88rem; color: rgba(255,255,255,.5); font-weight: 500; }
+
+/* ---- HOW IT WORKS ---- */
+#how-it-works { padding: 100px 0; background: var(--tv-surface); }
+.steps-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; position: relative; }
+.steps-grid::before {
+  content: ''; position: absolute; top: 36px; left: 15%; right: 15%;
+  height: 2px; background: linear-gradient(90deg, var(--tv-accent-2), var(--tv-accent-light));
+  z-index: 0;
+}
+.step-card {
+  background: var(--tv-surface); text-align: center; padding: 32px 24px;
+  border-radius: var(--tv-radius-lg); position: relative; z-index: 1;
+  border: 1.5px solid var(--tv-border);
+}
+.step-num {
+  width: 64px; height: 64px; border-radius: 50%;
+  background: var(--tv-gradient-1);
+  display: flex; align-items: center; justify-content: center;
+  font-family: var(--tv-font-display); font-weight: 800; font-size: 1.3rem;
+  color: #fff; margin: 0 auto 20px;
+  box-shadow: 0 8px 24px rgba(29,78,216,.35);
+}
+.step-card h3 {
+  font-family: var(--tv-font-display); font-weight: 700; font-size: 1.05rem;
+  margin-bottom: 10px; color: var(--tv-text);
+}
+.step-card p { font-size: .875rem; color: var(--tv-text-3); line-height: 1.6; }
+
+/* ---- TESTIMONIALS ---- */
+#testimonials { padding: 100px 0; background: var(--tv-surface-2); }
+.testimonials-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+.testimonial-card {
+  background: var(--tv-surface); border: 1.5px solid var(--tv-border);
+  border-radius: var(--tv-radius-md); padding: 28px;
+  transition: all var(--tv-transition);
+}
+.testimonial-card:hover { box-shadow: var(--tv-shadow-lg); transform: translateY(-2px); }
+.t-stars { color: var(--tv-yellow); margin-bottom: 14px; font-size: .9rem; letter-spacing: 2px; }
+.t-text { font-size: .9rem; color: var(--tv-text-2); line-height: 1.7; margin-bottom: 20px; font-style: italic; }
+.t-author { display: flex; align-items: center; gap: 12px; }
+.t-avatar {
+  width: 42px; height: 42px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-weight: 700; font-size: .9rem; color: #fff; flex-shrink: 0;
+}
+.t-name { font-weight: 600; font-size: .88rem; color: var(--tv-text); }
+.t-role { font-size: .77rem; color: var(--tv-text-3); }
+
+/* ---- FAQ ---- */
+#faq { padding: 100px 0; }
+.faq-list { max-width: 760px; margin: 0 auto; }
+.faq-item {
+  border: 1.5px solid var(--tv-border); border-radius: var(--tv-radius-md);
+  margin-bottom: 12px; overflow: hidden;
+  transition: border-color var(--tv-transition);
+}
+.faq-item.open { border-color: var(--tv-accent-2); }
+.faq-q {
+  width: 100%; display: flex; align-items: center; justify-content: space-between;
+  padding: 20px 24px; background: var(--tv-surface); border: none;
+  cursor: pointer; font-family: var(--tv-font-body); font-size: .95rem;
+  font-weight: 600; color: var(--tv-text); text-align: left;
+  transition: background var(--tv-transition);
+}
+.faq-q:hover { background: var(--tv-surface-2); }
+.faq-arrow {
+  flex-shrink: 0; transition: transform var(--tv-transition); font-size: .85rem; color: var(--tv-text-3);
+}
+.faq-item.open .faq-arrow { transform: rotate(180deg); }
+.faq-a {
+  max-height: 0; overflow: hidden; transition: max-height .3s ease, padding .3s ease;
+  padding: 0 24px;
+}
+.faq-item.open .faq-a { max-height: 300px; padding: 0 24px 20px; }
+.faq-a p { font-size: .9rem; color: var(--tv-text-3); line-height: 1.7; }
+
+/* ---- CTA SECTION ---- */
+#cta-section {
+  padding: 100px 0;
+  background: var(--tv-gradient-hero);
+  position: relative; overflow: hidden; text-align: center;
+}
+.cta-glow {
+  position: absolute; width: 500px; height: 500px; border-radius: 50%;
+  background: radial-gradient(circle, rgba(29,78,216,.4) 0%, transparent 70%);
+  top: 50%; left: 50%; transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+.cta-content { position: relative; z-index: 2; }
+.cta-title {
+  font-family: var(--tv-font-display); font-weight: 800;
+  font-size: clamp(1.8rem, 3vw, 2.8rem); color: #fff;
+  letter-spacing: -1px; margin-bottom: 16px;
+}
+.cta-subtitle { color: rgba(255,255,255,.6); font-size: 1.05rem; margin-bottom: 36px; }
+.cta-actions { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+
+/* ---- FOOTER ---- */
+footer {
+  background: var(--tv-ink); color: rgba(255,255,255,.6);
+  padding: 60px 0 0;
+}
+.footer-grid {
+  display: grid; grid-template-columns: 1.5fr 1fr 1fr 1fr; gap: 40px;
+  padding-bottom: 48px; border-bottom: 1px solid rgba(255,255,255,.08);
+}
+.footer-brand { }
+.footer-brand .nav-logo-text { color: #fff; margin-bottom: 12px; display: block; }
+.footer-brand p { font-size: .85rem; line-height: 1.7; color: rgba(255,255,255,.45); margin-bottom: 20px; }
+.footer-socials { display: flex; gap: 8px; }
+.footer-social {
+  width: 36px; height: 36px; border-radius: var(--tv-radius-sm);
+  background: rgba(255,255,255,.08); border: 1px solid rgba(255,255,255,.1);
+  display: flex; align-items: center; justify-content: center;
+  font-size: .85rem; cursor: pointer; transition: all var(--tv-transition);
+  text-decoration: none; color: rgba(255,255,255,.6);
+}
+.footer-social:hover { background: var(--tv-accent-2); border-color: var(--tv-accent-2); color: #fff; }
+.footer-col h4 { font-size: .85rem; font-weight: 700; color: #fff; margin-bottom: 16px; text-transform: uppercase; letter-spacing: .5px; }
+.footer-col ul { list-style: none; }
+.footer-col li { margin-bottom: 10px; }
+.footer-col a { font-size: .85rem; color: rgba(255,255,255,.45); text-decoration: none; transition: color var(--tv-transition); }
+.footer-col a:hover { color: #fff; }
+.footer-bottom {
+  padding: 20px 0; display: flex;
+  align-items: center; justify-content: space-between;
+  font-size: .8rem; color: rgba(255,255,255,.3);
+}
+.footer-bottom-links { display: flex; gap: 20px; }
+.footer-bottom-links a { color: rgba(255,255,255,.3); text-decoration: none; }
+.footer-bottom-links a:hover { color: rgba(255,255,255,.6); }
+
+/* ---- MODALS ---- */
+.modal-overlay {
+  position: fixed; inset: 0; z-index: 2000;
+  background: rgba(0,0,0,.55);
+  backdrop-filter: blur(6px);
+  display: flex; align-items: center; justify-content: center;
+  padding: 20px;
+  opacity: 0; pointer-events: none;
+  transition: opacity var(--tv-transition);
+}
+.modal-overlay.open { opacity: 1; pointer-events: all; }
+.modal {
+  background: var(--tv-surface); border-radius: var(--tv-radius-xl);
+  box-shadow: var(--tv-shadow-xl);
+  width: 100%; max-width: 500px; max-height: 90vh; overflow-y: auto;
+  transform: scale(.95) translateY(10px);
+  transition: transform .3s cubic-bezier(.34,1.56,.64,1);
+}
+.modal-overlay.open .modal { transform: scale(1) translateY(0); }
+.modal-lg { max-width: 840px; }
+.modal-header {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 24px 28px; border-bottom: 1px solid var(--tv-border);
+  position: sticky; top: 0; background: var(--tv-surface); z-index: 2;
+  border-radius: var(--tv-radius-xl) var(--tv-radius-xl) 0 0;
+}
+.modal-title { font-family: var(--tv-font-display); font-weight: 800; font-size: 1.2rem; color: var(--tv-text); }
+.modal-close {
+  width: 32px; height: 32px; border-radius: 50%;
+  background: var(--tv-surface-2); border: 1px solid var(--tv-border);
+  display: flex; align-items: center; justify-content: center;
+  cursor: pointer; font-size: 1.1rem; color: var(--tv-text-2);
+  transition: all var(--tv-transition);
+}
+.modal-close:hover { background: var(--tv-surface-3); color: var(--tv-text); }
+.modal-body { padding: 28px; }
+
+/* ---- AUTH MODAL ---- */
+.auth-tabs { display: flex; border-bottom: 1px solid var(--tv-border); margin-bottom: 28px; }
+.auth-tab {
+  flex: 1; padding: 12px; text-align: center;
+  font-weight: 600; font-size: .9rem; color: var(--tv-text-3);
+  cursor: pointer; border-bottom: 2px solid transparent;
+  transition: all var(--tv-transition); margin-bottom: -1px;
+}
+.auth-tab.active { color: var(--tv-accent-2); border-bottom-color: var(--tv-accent-2); }
+.form-group { margin-bottom: 18px; }
+.form-label { display: block; font-size: .83rem; font-weight: 600; color: var(--tv-text-2); margin-bottom: 6px; }
+.form-input, .form-select, .form-textarea {
+  width: 100%; padding: 11px 14px; border-radius: var(--tv-radius);
+  border: 1.5px solid var(--tv-border);
+  background: var(--tv-surface-2); color: var(--tv-text);
+  font-family: var(--tv-font-body); font-size: .9rem;
+  transition: border-color var(--tv-transition), box-shadow var(--tv-transition);
+  outline: none;
+}
+.form-input:focus, .form-select:focus, .form-textarea:focus {
+  border-color: var(--tv-accent-2);
+  box-shadow: 0 0 0 3px rgba(37,99,235,.1);
+}
+.form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.form-textarea { resize: vertical; min-height: 90px; }
+.form-hint { font-size: .78rem; color: var(--tv-text-4); margin-top: 5px; }
+.form-divider {
+  display: flex; align-items: center; gap: 12px; margin: 20px 0;
+  font-size: .8rem; color: var(--tv-text-4);
+}
+.form-divider::before, .form-divider::after { content: ''; flex: 1; height: 1px; background: var(--tv-border); }
+.form-error { font-size: .8rem; color: var(--tv-red); margin-top: 6px; display: none; }
+.form-error.show { display: block; }
+.auth-social-btn {
+  width: 100%; padding: 10px; border-radius: var(--tv-radius);
+  border: 1.5px solid var(--tv-border); background: var(--tv-surface);
+  font-family: var(--tv-font-body); font-size: .88rem; font-weight: 500;
+  color: var(--tv-text-2); cursor: pointer; display: flex; align-items: center;
+  justify-content: center; gap: 10px; transition: all var(--tv-transition);
+  margin-bottom: 8px;
+}
+.auth-social-btn:hover { border-color: var(--tv-accent-2); background: var(--tv-surface-2); }
+
+/* ---- COMPANY PROFILE MODAL ---- */
+.profile-banner {
+  height: 160px; border-radius: var(--tv-radius-lg) var(--tv-radius-lg) 0 0;
+  position: relative;
+}
+.profile-logo {
+  position: absolute; bottom: -32px; left: 28px;
+  width: 64px; height: 64px; border-radius: 14px;
+  border: 3px solid var(--tv-surface);
+  background: var(--tv-surface); display: flex; align-items: center;
+  justify-content: center; font-size: 2rem;
+  box-shadow: var(--tv-shadow-md);
+}
+.profile-actions-row {
+  position: absolute; bottom: 12px; right: 20px;
+  display: flex; gap: 8px;
+}
+.profile-body { padding: 52px 28px 28px; }
+.profile-name {
+  font-family: var(--tv-font-display); font-weight: 800;
+  font-size: 1.5rem; letter-spacing: -.5px; color: var(--tv-text);
+  margin-bottom: 6px;
+}
+.profile-industry { color: var(--tv-text-3); font-size: .9rem; margin-bottom: 16px; }
+.profile-badges { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 20px; }
+.profile-desc { font-size: .9rem; color: var(--tv-text-2); line-height: 1.7; margin-bottom: 24px; }
+.profile-info-grid {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 24px;
+}
+.profile-info-item { }
+.profile-info-label { font-size: .75rem; color: var(--tv-text-4); font-weight: 600; text-transform: uppercase; letter-spacing: .5px; margin-bottom: 4px; }
+.profile-info-value { font-size: .88rem; color: var(--tv-text-2); font-weight: 500; }
+.profile-info-value a { color: var(--tv-accent-2); text-decoration: none; }
+.profile-section-title {
+  font-family: var(--tv-font-display); font-weight: 700; font-size: 1rem;
+  margin-bottom: 14px; color: var(--tv-text);
+}
+.products-grid-mini { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-bottom: 24px; }
+.product-chip-mini {
+  background: var(--tv-surface-2); border: 1px solid var(--tv-border);
+  border-radius: var(--tv-radius); padding: 10px; text-align: center;
+  font-size: .78rem; color: var(--tv-text-2); font-weight: 500;
+}
+.cert-list { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; }
+.cert-badge {
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 6px 12px; border-radius: var(--tv-radius);
+  background: var(--tv-green-light); color: var(--tv-green);
+  font-size: .78rem; font-weight: 600; border: 1px solid #bbf7d0;
+}
+.profile-footer { display: flex; gap: 10px; padding-top: 20px; border-top: 1px solid var(--tv-border); }
+
+/* ---- CHAT ---- */
+#chat-overlay {
+  position: fixed; bottom: 90px; right: 24px; z-index: 1500;
+  width: 380px; height: 540px;
+  background: var(--tv-surface); border-radius: var(--tv-radius-xl);
+  border: 1.5px solid var(--tv-border);
+  box-shadow: var(--tv-shadow-xl);
+  display: flex; flex-direction: column; overflow: hidden;
+  transform: scale(.9) translateY(20px); opacity: 0; pointer-events: none;
+  transition: all .3s cubic-bezier(.34,1.56,.64,1);
+}
+#chat-overlay.open { transform: scale(1) translateY(0); opacity: 1; pointer-events: all; }
+.chat-header {
+  background: var(--tv-gradient-1); padding: 16px 20px;
+  display: flex; align-items: center; justify-content: space-between;
+}
+.chat-header-left { display: flex; align-items: center; gap: 12px; }
+.chat-avatar {
+  width: 38px; height: 38px; border-radius: 50%;
+  background: rgba(255,255,255,.2); border: 2px solid rgba(255,255,255,.3);
+  display: flex; align-items: center; justify-content: center; font-size: 1rem;
+}
+.chat-header-info { }
+.chat-header-name { font-weight: 700; font-size: .9rem; color: #fff; }
+.chat-header-status { font-size: .72rem; color: rgba(255,255,255,.7); display: flex; align-items: center; gap: 4px; }
+.chat-header-status::before {
+  content: ''; width: 6px; height: 6px; border-radius: 50%; background: #4ade80;
+}
+.chat-close-btn {
+  background: rgba(255,255,255,.15); border: none; border-radius: 50%;
+  width: 30px; height: 30px; display: flex; align-items: center; justify-content: center;
+  color: #fff; cursor: pointer; font-size: 1rem; transition: background var(--tv-transition);
+}
+.chat-close-btn:hover { background: rgba(255,255,255,.25); }
+
+/* Chat list view */
+.chat-list { flex: 1; overflow-y: auto; }
+.chat-list-item {
+  display: flex; align-items: center; gap: 12px;
+  padding: 14px 20px; border-bottom: 1px solid var(--tv-border);
+  cursor: pointer; transition: background var(--tv-transition);
+}
+.chat-list-item:hover { background: var(--tv-surface-2); }
+.chat-list-avatar {
+  width: 42px; height: 42px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.1rem; font-weight: 700; color: #fff; flex-shrink: 0;
+}
+.chat-list-info { flex: 1; min-width: 0; }
+.chat-list-name { font-weight: 600; font-size: .88rem; color: var(--tv-text); margin-bottom: 2px; }
+.chat-list-preview { font-size: .78rem; color: var(--tv-text-4); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.chat-list-time { font-size: .72rem; color: var(--tv-text-4); flex-shrink: 0; }
+
+/* Chat messages view */
+#chat-messages-view { display: none; flex-direction: column; flex: 1; overflow: hidden; }
+#chat-messages-view.active { display: flex; }
+.chat-back-btn {
+  background: rgba(255,255,255,.15); border: none;
+  color: #fff; cursor: pointer; font-size: .85rem; padding: 4px 8px;
+  border-radius: 6px; display: flex; align-items: center; gap: 4px;
+  transition: background var(--tv-transition);
+}
+.chat-back-btn:hover { background: rgba(255,255,255,.25); }
+.messages-area {
+  flex: 1; overflow-y: auto; padding: 16px;
+  display: flex; flex-direction: column; gap: 10px;
+  background: var(--tv-surface-2);
+}
+.msg { display: flex; gap: 8px; max-width: 78%; }
+.msg.sent { margin-left: auto; flex-direction: row-reverse; }
+.msg-avatar {
+  width: 28px; height: 28px; border-radius: 50%; flex-shrink: 0;
+  display: flex; align-items: center; justify-content: center;
+  font-size: .65rem; font-weight: 700; color: #fff; margin-top: 2px;
+}
+.msg-content { }
+.msg-bubble {
+  padding: 9px 14px; border-radius: 18px;
+  font-size: .84rem; line-height: 1.5; color: var(--tv-text);
+  background: var(--tv-surface); border: 1px solid var(--tv-border);
+  border-bottom-left-radius: 4px;
+}
+.msg.sent .msg-bubble {
+  background: var(--tv-gradient-1); color: #fff; border: none;
+  border-bottom-right-radius: 4px; border-bottom-left-radius: 18px;
+}
+.msg-time { font-size: .68rem; color: var(--tv-text-4); margin-top: 4px; text-align: right; }
+.msg.sent .msg-time { text-align: right; color: rgba(255,255,255,.6); }
+.chat-input-area {
+  display: flex; gap: 8px; padding: 12px 16px;
+  border-top: 1px solid var(--tv-border); background: var(--tv-surface);
+}
+.chat-input {
+  flex: 1; padding: 9px 14px; border-radius: 99px;
+  border: 1.5px solid var(--tv-border); background: var(--tv-surface-2);
+  font-family: var(--tv-font-body); font-size: .87rem; color: var(--tv-text);
+  outline: none; transition: border-color var(--tv-transition);
+}
+.chat-input:focus { border-color: var(--tv-accent-2); }
+.chat-send-btn {
+  width: 36px; height: 36px; border-radius: 50%;
+  background: var(--tv-gradient-1); border: none;
+  color: #fff; cursor: pointer; display: flex; align-items: center;
+  justify-content: center; font-size: .9rem; transition: transform var(--tv-transition);
+  flex-shrink: 0;
+}
+.chat-send-btn:hover { transform: scale(1.1); }
+
+/* ---- CHAT TRIGGER ---- */
+#chat-trigger {
+  position: fixed; bottom: 24px; right: 24px; z-index: 1400;
+  width: 54px; height: 54px; border-radius: 50%;
+  background: var(--tv-gradient-1); border: none;
+  color: #fff; font-size: 1.4rem; cursor: pointer;
+  box-shadow: 0 8px 24px rgba(29,78,216,.4);
+  display: flex; align-items: center; justify-content: center;
+  transition: all var(--tv-transition);
+}
+#chat-trigger:hover { transform: scale(1.1); box-shadow: 0 10px 30px rgba(29,78,216,.5); }
+.chat-notif-badge {
+  position: absolute; top: -4px; right: -4px;
+  width: 18px; height: 18px; border-radius: 50%;
+  background: var(--tv-red); color: #fff;
+  font-size: .7rem; font-weight: 700; display: flex; align-items: center; justify-content: center;
+}
+
+/* ---- DASHBOARD ---- */
+#dashboard-overlay {
+  position: fixed; inset: 0; z-index: 1800;
+  background: var(--tv-surface); overflow-y: auto;
+  transform: translateX(100%); transition: transform .4s cubic-bezier(.4,0,.2,1);
+}
+#dashboard-overlay.open { transform: translateX(0); }
+.dash-layout { display: grid; grid-template-columns: 260px 1fr; min-height: 100vh; }
+.dash-sidebar {
+  background: var(--tv-surface-2); border-right: 1px solid var(--tv-border);
+  padding: 0; position: sticky; top: 0; height: 100vh; overflow-y: auto;
+}
+.dash-sidebar-header {
+  padding: 20px 20px 16px; border-bottom: 1px solid var(--tv-border);
+  display: flex; align-items: center; gap: 12px;
+}
+.dash-user-avatar {
+  width: 42px; height: 42px; border-radius: 50%;
+  background: var(--tv-gradient-1); color: #fff;
+  display: flex; align-items: center; justify-content: center;
+  font-weight: 700; font-size: 1rem; flex-shrink: 0;
+}
+.dash-user-name { font-weight: 700; font-size: .9rem; color: var(--tv-text); }
+.dash-user-type { font-size: .75rem; color: var(--tv-text-4); }
+.dash-nav { padding: 12px 12px; }
+.dash-nav-group { margin-bottom: 20px; }
+.dash-nav-group-title {
+  font-size: .68rem; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 1px; color: var(--tv-text-4); padding: 0 8px; margin-bottom: 6px;
+}
+.dash-nav-item {
+  display: flex; align-items: center; gap: 10px;
+  padding: 10px 10px; border-radius: var(--tv-radius);
+  font-size: .875rem; font-weight: 500; color: var(--tv-text-2);
+  cursor: pointer; transition: all var(--tv-transition); margin-bottom: 2px;
+}
+.dash-nav-item:hover { background: var(--tv-surface-3); color: var(--tv-text); }
+.dash-nav-item.active { background: var(--tv-accent-light); color: var(--tv-accent-2); font-weight: 600; }
+.dash-nav-item .icon { font-size: 1rem; flex-shrink: 0; }
+.dash-nav-item .count {
+  margin-left: auto; background: var(--tv-accent-2); color: #fff;
+  font-size: .68rem; font-weight: 700; padding: 2px 6px; border-radius: 99px;
+}
+.dash-main { padding: 32px 36px; }
+.dash-page { display: none; }
+.dash-page.active { display: block; }
+.dash-page-title {
+  font-family: var(--tv-font-display); font-weight: 800;
+  font-size: 1.5rem; letter-spacing: -.5px; margin-bottom: 24px; color: var(--tv-text);
+}
+.dash-stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-bottom: 28px; }
+.dash-stat-card {
+  background: var(--tv-surface); border: 1.5px solid var(--tv-border);
+  border-radius: var(--tv-radius-md); padding: 20px;
+}
+.dash-stat-num { font-family: var(--tv-font-display); font-weight: 800; font-size: 1.8rem; color: var(--tv-text); margin-bottom: 4px; }
+.dash-stat-label { font-size: .78rem; color: var(--tv-text-3); }
+.dash-card {
+  background: var(--tv-surface); border: 1.5px solid var(--tv-border);
+  border-radius: var(--tv-radius-md); padding: 24px; margin-bottom: 20px;
+}
+.dash-card-title {
+  font-family: var(--tv-font-display); font-weight: 700; font-size: 1rem;
+  margin-bottom: 16px; color: var(--tv-text);
+}
+.dash-close {
+  background: none; border: none; cursor: pointer; font-size: 1.3rem;
+  color: var(--tv-text-2); padding: 4px; position: absolute; top: 16px; right: 20px;
+}
+.saved-company-item {
+  display: flex; align-items: center; gap: 14px;
+  padding: 14px 0; border-bottom: 1px solid var(--tv-border);
+}
+.saved-company-item:last-child { border: none; }
+.saved-company-logo {
+  width: 44px; height: 44px; border-radius: 10px;
+  background: var(--tv-surface-2); display: flex; align-items: center;
+  justify-content: center; font-size: 1.3rem; flex-shrink: 0;
+  border: 1px solid var(--tv-border);
+}
+.saved-company-info { flex: 1; }
+.saved-company-name { font-weight: 600; font-size: .88rem; color: var(--tv-text); }
+.saved-company-industry { font-size: .77rem; color: var(--tv-text-3); }
+.notif-item {
+  display: flex; align-items: flex-start; gap: 12px;
+  padding: 14px 0; border-bottom: 1px solid var(--tv-border);
+}
+.notif-item:last-child { border: none; }
+.notif-icon {
+  width: 36px; height: 36px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center; font-size: .9rem;
+  flex-shrink: 0;
+}
+.notif-text { font-size: .85rem; color: var(--tv-text-2); flex: 1; }
+.notif-time { font-size: .72rem; color: var(--tv-text-4); }
+.req-card {
+  background: var(--tv-surface-2); border: 1px solid var(--tv-border);
+  border-radius: var(--tv-radius-md); padding: 18px; margin-bottom: 12px;
+}
+.req-card-title { font-weight: 700; font-size: .9rem; color: var(--tv-text); margin-bottom: 6px; }
+.req-card-meta { display: flex; gap: 16px; flex-wrap: wrap; }
+.req-meta-item { font-size: .78rem; color: var(--tv-text-3); display: flex; align-items: center; gap: 4px; }
+.admin-table {
+  width: 100%; border-collapse: collapse; font-size: .85rem;
+}
+.admin-table th {
+  text-align: left; padding: 10px 14px; background: var(--tv-surface-2);
+  border-bottom: 1px solid var(--tv-border);
+  font-size: .75rem; font-weight: 700; text-transform: uppercase;
+  letter-spacing: .5px; color: var(--tv-text-3);
+}
+.admin-table td { padding: 12px 14px; border-bottom: 1px solid var(--tv-border); color: var(--tv-text-2); }
+.admin-table tr:last-child td { border: none; }
+.admin-table tr:hover td { background: var(--tv-surface-2); }
+
+/* ---- POST REQUIREMENT ---- */
+.req-form-section { max-width: 640px; }
+
+/* ---- SELLER PRODUCT GRID ---- */
+.seller-products-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+.seller-product-card {
+  background: var(--tv-surface-2); border: 1px solid var(--tv-border);
+  border-radius: var(--tv-radius); padding: 16px;
+}
+.seller-product-name { font-weight: 600; font-size: .85rem; margin-bottom: 4px; color: var(--tv-text); }
+.seller-product-price { font-size: .8rem; color: var(--tv-green); font-weight: 600; margin-bottom: 8px; }
+.seller-product-actions { display: flex; gap: 6px; }
+
+/* ---- ANIMATIONS ---- */
+.fade-in-up {
+  opacity: 0; transform: translateY(24px);
+  transition: opacity .6s ease, transform .6s ease;
+}
+.fade-in-up.visible { opacity: 1; transform: translateY(0); }
+.scale-in {
+  opacity: 0; transform: scale(.95);
+  transition: opacity .5s ease, transform .5s ease;
+}
+.scale-in.visible { opacity: 1; transform: scale(1); }
+
+/* ---- TOAST ---- */
+#toast-container {
+  position: fixed; bottom: 90px; left: 50%; transform: translateX(-50%);
+  z-index: 9999; display: flex; flex-direction: column; gap: 8px; align-items: center;
+  pointer-events: none;
+}
+.toast {
+  padding: 12px 20px; border-radius: var(--tv-radius);
+  font-size: .88rem; font-weight: 500; color: #fff;
+  box-shadow: var(--tv-shadow-lg);
+  animation: toast-in .3s ease forwards;
+  pointer-events: all;
+}
+.toast.success { background: var(--tv-green); }
+.toast.error { background: var(--tv-red); }
+.toast.info { background: var(--tv-accent-2); }
+@keyframes toast-in { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+
+/* ---- NOTIFICATION DOT ---- */
+.notif-dot {
+  position: fixed; top: 18px; right: 80px; z-index: 1100;
+  display: none;
+}
+.notif-dot.visible { display: block; }
+
+/* ---- RESPONSIVE ---- */
+@media (max-width: 1200px) {
+  .features-grid { grid-template-columns: repeat(2, 1fr); }
+  .companies-grid { grid-template-columns: repeat(3, 1fr); }
+  .industries-grid { grid-template-columns: repeat(4, 1fr); }
+  .footer-grid { grid-template-columns: 1fr 1fr; gap: 32px; }
+}
+@media (max-width: 900px) {
+  .hero-inner { grid-template-columns: 1fr; }
+  .hero-visual { display: none; }
+  .stats-grid { grid-template-columns: repeat(2, 1fr); }
+  .steps-grid { grid-template-columns: 1fr; }
+  .steps-grid::before { display: none; }
+  .testimonials-grid { grid-template-columns: 1fr; }
+  .dash-layout { grid-template-columns: 1fr; }
+  .dash-sidebar { display: none; }
+  .nav-links { display: none; }
+  .hamburger { display: flex; }
+  .dash-stats-grid { grid-template-columns: repeat(2, 1fr); }
+  .profile-info-grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 640px) {
+  .companies-grid { grid-template-columns: repeat(2, 1fr); }
+  .industries-grid { grid-template-columns: repeat(3, 1fr); }
+  .footer-grid { grid-template-columns: 1fr; }
+  .search-select { display: none; }
+  #chat-overlay { width: calc(100vw - 20px); right: 10px; }
+  .hero-actions { flex-direction: column; }
+  .hero-actions .btn { width: 100%; }
+  .hero-trust { gap: 14px; }
+  .features-grid { grid-template-columns: 1fr; }
+  .form-grid { grid-template-columns: 1fr; }
+  .seller-products-grid { grid-template-columns: 1fr 1fr; }
+  .products-grid-mini { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 420px) {
+  .companies-grid { grid-template-columns: 1fr; }
+  .industries-grid { grid-template-columns: repeat(2, 1fr); }
+  .dash-stats-grid { grid-template-columns: 1fr 1fr; }
+}
+</style>
+</head>
+<body data-theme="light">
+
+<!-- NAV -->
+<nav id="navbar" role="navigation" aria-label="Main navigation">
+  <div class="container nav-inner">
+    <a href="#" class="nav-logo" onclick="scrollToTop()">
+      <div class="nav-logo-mark">T</div>
+      <span class="nav-logo-text">Trade<span>Verse</span></span>
+    </a>
+    <ul class="nav-links" role="list">
+      <li><a href="#features">Features</a></li>
+      <li><a href="#marketplace">Marketplace</a></li>
+      <li><a href="#industries">Industries</a></li>
+      <li><a href="#how-it-works">How it Works</a></li>
+      <li><a href="#" onclick="openAdmin(); return false;">Admin</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button id="theme-btn" aria-label="Toggle dark mode" title="Toggle dark mode">🌙</button>
+      <div id="nav-auth-btns">
+        <button class="btn btn-ghost btn-sm" onclick="openAuth('login')">Login</button>
+        <button class="btn btn-primary btn-sm" onclick="openAuth('signup')">Get Started</button>
+      </div>
+      <div id="nav-user-menu" class="hidden" style="display:flex;align-items:center;gap:8px;">
+        <button class="btn btn-ghost btn-sm" onclick="openDashboard()">
+          <span id="nav-username">Dashboard</span>
+        </button>
+        <button class="btn btn-sm btn-secondary" onclick="logout()">Logout</button>
+      </div>
+      <button class="hamburger" id="hamburger-btn" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- MOBILE NAV -->
+<div id="mobile-nav" role="dialog" aria-label="Mobile navigation">
+  <a href="#features" onclick="closeMobileNav()">Features</a>
+  <a href="#marketplace" onclick="closeMobileNav()">Marketplace</a>
+  <a href="#industries" onclick="closeMobileNav()">Industries</a>
+  <a href="#how-it-works" onclick="closeMobileNav()">How it Works</a>
+  <a href="#testimonials" onclick="closeMobileNav()">Testimonials</a>
+  <div class="mobile-nav-actions">
+    <button class="btn btn-secondary w-full" onclick="openAuth('login'); closeMobileNav()">Login</button>
+    <button class="btn btn-primary w-full" onclick="openAuth('signup'); closeMobileNav()">Get Started Free</button>
+  </div>
+</div>
+
+<!-- HERO -->
+<section id="hero" role="banner">
+  <div class="hero-grid"></div>
+  <div class="hero-glow"></div>
+  <div class="hero-glow-2"></div>
+  <div class="container">
+    <div class="hero-inner">
+      <div class="hero-content">
+        <div class="hero-eyebrow fade-in-up">🇮🇳 India's Fastest Growing B2B Platform</div>
+        <h1 class="hero-title fade-in-up">
+          Connect Directly With<br>
+          <span class="highlight">Manufacturers & Buyers</span>
+        </h1>
+        <p class="hero-subtitle fade-in-up">
+          Find suppliers, manufacturers, wholesalers and resellers without middlemen or unwanted sales calls. Real connections, real business.
+        </p>
+        <div class="hero-actions fade-in-up">
+          <button class="btn btn-primary btn-lg" onclick="scrollTo('#search-section')">
+            🔍 Find Suppliers
+          </button>
+          <button class="btn btn-outline-white btn-lg" onclick="openAuth('signup')">
+            📋 List Your Business
+          </button>
+        </div>
+        <div class="hero-trust fade-in-up">
+          <div class="trust-item"><div class="icon">✅</div> Verified Suppliers</div>
+          <div class="trust-item"><div class="icon">💬</div> Direct Messaging</div>
+          <div class="trust-item"><div class="icon">🚫</div> No Spam Calls</div>
+          <div class="trust-item"><div class="icon">🆓</div> Free Registration</div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-stat-card">
+          <div class="stat-row">
+            <div class="stat-item">
+              <div class="stat-num" data-count="48000">0</div>
+              <div class="stat-label">Verified Businesses</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-num" data-count="2400000">0</div>
+              <div class="stat-label">Monthly Inquiries</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-num" data-count="28">0</div>
+              <div class="stat-label">Industry Sectors</div>
+            </div>
+          </div>
+        </div>
+        <div class="hero-mini-cards">
+          <div class="mini-card">
+            <div class="mini-card-icon">⚡</div>
+            <div style="font-size:.82rem;color:rgba(255,255,255,.8);font-weight:600;margin-bottom:4px;">Avg Response</div>
+            <div class="mini-card-label">Under 2 Hours</div>
+          </div>
+          <div class="mini-card">
+            <div class="mini-card-icon">🌏</div>
+            <div style="font-size:.82rem;color:rgba(255,255,255,.8);font-weight:600;margin-bottom:4px;">Pan India</div>
+            <div class="mini-card-label">All 28 States</div>
+          </div>
+          <div class="mini-card">
+            <div class="mini-card-icon">🔒</div>
+            <div style="font-size:.82rem;color:rgba(255,255,255,.8);font-weight:600;margin-bottom:4px;">100% Secure</div>
+            <div class="mini-card-label">Verified Data</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee-section" aria-hidden="true">
+  <div class="marquee-track" id="marquee">
+    <div class="marquee-item"><span>🏭</span> Manufacturers</div>
+    <div class="marquee-item"><span>📦</span> Wholesalers</div>
+    <div class="marquee-item"><span>🚢</span> Exporters</div>
+    <div class="marquee-item"><span>🔄</span> Distributors</div>
+    <div class="marquee-item"><span>🛒</span> Retailers</div>
+    <div class="marquee-item"><span>🔧</span> Industrial Suppliers</div>
+    <div class="marquee-item"><span>🌾</span> Agri Exporters</div>
+    <div class="marquee-item"><span>💊</span> Pharma Companies</div>
+    <div class="marquee-item"><span>👕</span> Textile Mills</div>
+    <div class="marquee-item"><span>🖥️</span> Electronics OEMs</div>
+    <div class="marquee-item"><span>🏗️</span> Construction Materials</div>
+    <div class="marquee-item"><span>🚗</span> Auto Components</div>
+    <div class="marquee-item"><span>🏭</span> Manufacturers</div>
+    <div class="marquee-item"><span>📦</span> Wholesalers</div>
+    <div class="marquee-item"><span>🚢</span> Exporters</div>
+    <div class="marquee-item"><span>🔄</span> Distributors</div>
+    <div class="marquee-item"><span>🛒</span> Retailers</div>
+    <div class="marquee-item"><span>🔧</span> Industrial Suppliers</div>
+    <div class="marquee-item"><span>🌾</span> Agri Exporters</div>
+    <div class="marquee-item"><span>💊</span> Pharma Companies</div>
+    <div class="marquee-item"><span>👕</span> Textile Mills</div>
+    <div class="marquee-item"><span>🖥️</span> Electronics OEMs</div>
+    <div class="marquee-item"><span>🏗️</span> Construction Materials</div>
+    <div class="marquee-item"><span>🚗</span> Auto Components</div>
+  </div>
+</div>
+
+<!-- FEATURES -->
+<section id="features" aria-labelledby="features-title">
+  <div class="container" style="padding: 100px 24px;">
+    <div class="section-header fade-in-up">
+      <div class="section-eyebrow">Platform Features</div>
+      <h2 class="section-title" id="features-title">Everything You Need to<br>Grow Your Business</h2>
+      <p class="section-subtitle">Unlike traditional B2B portals, TradeVerse puts YOU in control. Direct connections, zero friction.</p>
+    </div>
+    <div class="features-grid">
+      <div class="feature-card fade-in-up">
+        <div class="feature-icon">✅</div>
+        <h3>Verified Businesses</h3>
+        <p>Every business is manually reviewed and verified with GST, PAN, and trade documents. No fake listings, ever.</p>
+      </div>
+      <div class="feature-card fade-in-up">
+        <div class="feature-icon">💬</div>
+        <h3>Direct In-App Chat</h3>
+        <p>Message any verified supplier or buyer directly without sharing your phone number. Private and secure conversations.</p>
+      </div>
+      <div class="feature-card fade-in-up">
+        <div class="feature-icon">📊</div>
+        <h3>Lead Generation</h3>
+        <p>Get qualified leads from buyers actively searching for your products. Track inquiries and respond from your dashboard.</p>
+      </div>
+      <div class="feature-card fade-in-up">
+        <div class="feature-icon">📋</div>
+        <h3>RFQ Requests</h3>
+        <p>Post and receive Request for Quotation. Compare multiple suppliers at once and choose the best deal for your business.</p>
+      </div>
+      <div class="feature-card fade-in-up">
+        <div class="feature-icon">🏢</div>
+        <h3>Business Profiles</h3>
+        <p>Rich company pages with certificates, product catalogs, team photos, and verified reviews build instant credibility.</p>
+      </div>
+      <div class="feature-card fade-in-up">
+        <div class="feature-icon">📁</div>
+        <h3>Product Catalogs</h3>
+        <p>Upload detailed product sheets, pricing tiers, and specifications. Buyers get all info they need without a phone call.</p>
+      </div>
+      <div class="feature-card fade-in-up">
+        <div class="feature-icon">🔎</div>
+        <h3>Smart Search</h3>
+        <p>Search by product, industry, location, certifications, export status, and more. Find exactly what you need in seconds.</p>
+      </div>
+      <div class="feature-card fade-in-up">
+        <div class="feature-icon">🔖</div>
+        <h3>Saved Suppliers</h3>
+        <p>Bookmark your favourite suppliers and buyers. Build a curated shortlist and revisit at any time from your dashboard.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SEARCH SECTION -->
+<section id="search-section" aria-label="Search suppliers">
+  <div class="container" style="padding: 60px 24px 40px;">
+    <div class="section-header fade-in-up" style="margin-bottom:32px;">
+      <div class="section-eyebrow">Smart Search</div>
+      <h2 class="section-title">Find the Right Business Partner</h2>
+      <p class="section-subtitle">Search across 48,000+ verified businesses. Filter by industry, location, product, and more.</p>
+    </div>
+    <div class="search-bar-wrap fade-in-up">
+      <select class="search-select" id="search-type" aria-label="Business type">
+        <option value="">All Types</option>
+        <option value="manufacturer">Manufacturers</option>
+        <option value="wholesaler">Wholesalers</option>
+        <option value="exporter">Exporters</option>
+        <option value="distributor">Distributors</option>
+        <option value="retailer">Retailers</option>
+        <option value="supplier">Suppliers</option>
+      </select>
+      <input type="search" class="search-input" id="main-search" placeholder="Search by product, company name or industry..." autocomplete="off" aria-label="Search suppliers">
+      <button class="search-btn" onclick="performSearch()">
+        🔍 Search
+      </button>
+    </div>
+    <div class="filter-tags fade-in-up" id="filter-tags-container">
+      <span class="filter-tag active" data-filter="all">All</span>
+      <span class="filter-tag" data-filter="manufacturer">Manufacturers</span>
+      <span class="filter-tag" data-filter="exporter">Exporters</span>
+      <span class="filter-tag" data-filter="wholesaler">Wholesalers</span>
+      <span class="filter-tag" data-filter="distributor">Distributors</span>
+      <span class="filter-tag" data-filter="supplier">Suppliers</span>
+    </div>
+    <div style="display:flex;gap:8px;flex-wrap:wrap;" class="fade-in-up" id="location-tags">
+      <span class="filter-tag" data-location="Mumbai">Mumbai</span>
+      <span class="filter-tag" data-location="Delhi">Delhi NCR</span>
+      <span class="filter-tag" data-location="Surat">Surat</span>
+      <span class="filter-tag" data-location="Ludhiana">Ludhiana</span>
+      <span class="filter-tag" data-location="Rajkot">Rajkot</span>
+      <span class="filter-tag" data-location="Chennai">Chennai</span>
+      <span class="filter-tag" data-location="Pune">Pune</span>
+      <span class="filter-tag" data-location="Ahmedabad">Ahmedabad</span>
+    </div>
+  </div>
+</section>
+
+<!-- MARKETPLACE -->
+<section id="marketplace" aria-labelledby="marketplace-title">
+  <div class="container" style="padding: 0 24px 100px;">
+    <div class="marketplace-header">
+      <div>
+        <h2 id="marketplace-title" style="font-family:var(--tv-font-display);font-weight:800;font-size:1.5rem;letter-spacing:-.5px;color:var(--tv-text);">Verified Businesses</h2>
+        <p class="results-info" id="results-info">Showing 20 of 48,000+ verified businesses</p>
+      </div>
+      <div style="display:flex;gap:8px;align-items:center;">
+        <span style="font-size:.8rem;color:var(--tv-text-3);">Sort by:</span>
+        <select class="form-select" id="sort-select" style="width:auto;padding:6px 12px;font-size:.82rem;">
+          <option value="relevance">Relevance</option>
+          <option value="newest">Newest</option>
+          <option value="rating">Top Rated</option>
+          <option value="response">Response Time</option>
+        </select>
+      </div>
+    </div>
+    <div class="companies-grid" id="companies-grid">
+      <!-- Generated by JS -->
+    </div>
+    <div class="load-more-wrap">
+      <button class="btn btn-secondary" id="load-more-btn" onclick="loadMoreCompanies()">
+        Load More Companies
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- INDUSTRIES -->
+<section id="industries" aria-labelledby="industries-title">
+  <div class="container" style="padding: 80px 24px;">
+    <div class="section-header fade-in-up">
+      <div class="section-eyebrow">Browse by Industry</div>
+      <h2 class="section-title" id="industries-title">Find Suppliers in Your Industry</h2>
+      <p class="section-subtitle">Over 28 industry categories with thousands of verified businesses each.</p>
+    </div>
+    <div class="industries-grid" id="industries-grid">
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<section id="stats" aria-label="Platform statistics">
+  <div class="container" style="padding: 80px 24px;">
+    <div class="stats-grid fade-in-up">
+      <div class="stat-block">
+        <div class="stat-block-num"><span class="counter accent" data-count="48">0</span>K+</div>
+        <div class="stat-block-label">Verified Businesses</div>
+      </div>
+      <div class="stat-block">
+        <div class="stat-block-num"><span class="counter accent" data-count="24">0</span>L+</div>
+        <div class="stat-block-label">Monthly Inquiries</div>
+      </div>
+      <div class="stat-block">
+        <div class="stat-block-num"><span class="counter accent" data-count="98">0</span>%</div>
+        <div class="stat-block-label">Verified Accuracy</div>
+      </div>
+      <div class="stat-block">
+        <div class="stat-block-num"><span class="counter accent" data-count="28">0</span>+</div>
+        <div class="stat-block-label">Industry Categories</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section id="how-it-works" aria-labelledby="how-title">
+  <div class="container" style="padding: 100px 24px;">
+    <div class="section-header fade-in-up">
+      <div class="section-eyebrow">Simple Process</div>
+      <h2 class="section-title" id="how-title">Start Trading in Minutes,<br>Not Weeks</h2>
+      <p class="section-subtitle">Unlike traditional B2B portals with long onboarding, TradeVerse gets you connected instantly.</p>
+    </div>
+    <div class="steps-grid">
+      <div class="step-card fade-in-up">
+        <div class="step-num">1</div>
+        <h3>Create Free Account</h3>
+        <p>Sign up in 30 seconds. No lengthy forms. No OTP verification loops. Just your name, email, and business type.</p>
+      </div>
+      <div class="step-card fade-in-up">
+        <div class="step-num">2</div>
+        <h3>Search & Discover</h3>
+        <p>Browse 48,000+ verified businesses. Use smart filters to narrow down by location, industry, product, and more.</p>
+      </div>
+      <div class="step-card fade-in-up">
+        <div class="step-num">3</div>
+        <h3>Connect & Trade</h3>
+        <p>Message directly, view contact details, send RFQs, and close deals — all without a single unwanted phone call.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials" aria-labelledby="t-title">
+  <div class="container" style="padding: 100px 24px;">
+    <div class="section-header fade-in-up">
+      <div class="section-eyebrow">Success Stories</div>
+      <h2 class="section-title" id="t-title">Trusted by 48,000+ Businesses<br>Across India</h2>
+    </div>
+    <div class="testimonials-grid" id="testimonials-grid"></div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" aria-labelledby="faq-title">
+  <div class="container" style="padding: 100px 24px;">
+    <div class="section-header fade-in-up">
+      <div class="section-eyebrow">FAQs</div>
+      <h2 class="section-title" id="faq-title">Got Questions? We've Got<br>Straight Answers.</h2>
+    </div>
+    <div class="faq-list" id="faq-list"></div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section id="cta-section" aria-label="Call to action">
+  <div class="cta-glow"></div>
+  <div class="container">
+    <div class="cta-content fade-in-up">
+      <div class="hero-eyebrow" style="margin:0 auto 20px;">🚀 Join 48,000+ Businesses</div>
+      <h2 class="cta-title">Ready to Grow Your Business<br>Without the Middlemen?</h2>
+      <p class="cta-subtitle">Register free today. No credit card. No sales calls. No OTP verification.<br>Just direct connections that drive real business.</p>
+      <div class="cta-actions">
+        <button class="btn btn-primary btn-lg" onclick="openAuth('signup')">Create Free Account →</button>
+        <button class="btn btn-outline-white btn-lg" onclick="scrollTo('#marketplace')">Browse Suppliers</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer role="contentinfo">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:14px;">
+          <div class="nav-logo-mark">T</div>
+          <span style="font-family:var(--tv-font-display);font-weight:800;font-size:1.2rem;color:#fff;">Trade<span style="color:#60a5fa;">Verse</span></span>
+        </div>
+        <p>India's most trusted B2B marketplace. Connecting manufacturers, wholesalers, exporters, and buyers directly — no middlemen, no spam.</p>
+        <div class="footer-socials">
+          <a class="footer-social" href="#" aria-label="LinkedIn">in</a>
+          <a class="footer-social" href="#" aria-label="Twitter">𝕏</a>
+          <a class="footer-social" href="#" aria-label="Facebook">f</a>
+          <a class="footer-social" href="#" aria-label="Instagram">📷</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Platform</h4>
+        <ul>
+          <li><a href="#marketplace">Browse Suppliers</a></li>
+          <li><a href="#" onclick="openAuth('signup');return false;">List Your Business</a></li>
+          <li><a href="#" onclick="openAuth('login');return false;">Post Requirement</a></li>
+          <li><a href="#">Premium Plans</a></li>
+          <li><a href="#">Verified Badges</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Industries</h4>
+        <ul>
+          <li><a href="#">Textiles &amp; Apparel</a></li>
+          <li><a href="#">Electronics</a></li>
+          <li><a href="#">Machinery</a></li>
+          <li><a href="#">Chemicals</a></li>
+          <li><a href="#">Agriculture</a></li>
+          <li><a href="#">Construction</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Press</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 TradeVerse Technologies Pvt. Ltd. All rights reserved.</span>
+      <div class="footer-bottom-links">
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+        <a href="#">Sitemap</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- CHAT TRIGGER -->
+<button id="chat-trigger" onclick="toggleChat()" aria-label="Open chat">
+  💬
+  <span class="chat-notif-badge" id="chat-notif-badge" style="display:none;">3</span>
+</button>
+
+<!-- CHAT OVERLAY -->
+<div id="chat-overlay" role="dialog" aria-label="Chat">
+  <div class="chat-header" id="chat-header">
+    <div class="chat-header-left">
+      <div class="chat-avatar" id="chat-header-avatar">💬</div>
+      <div class="chat-header-info">
+        <div class="chat-header-name" id="chat-header-name">TradeVerse Chat</div>
+        <div class="chat-header-status" id="chat-header-status">All Conversations</div>
+      </div>
+    </div>
+    <div style="display:flex;gap:6px;align-items:center;">
+      <button class="chat-back-btn" id="chat-back-btn" onclick="backToChatList()" style="display:none;">← Back</button>
+      <button class="chat-close-btn" onclick="toggleChat()" aria-label="Close chat">✕</button>
+    </div>
+  </div>
+  <!-- Chat list -->
+  <div class="chat-list" id="chat-list-view"></div>
+  <!-- Messages view -->
+  <div id="chat-messages-view">
+    <div class="messages-area" id="messages-area"></div>
+    <div class="chat-input-area">
+      <input type="text" class="chat-input" id="chat-message-input" placeholder="Type a message..." autocomplete="off">
+      <button class="chat-send-btn" onclick="sendMessage()" aria-label="Send message">➤</button>
+    </div>
+  </div>
+</div>
+
+<!-- TOAST CONTAINER -->
+<div id="toast-container" aria-live="polite"></div>
+
+<!-- AUTH MODAL -->
+<div class="modal-overlay" id="auth-modal" role="dialog" aria-modal="true" aria-label="Authentication">
+  <div class="modal">
+    <div class="modal-header">
+      <div class="modal-title" id="auth-modal-title">Welcome to TradeVerse</div>
+      <button class="modal-close" onclick="closeModal('auth-modal')" aria-label="Close">✕</button>
+    </div>
+    <div class="modal-body">
+      <div class="auth-tabs">
+        <div class="auth-tab active" id="tab-login" onclick="switchAuthTab('login')">Login</div>
+        <div class="auth-tab" id="tab-signup" onclick="switchAuthTab('signup')">Sign Up</div>
+      </div>
+      <!-- LOGIN FORM -->
+      <div id="login-form">
+        <div class="form-group">
+          <label class="form-label" for="login-email">Email Address</label>
+          <input type="email" class="form-input" id="login-email" placeholder="you@company.com">
+          <div class="form-error" id="login-email-err">Please enter a valid email address.</div>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="login-password">Password</label>
+          <input type="password" class="form-input" id="login-password" placeholder="Enter your password">
+          <div class="form-error" id="login-pass-err">Incorrect password. Please try again.</div>
+        </div>
+        <div style="text-align:right;margin-bottom:18px;">
+          <a href="#" style="font-size:.82rem;color:var(--tv-accent-2);text-decoration:none;" onclick="showForgotPassword();return false;">Forgot Password?</a>
+        </div>
+        <button class="btn btn-primary w-full" style="margin-bottom:16px;" onclick="handleLogin()">Login to TradeVerse</button>
+        <div class="form-divider">or continue with</div>
+        <button class="auth-social-btn" onclick="handleGuestLogin()">👤 Continue as Guest (Demo)</button>
+        <p style="text-align:center;margin-top:14px;font-size:.82rem;color:var(--tv-text-3);">
+          Don't have an account? <a href="#" style="color:var(--tv-accent-2);text-decoration:none;" onclick="switchAuthTab('signup')">Sign up free</a>
+        </p>
+      </div>
+      <!-- SIGNUP FORM -->
+      <div id="signup-form" style="display:none;">
+        <div class="form-grid">
+          <div class="form-group">
+            <label class="form-label" for="reg-fname">First Name</label>
+            <input type="text" class="form-input" id="reg-fname" placeholder="Rajesh">
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="reg-lname">Last Name</label>
+            <input type="text" class="form-input" id="reg-lname" placeholder="Kumar">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="reg-email">Business Email</label>
+          <input type="email" class="form-input" id="reg-email" placeholder="rajesh@yourcompany.com">
+          <div class="form-error" id="reg-email-err">Email already registered. Try logging in.</div>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="reg-password">Password</label>
+          <input type="password" class="form-input" id="reg-password" placeholder="Minimum 8 characters">
+        </div>
+        <div class="form-grid">
+          <div class="form-group">
+            <label class="form-label" for="reg-business-type">Business Type</label>
+            <select class="form-select" id="reg-business-type">
+              <option value="">Select type</option>
+              <option value="manufacturer">Manufacturer</option>
+              <option value="wholesaler">Wholesaler</option>
+              <option value="exporter">Exporter</option>
+              <option value="distributor">Distributor</option>
+              <option value="retailer">Retailer</option>
+              <option value="buyer">Buyer</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="reg-location">City / Location</label>
+            <input type="text" class="form-input" id="reg-location" placeholder="Mumbai">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="reg-company">Company Name (Optional)</label>
+          <input type="text" class="form-input" id="reg-company" placeholder="Your Company Pvt. Ltd.">
+        </div>
+        <div class="form-error" id="reg-general-err" style="margin-bottom:12px;">Please fill all required fields.</div>
+        <button class="btn btn-primary w-full" style="margin-bottom:12px;" onclick="handleSignup()">Create Free Account →</button>
+        <p style="text-align:center;font-size:.78rem;color:var(--tv-text-4);line-height:1.5;">
+          By signing up you agree to our <a href="#" style="color:var(--tv-accent-2);">Terms</a> and <a href="#" style="color:var(--tv-accent-2);">Privacy Policy</a>.
+          No sales calls. Ever.
+        </p>
+      </div>
+      <!-- FORGOT PASSWORD -->
+      <div id="forgot-form" style="display:none;">
+        <p style="font-size:.88rem;color:var(--tv-text-3);margin-bottom:20px;">Enter your email and we'll send a reset link.</p>
+        <div class="form-group">
+          <label class="form-label" for="forgot-email">Email Address</label>
+          <input type="email" class="form-input" id="forgot-email" placeholder="you@company.com">
+        </div>
+        <button class="btn btn-primary w-full" onclick="handleForgotPassword()">Send Reset Link</button>
+        <p style="text-align:center;margin-top:14px;font-size:.82rem;">
+          <a href="#" style="color:var(--tv-accent-2);text-decoration:none;" onclick="switchAuthTab('login')">← Back to Login</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- COMPANY PROFILE MODAL -->
+<div class="modal-overlay" id="profile-modal" role="dialog" aria-modal="true" aria-label="Company Profile">
+  <div class="modal modal-lg">
+    <div class="modal-header">
+      <div class="modal-title">Company Profile</div>
+      <button class="modal-close" onclick="closeModal('profile-modal')" aria-label="Close">✕</button>
+    </div>
+    <div id="profile-modal-content"></div>
+  </div>
+</div>
+
+<!-- POST REQUIREMENT MODAL -->
+<div class="modal-overlay" id="req-modal" role="dialog" aria-modal="true" aria-label="Post Requirement">
+  <div class="modal">
+    <div class="modal-header">
+      <div class="modal-title">Post a Requirement</div>
+      <button class="modal-close" onclick="closeModal('req-modal')" aria-label="Close">✕</button>
+    </div>
+    <div class="modal-body">
+      <div class="form-group">
+        <label class="form-label" for="req-product">Product / Service Needed *</label>
+        <input type="text" class="form-input" id="req-product" placeholder="e.g., Stainless Steel Pipes 304 Grade">
+      </div>
+      <div class="form-grid">
+        <div class="form-group">
+          <label class="form-label" for="req-qty">Quantity Required</label>
+          <input type="text" class="form-input" id="req-qty" placeholder="e.g., 500 MT/month">
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="req-budget">Budget Range</label>
+          <input type="text" class="form-input" id="req-budget" placeholder="e.g., ₹2-5 Lakhs">
+        </div>
+      </div>
+      <div class="form-grid">
+        <div class="form-group">
+          <label class="form-label" for="req-loc">Delivery Location</label>
+          <input type="text" class="form-input" id="req-loc" placeholder="Mumbai, Maharashtra">
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="req-timeline">Timeline</label>
+          <select class="form-select" id="req-timeline">
+            <option value="">Select...</option>
+            <option>Urgent (within 1 week)</option>
+            <option>Within 1 month</option>
+            <option>1–3 months</option>
+            <option>3–6 months</option>
+            <option>Ongoing requirement</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="req-desc">Additional Details</label>
+        <textarea class="form-textarea" id="req-desc" placeholder="Specifications, certifications required, packaging details..."></textarea>
+      </div>
+      <button class="btn btn-primary w-full" onclick="submitRequirement()">Post Requirement →</button>
+    </div>
+  </div>
+</div>
+
+<!-- DASHBOARD -->
+<div id="dashboard-overlay" role="dialog" aria-label="User Dashboard">
+  <div class="dash-layout">
+    <aside class="dash-sidebar">
+      <div class="dash-sidebar-header">
+        <div class="dash-user-avatar" id="dash-avatar">R</div>
+        <div>
+          <div class="dash-user-name" id="dash-name">User Name</div>
+          <div class="dash-user-type" id="dash-type">Manufacturer</div>
+        </div>
+      </div>
+      <nav class="dash-nav" aria-label="Dashboard navigation">
+        <div class="dash-nav-group">
+          <div class="dash-nav-group-title">Overview</div>
+          <div class="dash-nav-item active" data-page="overview" onclick="switchDashPage('overview')">
+            <span class="icon">🏠</span> Dashboard
+          </div>
+          <div class="dash-nav-item" data-page="profile" onclick="switchDashPage('profile')">
+            <span class="icon">👤</span> My Profile
+          </div>
+          <div class="dash-nav-item" data-page="notifications" onclick="switchDashPage('notifications')">
+            <span class="icon">🔔</span> Notifications <span class="count">3</span>
+          </div>
+        </div>
+        <div class="dash-nav-group">
+          <div class="dash-nav-group-title">Activity</div>
+          <div class="dash-nav-item" data-page="saved" onclick="switchDashPage('saved')">
+            <span class="icon">🔖</span> Saved Companies
+          </div>
+          <div class="dash-nav-item" data-page="requirements" onclick="switchDashPage('requirements')">
+            <span class="icon">📋</span> My Requirements
+          </div>
+          <div class="dash-nav-item" data-page="chats" onclick="switchDashPage('chats')">
+            <span class="icon">💬</span> My Chats <span class="count">2</span>
+          </div>
+        </div>
+        <div class="dash-nav-group">
+          <div class="dash-nav-group-title">Seller Tools</div>
+          <div class="dash-nav-item" data-page="products" onclick="switchDashPage('products')">
+            <span class="icon">📦</span> My Products
+          </div>
+          <div class="dash-nav-item" data-page="leads" onclick="switchDashPage('leads')">
+            <span class="icon">📊</span> Leads &amp; Inquiries
+          </div>
+        </div>
+        <div class="dash-nav-group">
+          <div class="dash-nav-group-title">System</div>
+          <div class="dash-nav-item" data-page="settings" onclick="switchDashPage('settings')">
+            <span class="icon">⚙️</span> Settings
+          </div>
+          <div class="dash-nav-item" onclick="openAdmin()">
+            <span class="icon">🛡️</span> Admin Panel
+          </div>
+          <div class="dash-nav-item" onclick="logout()">
+            <span class="icon">🚪</span> Logout
+          </div>
+        </div>
+      </nav>
+    </aside>
+    <main class="dash-main">
+      <button style="background:none;border:none;cursor:pointer;font-size:.85rem;color:var(--tv-text-3);margin-bottom:20px;display:flex;align-items:center;gap:6px;" onclick="closeDashboard()">← Back to TradeVerse</button>
+
+      <!-- OVERVIEW -->
+      <div class="dash-page active" id="page-overview">
+        <h1 class="dash-page-title">Good morning, <span id="dash-greeting-name">User</span> 👋</h1>
+        <div class="dash-stats-grid">
+          <div class="dash-stat-card">
+            <div class="dash-stat-num" id="ds-inquiries">12</div>
+            <div class="dash-stat-label">Inquiries Received</div>
+          </div>
+          <div class="dash-stat-card">
+            <div class="dash-stat-num" id="ds-saved">5</div>
+            <div class="dash-stat-label">Saved Companies</div>
+          </div>
+          <div class="dash-stat-card">
+            <div class="dash-stat-num" id="ds-reqs">2</div>
+            <div class="dash-stat-label">Posted Requirements</div>
+          </div>
+          <div class="dash-stat-card">
+            <div class="dash-stat-num" id="ds-views">847</div>
+            <div class="dash-stat-label">Profile Views</div>
+          </div>
+        </div>
+        <div class="dash-card">
+          <div class="dash-card-title">Quick Actions</div>
+          <div style="display:flex;gap:10px;flex-wrap:wrap;">
+            <button class="btn btn-primary btn-sm" onclick="openModal('req-modal')">+ Post Requirement</button>
+            <button class="btn btn-secondary btn-sm" onclick="switchDashPage('products')">Add Product</button>
+            <button class="btn btn-secondary btn-sm" onclick="scrollTo('#marketplace');closeDashboard()">Browse Suppliers</button>
+            <button class="btn btn-secondary btn-sm" onclick="switchDashPage('saved')">View Saved</button>
+          </div>
+        </div>
+        <div class="dash-card">
+          <div class="dash-card-title">📈 Activity Chart (Last 7 Days)</div>
+          <canvas id="activity-chart" height="120"></canvas>
+        </div>
+        <div class="dash-card">
+          <div class="dash-card-title">Recent Notifications</div>
+          <div id="recent-notifs"></div>
+        </div>
+      </div>
+
+      <!-- PROFILE -->
+      <div class="dash-page" id="page-profile">
+        <h1 class="dash-page-title">My Profile</h1>
+        <div class="dash-card">
+          <div style="display:flex;align-items:center;gap:16px;margin-bottom:24px;">
+            <div style="width:64px;height:64px;border-radius:50%;background:var(--tv-gradient-1);color:#fff;display:flex;align-items:center;justify-content:center;font-size:1.5rem;font-weight:700;" id="profile-page-avatar">R</div>
+            <div>
+              <div style="font-weight:700;font-size:1.1rem;color:var(--tv-text);" id="profile-page-name">User Name</div>
+              <div style="font-size:.85rem;color:var(--tv-text-3);" id="profile-page-email">email@company.com</div>
+            </div>
+          </div>
+          <div class="form-grid">
+            <div class="form-group">
+              <label class="form-label">First Name</label>
+              <input class="form-input" id="p-fname" type="text" placeholder="First Name">
+            </div>
+            <div class="form-group">
+              <label class="form-label">Last Name</label>
+              <input class="form-input" id="p-lname" type="text" placeholder="Last Name">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Company Name</label>
+            <input class="form-input" id="p-company" type="text" placeholder="Your Company Pvt. Ltd.">
+          </div>
+          <div class="form-grid">
+            <div class="form-group">
+              <label class="form-label">Business Type</label>
+              <select class="form-select" id="p-btype">
+                <option value="manufacturer">Manufacturer</option>
+                <option value="wholesaler">Wholesaler</option>
+                <option value="exporter">Exporter</option>
+                <option value="distributor">Distributor</option>
+                <option value="retailer">Retailer</option>
+                <option value="buyer">Buyer</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Location</label>
+              <input class="form-input" id="p-location" type="text" placeholder="City, State">
+            </div>
+          </div>
+          <button class="btn btn-primary" onclick="saveProfile()">Save Changes</button>
+        </div>
+      </div>
+
+      <!-- SAVED -->
+      <div class="dash-page" id="page-saved">
+        <h1 class="dash-page-title">Saved Companies</h1>
+        <div class="dash-card">
+          <div id="saved-companies-list">
+            <p style="color:var(--tv-text-3);font-size:.88rem;">No saved companies yet. Browse the marketplace and click "Save" to add companies here.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- REQUIREMENTS -->
+      <div class="dash-page" id="page-requirements">
+        <h1 class="dash-page-title">My Requirements</h1>
+        <div style="margin-bottom:16px;">
+          <button class="btn btn-primary btn-sm" onclick="openModal('req-modal')">+ Post New Requirement</button>
+        </div>
+        <div id="requirements-list">
+          <p style="color:var(--tv-text-3);font-size:.88rem;">No requirements posted yet.</p>
+        </div>
+      </div>
+
+      <!-- CHATS -->
+      <div class="dash-page" id="page-chats">
+        <h1 class="dash-page-title">My Chats</h1>
+        <div class="dash-card">
+          <div id="dash-chat-list">
+            <p style="color:var(--tv-text-3);font-size:.88rem;">No chats yet. Open a company profile and click "Chat" to start a conversation.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- PRODUCTS -->
+      <div class="dash-page" id="page-products">
+        <h1 class="dash-page-title">My Products</h1>
+        <div class="dash-card" style="margin-bottom:20px;">
+          <div class="dash-card-title">Add New Product</div>
+          <div class="form-grid">
+            <div class="form-group">
+              <label class="form-label">Product Name *</label>
+              <input class="form-input" id="prod-name" type="text" placeholder="e.g., SS Pipes 304 Grade">
+            </div>
+            <div class="form-group">
+              <label class="form-label">Price Range</label>
+              <input class="form-input" id="prod-price" type="text" placeholder="e.g., ₹150-200/kg">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Short Description</label>
+            <input class="form-input" id="prod-desc" type="text" placeholder="Brief product description">
+          </div>
+          <button class="btn btn-primary btn-sm" onclick="addProduct()">Add Product</button>
+        </div>
+        <div class="dash-card">
+          <div class="dash-card-title">Your Products</div>
+          <div class="seller-products-grid" id="seller-products-grid">
+            <p style="color:var(--tv-text-3);font-size:.88rem;grid-column:1/-1;">No products added yet.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- LEADS -->
+      <div class="dash-page" id="page-leads">
+        <h1 class="dash-page-title">Leads &amp; Inquiries</h1>
+        <div class="dash-card">
+          <table class="admin-table">
+            <thead>
+              <tr>
+                <th>Buyer</th>
+                <th>Product Interest</th>
+                <th>Location</th>
+                <th>Date</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody id="leads-table-body">
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- NOTIFICATIONS -->
+      <div class="dash-page" id="page-notifications">
+        <h1 class="dash-page-title">Notifications</h1>
+        <div class="dash-card">
+          <div id="all-notifs-list"></div>
+        </div>
+      </div>
+
+      <!-- SETTINGS -->
+      <div class="dash-page" id="page-settings">
+        <h1 class="dash-page-title">Settings</h1>
+        <div class="dash-card">
+          <div class="dash-card-title">Preferences</div>
+          <div style="display:flex;flex-direction:column;gap:18px;">
+            <label style="display:flex;justify-content:space-between;align-items:center;cursor:pointer;">
+              <div>
+                <div style="font-weight:600;font-size:.9rem;color:var(--tv-text);">Dark Mode</div>
+                <div style="font-size:.78rem;color:var(--tv-text-3);">Switch between light and dark theme</div>
+              </div>
+              <input type="checkbox" id="settings-dark-toggle" style="width:18px;height:18px;cursor:pointer;" onchange="toggleTheme()">
+            </label>
+            <label style="display:flex;justify-content:space-between;align-items:center;cursor:pointer;">
+              <div>
+                <div style="font-weight:600;font-size:.9rem;color:var(--tv-text);">Email Notifications</div>
+                <div style="font-size:.78rem;color:var(--tv-text-3);">Receive email alerts for new inquiries</div>
+              </div>
+              <input type="checkbox" checked style="width:18px;height:18px;cursor:pointer;">
+            </label>
+            <label style="display:flex;justify-content:space-between;align-items:center;cursor:pointer;">
+              <div>
+                <div style="font-weight:600;font-size:.9rem;color:var(--tv-text);">Show Contact Details</div>
+                <div style="font-size:.78rem;color:var(--tv-text-3);">Allow logged-in users to see your contact info</div>
+              </div>
+              <input type="checkbox" checked style="width:18px;height:18px;cursor:pointer;">
+            </label>
+          </div>
+          <div style="margin-top:24px;padding-top:20px;border-top:1px solid var(--tv-border);">
+            <button class="btn btn-danger btn-sm" onclick="if(confirm('Delete your account? This cannot be undone.'))logout()">Delete Account</button>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+</div>
+
+<!-- ADMIN PANEL MODAL -->
+<div class="modal-overlay" id="admin-modal" role="dialog" aria-modal="true" aria-label="Admin Panel">
+  <div class="modal modal-lg">
+    <div class="modal-header">
+      <div class="modal-title">🛡️ Admin Panel</div>
+      <button class="modal-close" onclick="closeModal('admin-modal')" aria-label="Close">✕</button>
+    </div>
+    <div class="modal-body">
+      <div style="display:flex;gap:8px;margin-bottom:20px;flex-wrap:wrap;">
+        <button class="filter-tag active" onclick="switchAdminTab(this,'admin-users')">Users</button>
+        <button class="filter-tag" onclick="switchAdminTab(this,'admin-companies')">Companies</button>
+        <button class="filter-tag" onclick="switchAdminTab(this,'admin-requirements')">Requirements</button>
+        <button class="filter-tag" onclick="switchAdminTab(this,'admin-stats')">Statistics</button>
+      </div>
+      <div id="admin-users" class="admin-tab-content">
+        <table class="admin-table">
+          <thead><tr><th>#</th><th>Name</th><th>Email</th><th>Type</th><th>Location</th><th>Joined</th></tr></thead>
+          <tbody id="admin-users-body"></tbody>
+        </table>
+      </div>
+      <div id="admin-companies" class="admin-tab-content" style="display:none;">
+        <table class="admin-table">
+          <thead><tr><th>#</th><th>Company</th><th>Industry</th><th>Location</th><th>Type</th><th>Status</th></tr></thead>
+          <tbody id="admin-companies-body"></tbody>
+        </table>
+      </div>
+      <div id="admin-requirements" class="admin-tab-content" style="display:none;">
+        <table class="admin-table">
+          <thead><tr><th>#</th><th>Product</th><th>Qty</th><th>Budget</th><th>Location</th><th>Timeline</th></tr></thead>
+          <tbody id="admin-reqs-body"></tbody>
+        </table>
+      </div>
+      <div id="admin-stats" class="admin-tab-content" style="display:none;">
+        <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px;">
+          <div class="dash-stat-card"><div class="dash-stat-num" id="adm-users-count">0</div><div class="dash-stat-label">Registered Users</div></div>
+          <div class="dash-stat-card"><div class="dash-stat-num">48,000+</div><div class="dash-stat-label">Companies</div></div>
+          <div class="dash-stat-card"><div class="dash-stat-num" id="adm-reqs-count">0</div><div class="dash-stat-label">Requirements Posted</div></div>
+        </div>
+        <div style="margin-top:20px;" class="dash-card">
+          <div class="dash-card-title">Platform Overview</div>
+          <canvas id="admin-chart" height="140"></canvas>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+/* ============================================
+   TRADEVERSE — JAVASCRIPT ENGINE
+   ============================================ */
+
+// ---- DATA ----
+const COMPANIES = [
+  { id:1, name:"Mehta Steel & Alloys", industry:"Steel & Metals", location:"Mumbai, Maharashtra", type:"manufacturer", products:["SS Pipes","MS Channels","Steel Plates","Rods"], logo:"🏭", banner:"linear-gradient(135deg,#1e3a8a,#1d4ed8)", verified:true, premium:true, exporter:true, rating:4.8, reviews:234, response:"< 1 hour", yearsInBusiness:22, email:"sales@mehtasteel.com", phone:"+91 98200 12345", website:"mehtasteel.com", description:"Leading manufacturer and exporter of stainless steel and mild steel products. ISO 9001:2015 certified with over 22 years of industry experience serving clients across 40+ countries.", certs:["ISO 9001:2015","BIS Certified","EEPC Member"], employees:"200-500" },
+  { id:2, name:"Patel Textiles Ltd.", industry:"Textiles & Apparel", location:"Surat, Gujarat", type:"manufacturer", products:["Polyester Fabric","Silk Sarees","Dress Material","Blouse Pieces"], logo:"👕", banner:"linear-gradient(135deg,#7c3aed,#c026d3)", verified:true, premium:false, exporter:true, rating:4.6, reviews:189, response:"< 2 hours", yearsInBusiness:18, email:"info@pateltextiles.com", phone:"+91 97251 67890", website:"pateltextiles.com", description:"Surat's most trusted textile manufacturer producing premium polyester, silk, and synthetic fabrics for domestic and international markets.", certs:["ISO 9001","Oeko-Tex Standard 100"], employees:"100-200" },
+  { id:3, name:"Sharma Electronics Hub", industry:"Electronics & Components", location:"Delhi NCR", type:"distributor", products:["PCBs","LED Modules","Sensors","Power Supplies"], logo:"💡", banner:"linear-gradient(135deg,#0f766e,#0891b2)", verified:true, premium:true, exporter:false, rating:4.7, reviews:312, response:"< 30 mins", yearsInBusiness:14, email:"orders@sharmaelectronics.in", phone:"+91 99101 23456", website:"sharmaelectronics.in", description:"Authorized distributor of top electronic components and modules for OEM manufacturers. Wide range of PCBs, sensors, and power solutions.", certs:["ISO 14001","RoHS Compliant"], employees:"50-100" },
+  { id:4, name:"Gupta Chemical Industries", industry:"Chemicals & Petrochemicals", location:"Vapi, Gujarat", type:"manufacturer", products:["Industrial Solvents","Specialty Chemicals","Resins","Adhesives"], logo:"⚗️", banner:"linear-gradient(135deg,#b45309,#d97706)", verified:true, premium:false, exporter:true, rating:4.5, reviews:156, response:"< 3 hours", yearsInBusiness:27, email:"export@guptachem.com", phone:"+91 98792 34567", website:"guptachem.com", description:"REACH compliant chemical manufacturer exporting specialty chemicals, industrial solvents, and adhesives to 30+ countries worldwide.", certs:["REACH","ISO 14001:2015","FSSAI"], employees:"100-200" },
+  { id:5, name:"Kapoor Agro Exports", industry:"Agriculture & Food", location:"Ludhiana, Punjab", type:"exporter", products:["Basmati Rice","Wheat Flour","Pulses","Spices"], logo:"🌾", banner:"linear-gradient(135deg,#15803d,#16a34a)", verified:true, premium:true, exporter:true, rating:4.9, reviews:445, response:"< 1 hour", yearsInBusiness:31, email:"trade@kapooragro.com", phone:"+91 98146 45678", website:"kapooragro.com", description:"India's top agri exporter for basmati rice, pulses, and spices. APEDA registered with direct farm partnerships across Punjab and Haryana.", certs:["APEDA Registered","FSSAI","Organic India Cert"], employees:"500-1000" },
+  { id:6, name:"Reddy Machinery Works", industry:"Industrial Machinery", location:"Coimbatore, Tamil Nadu", type:"manufacturer", products:["CNC Machines","Lathe Machines","Hydraulic Presses","Grinders"], logo:"⚙️", banner:"linear-gradient(135deg,#64748b,#475569)", verified:true, premium:false, exporter:false, rating:4.4, reviews:98, response:"< 4 hours", yearsInBusiness:19, email:"sales@reddymachinery.in", phone:"+91 94432 56789", website:"reddymachinery.in", description:"Precision engineering company manufacturing CNC turning centers, hydraulic presses, and industrial grinders for SME manufacturers.", certs:["CE Marked","ISO 9001:2015"], employees:"50-100" },
+  { id:7, name:"Singh Packaging Solutions", industry:"Packaging & Printing", location:"Delhi NCR", type:"manufacturer", products:["Corrugated Boxes","Bubble Wrap","BOPP Films","Stretch Films"], logo:"📦", banner:"linear-gradient(135deg,#dc2626,#ea580c)", verified:true, premium:false, exporter:false, rating:4.3, reviews:134, response:"< 2 hours", yearsInBusiness:11, email:"orders@singhpacking.com", phone:"+91 98118 67890", website:"singhpacking.com", description:"High-volume packaging manufacturer for e-commerce, FMCG, and pharma sectors. Custom printing and eco-friendly packaging options available.", certs:["ISO 9001","FSC Certified"], employees:"100-200" },
+  { id:8, name:"Joshi Pharma Distributors", industry:"Pharmaceuticals", location:"Mumbai, Maharashtra", type:"distributor", products:["Generic Medicines","API","Nutraceuticals","Medical Devices"], logo:"💊", banner:"linear-gradient(135deg,#0369a1,#0284c7)", verified:true, premium:true, exporter:true, rating:4.8, reviews:267, response:"< 1 hour", yearsInBusiness:24, email:"wholesale@joshipharma.com", phone:"+91 98202 78901", website:"joshipharma.com", description:"Licensed pharmaceutical distributor with pan-India reach. Authorized distributor for 200+ brands. Cold chain logistics available.", certs:["WHO-GMP","DSCSA Compliant","ISO 13485"], employees:"200-500" },
+  { id:9, name:"Verma Auto Components", industry:"Automobile", location:"Pune, Maharashtra", type:"manufacturer", products:["Engine Parts","Brake Systems","Exhaust Systems","Gaskets"], logo:"🚗", banner:"linear-gradient(135deg,#1e293b,#334155)", verified:true, premium:true, exporter:true, rating:4.7, reviews:189, response:"< 2 hours", yearsInBusiness:16, email:"oem@vermaautomotive.in", phone:"+91 98233 89012", website:"vermaautomotive.in", description:"Tier-1 and Tier-2 OEM supplier for passenger cars and commercial vehicles. IATF 16949 certified with robotic welding facilities.", certs:["IATF 16949","ISO 14001","TS 16949"], employees:"500-1000" },
+  { id:10, name:"Agarwal Furniture Factory", industry:"Furniture & Interiors", location:"Jodhpur, Rajasthan", type:"manufacturer", products:["Wooden Furniture","Carved Pieces","Upholstered Sofas","Outdoor Furniture"], logo:"🪑", banner:"linear-gradient(135deg,#92400e,#b45309)", verified:true, premium:false, exporter:true, rating:4.6, reviews:222, response:"< 3 hours", yearsInBusiness:28, email:"export@agarwalfurniture.com", phone:"+91 94141 90123", website:"agarwalfurniture.com", description:"Jodhpur's iconic furniture exporter known for hand-carved solid wood furniture. Shipping to USA, UK, Australia, and Europe for 28 years.", certs:["Export House","FSC Certified"], employees:"200-500" },
+  { id:11, name:"Bhatia Construction Materials", industry:"Construction", location:"Ahmedabad, Gujarat", type:"wholesaler", products:["TMT Bars","Cement","AAC Blocks","Plumbing Fittings"], logo:"🏗️", banner:"linear-gradient(135deg,#374151,#6b7280)", verified:true, premium:false, exporter:false, rating:4.2, reviews:87, response:"< 4 hours", yearsInBusiness:9, email:"sales@bhatiamaterials.com", phone:"+91 96016 01234", website:"bhatiamaterials.com", description:"Authorized dealer and wholesaler of top construction materials including Ultratech cement, TATA TMT bars, and AAC blocks for Gujarat region.", certs:["NSIC Registered","ISO 9001"], employees:"20-50" },
+  { id:12, name:"Chopra Medical Devices", industry:"Medical Equipment", location:"Gurugram, Haryana", type:"manufacturer", products:["Surgical Instruments","Diagnostic Equipment","Patient Monitoring","IV Sets"], logo:"🏥", banner:"linear-gradient(135deg,#0891b2,#0284c7)", verified:true, premium:true, exporter:true, rating:4.9, reviews:378, response:"< 1 hour", yearsInBusiness:20, email:"global@chopramedical.in", phone:"+91 98102 12345", website:"chopramedical.in", description:"FDA-approved manufacturer of surgical instruments and diagnostic equipment. Exporting to 60+ countries with CE marked product range.", certs:["FDA Approved","CE Mark","ISO 13485","WHO-GMP"], employees:"200-500" },
+  { id:13, name:"Kumar Food Processing", industry:"Food Processing", location:"Pune, Maharashtra", type:"manufacturer", products:["Ready-to-Eat","Frozen Foods","Snacks","Sauces & Condiments"], logo:"🍱", banner:"linear-gradient(135deg,#dc2626,#f97316)", verified:true, premium:false, exporter:true, rating:4.4, reviews:143, response:"< 2 hours", yearsInBusiness:13, email:"b2b@kumarfoods.in", phone:"+91 98231 23456", website:"kumarfoods.in", description:"FSSAI certified food processing unit producing ready-to-eat meals, frozen snacks, and gourmet sauces for retail chains and foodservice.", certs:["FSSAI","ISO 22000","HACCP","Halal Certified"], employees:"100-200" },
+  { id:14, name:"National Industrial Tools", industry:"Industrial Tools", location:"Ludhiana, Punjab", type:"manufacturer", products:["Cutting Tools","Drill Bits","Grinding Wheels","Measuring Instruments"], logo:"🔧", banner:"linear-gradient(135deg,#1d4ed8,#4f46e5)", verified:true, premium:false, exporter:true, rating:4.5, reviews:201, response:"< 2 hours", yearsInBusiness:35, email:"export@nationaltools.in", phone:"+91 98146 34567", website:"nationaltools.in", description:"35-year-old manufacturer of precision industrial tools, cutting instruments, and measuring devices for machine shops and automotive OEMs.", certs:["BIS Mark","ISO 9001:2015","NSIC"], employees:"100-200" },
+  { id:15, name:"Eastern Gems & Jewellery", industry:"Gems & Jewellery", location:"Jaipur, Rajasthan", type:"exporter", products:["Gemstones","Silver Jewellery","Gold Hallmark","Costume Jewellery"], logo:"💎", banner:"linear-gradient(135deg,#7c3aed,#a855f7)", verified:true, premium:true, exporter:true, rating:4.8, reviews:534, response:"< 1 hour", yearsInBusiness:25, email:"exports@easterngems.com", phone:"+91 98290 45678", website:"easterngems.com", description:"Jaipur's premier gems and silver jewellery exporter supplying to USA, UK, Germany, and Japan. 25 years of hallmarked excellence.", certs:["Hallmark Bureau","Export House","GIA Certified"], employees:"100-200" },
+  { id:16, name:"Sunrise Solar Products", industry:"Renewable Energy", location:"Rajkot, Gujarat", type:"manufacturer", products:["Solar Panels","Inverters","Solar Pumps","EV Chargers"], logo:"☀️", banner:"linear-gradient(135deg,#f59e0b,#d97706)", verified:true, premium:true, exporter:false, rating:4.7, reviews:167, response:"< 2 hours", yearsInBusiness:10, email:"sales@sunrisesolar.in", phone:"+91 98248 56789", website:"sunrisesolar.in", description:"Gujarat-based solar products manufacturer with MNRE approved panels and grid-connected inverters. Serving residential, commercial, and industrial sectors.", certs:["MNRE Approved","IEC Certified","ISO 9001"], employees:"50-100" },
+  { id:17, name:"Allied Plastic Industries", industry:"Plastics & Rubber", location:"Chennai, Tamil Nadu", type:"manufacturer", products:["Injection Moulded Parts","PVC Pipes","Rubber Gaskets","HDPE Sheets"], logo:"🧪", banner:"linear-gradient(135deg,#0f766e,#0d9488)", verified:true, premium:false, exporter:false, rating:4.3, reviews:112, response:"< 3 hours", yearsInBusiness:17, email:"enquiry@alliedplastics.in", phone:"+91 98412 67890", website:"alliedplastics.in", description:"Custom injection moulding and plastic extrusion manufacturer for automotive, packaging, and household segments. 17 years of precision moulding.", certs:["ISO 9001:2015","RoHS Compliant"], employees:"100-200" },
+  { id:18, name:"Heritage Marble & Granite", industry:"Minerals & Mining", location:"Kishangarh, Rajasthan", type:"exporter", products:["Makrana Marble","Rajasthan Pink Granite","Sandstone","Slate Tiles"], logo:"🪨", banner:"linear-gradient(135deg,#a16207,#d97706)", verified:true, premium:false, exporter:true, rating:4.5, reviews:198, response:"< 4 hours", yearsInBusiness:33, email:"global@heritagemarble.com", phone:"+91 94142 78901", website:"heritagemarble.com", description:"33-year-old marble and granite quarry owner-exporter from Kishangarh. Direct mine-to-door supply with international shipping to 50+ countries.", certs:["Export House","MSME Registered"], employees:"50-100" },
+  { id:19, name:"TechWave IT Solutions", industry:"IT & Technology", location:"Bengaluru, Karnataka", type:"supplier", products:["Custom Software","ERP Systems","Cloud Solutions","IT Hardware"], logo:"💻", banner:"linear-gradient(135deg,#1d4ed8,#7c3aed)", verified:true, premium:true, exporter:false, rating:4.9, reviews:289, response:"< 30 mins", yearsInBusiness:8, email:"business@techwave.in", phone:"+91 98450 89012", website:"techwave.in", description:"Bengaluru-based tech company offering ERP, e-commerce platforms, and custom software for B2B businesses. Serving 500+ clients across 12 industries.", certs:["ISO 27001","ISO 9001","NASSCOM Member"], employees:"100-200" },
+  { id:20, name:"Global Spice Traders", industry:"Spices & Herbs", location:"Kochi, Kerala", type:"exporter", products:["Black Pepper","Cardamom","Turmeric","Dry Ginger"], logo:"🌶️", banner:"linear-gradient(135deg,#dc2626,#b91c1c)", verified:true, premium:false, exporter:true, rating:4.6, reviews:334, response:"< 2 hours", yearsInBusiness:41, email:"export@globalspice.in", phone:"+91 98470 90123", website:"globalspice.in", description:"Kerala's largest spice trading house with 41 years of export experience. SPICES BOARD registered supplier to global food companies and restaurants.", certs:["Spices Board India","FSSAI","Organic Certified","ISO 22000"], employees:"200-500" },
+  { id:21, name:"Dewan Hydraulics Pvt Ltd", industry:"Industrial Machinery", location:"Rajkot, Gujarat", type:"manufacturer", products:["Hydraulic Cylinders","Hydraulic Pumps","Power Packs","Hose Assemblies"], logo:"🔩", banner:"linear-gradient(135deg,#374151,#1f2937)", verified:true, premium:false, exporter:true, rating:4.4, reviews:76, response:"< 3 hours", yearsInBusiness:21, email:"exports@dewanhydraulics.com", phone:"+91 98248 01234", website:"dewanhydraulics.com", description:"Precision hydraulic component manufacturer supplying to construction, mining, and material handling equipment OEMs across India and abroad.", certs:["ISO 9001:2015","CE Marked"], employees:"50-100" },
+  { id:22, name:"Horizon Leather Goods", industry:"Leather & Footwear", location:"Agra, Uttar Pradesh", type:"exporter", products:["Leather Shoes","Bags","Belts","Leather Accessories"], logo:"👜", banner:"linear-gradient(135deg,#78350f,#92400e)", verified:true, premium:true, exporter:true, rating:4.7, reviews:412, response:"< 2 hours", yearsInBusiness:29, email:"sales@horizonleather.in", phone:"+91 98371 12345", website:"horizonleather.in", description:"CLE-registered leather goods manufacturer-exporter from Agra. Supplying private-label shoes and accessories to brands in USA, Germany, Italy, and UK.", certs:["CLE Registered","ISO 9001","LWG Certified"], employees:"200-500" },
+  { id:23, name:"Pinnacle Ceramic Works", industry:"Ceramics & Glass", location:"Morbi, Gujarat", type:"manufacturer", products:["Vitrified Tiles","Wall Tiles","Porcelain Slabs","Sanitaryware"], logo:"🪟", banner:"linear-gradient(135deg,#0f766e,#134e4a)", verified:true, premium:false, exporter:true, rating:4.5, reviews:155, response:"< 2 hours", yearsInBusiness:15, email:"export@pinnacleceramic.com", phone:"+91 98797 23456", website:"pinnacleceramic.com", description:"ISO 9001 certified vitrified tile and porcelain slab manufacturer from Morbi. Exporting to Middle East, Africa, and Southeast Asia.", certs:["ISO 9001","BIS Mark","CE Marked"], employees:"100-200" },
+  { id:24, name:"Nova Paper & Boards", industry:"Paper & Printing", location:"Kolkata, West Bengal", type:"manufacturer", products:["Kraft Paper","Duplex Board","Corrugated Sheets","Coated Paper"], logo:"📄", banner:"linear-gradient(135deg,#1d4ed8,#0284c7)", verified:true, premium:false, exporter:false, rating:4.2, reviews:89, response:"< 4 hours", yearsInBusiness:12, email:"sales@novapaper.in", phone:"+91 98307 34567", website:"novapaper.in", description:"Paper and paperboard manufacturer supplying kraft and duplex board to packaging, stationery, and printing companies across Eastern India.", certs:["ISO 9001","FSC Certified"], employees:"100-200" },
+];
+
+const INDUSTRIES = [
+  {name:"Automobile", icon:"🚗", count:"3,200+"},{name:"Textiles", icon:"👕", count:"6,800+"},
+  {name:"Electronics", icon:"💡", count:"4,100+"},{name:"Machinery", icon:"⚙️", count:"5,300+"},
+  {name:"Chemicals", icon:"⚗️", count:"2,900+"},{name:"Packaging", icon:"📦", count:"2,100+"},
+  {name:"Food Processing", icon:"🍱", count:"3,700+"},{name:"Construction", icon:"🏗️", count:"4,500+"},
+  {name:"Agriculture", icon:"🌾", count:"5,100+"},{name:"Furniture", icon:"🪑", count:"1,800+"},
+  {name:"Medical Equipment", icon:"🏥", count:"1,400+"},{name:"Industrial Tools", icon:"🔧", count:"3,200+"},
+];
+
+const TESTIMONIALS = [
+  { text:"We found three new long-term suppliers within a week of joining TradeVerse. No spam calls, no pressure. Just a clean platform that works. The verified badge system gives me real confidence.", name:"Rajesh Mehta", role:"Owner, Mehta Trading Co.", location:"Mumbai", stars:5, color:"#1d4ed8" },
+  { text:"After 5 years of dealing with IndiaMart's constant calls and fake leads, TradeVerse is a breath of fresh air. Direct messaging, real contact details, and buyers who actually mean business.", name:"Priya Sharma", role:"MD, Sharma Garments", location:"Surat", stars:5, color:"#7c3aed" },
+  { text:"As an exporter, I need genuine international buyers. TradeVerse's RFQ system brought us 3 confirmed orders from Singapore and UAE buyers in the very first month. Truly game-changing.", name:"Suresh Kapoor", role:"Director, Kapoor Agro Exports", location:"Ludhiana", stars:5, color:"#15803d" },
+  { text:"The free tier gives everything a small business needs. Profile, products, messaging — without paying for a premium plan first. We'll upgrade once the orders start flowing, which won't be long.", name:"Anita Patel", role:"Proprietor, Patel Packaging", location:"Ahmedabad", stars:4, color:"#dc2626" },
+  { text:"We've been listed on 6 B2B portals and TradeVerse gives us the best quality leads by far. Buyers here are serious and informed. Our conversion rate tripled in 3 months.", name:"Vikram Singh", role:"VP Sales, Singh Steel Works", location:"Delhi NCR", stars:5, color:"#0891b2" },
+  { text:"Response time from verified suppliers is incredible. I sent 8 RFQs on a Monday morning and had 6 detailed quotes by afternoon. Try doing that on any other portal.", name:"Deepa Nair", role:"Procurement Manager, TechCorp India", location:"Bengaluru", stars:5, color:"#f97316" },
+];
+
+const FAQS = [
+  { q:"Is TradeVerse really free to join?", a:"Yes. Creating a business profile, browsing verified suppliers, and posting requirements is completely free. We offer premium plans for businesses that want higher visibility, featured listings, and advanced analytics." },
+  { q:"Do I have to verify my phone number to contact sellers?", a:"No. Unlike other B2B portals, TradeVerse does not require OTP verification to contact sellers. Simply log in with your email and start messaging directly. Your phone remains private until you choose to share it." },
+  { q:"How does TradeVerse verify businesses?", a:"Every business undergoes a 3-step verification: GST/PAN document check, physical address verification via Google Maps + MSME registry cross-check, and a manual review by our team. Verified badge is only awarded after all 3 steps pass." },
+  { q:"Will I receive sales calls after signing up?", a:"Absolutely not. We built TradeVerse specifically because we were tired of the spam call culture on other B2B portals. We do not have a sales calling team and we never will. All communication is in-app or by email only." },
+  { q:"How is TradeVerse different from IndiaMart?", a:"TradeVerse offers: (1) No sales calls post-signup, (2) Direct messaging without OTP, (3) Contact details visible after simple login, (4) No fake leads or inflated inquiry counts, (5) Modern UI built for speed. We're what IndiaMart should have been." },
+  { q:"Can I list my business even if I'm a small manufacturer?", a:"Yes. TradeVerse welcomes manufacturers of all sizes — from solo artisans to 1000-employee factories. We believe every verified business deserves equal visibility on a fair platform." },
+];
+
+// ---- STATE ----
+let currentUser = null;
+let allCompanies = [...COMPANIES];
+let displayedCount = 20;
+let activeFilter = 'all';
+let activeLocation = '';
+let searchQuery = '';
+let currentChatCompany = null;
+let savedCompanies = [];
+let myRequirements = [];
+let myProducts = [];
+let chatConversations = {};
+
+// ---- INIT ----
+document.addEventListener('DOMContentLoaded', () => {
+  initTheme();
+  loadFromStorage();
+  renderCompanies();
+  renderIndustries();
+  renderTestimonials();
+  renderFAQs();
+  initScrollAnimations();
+  initNavScroll();
+  initCounterAnimations();
+  initFilterTags();
+  initSearchInput();
+  initChatListView();
+  updateNavAuth();
+  animateHeroCounters();
+});
+
+// ---- THEME ----
+function initTheme() {
+  const saved = localStorage.getItem('tv_theme') || 'light';
+  setTheme(saved);
+}
+function setTheme(t) {
+  document.body.setAttribute('data-theme', t);
+  const btn = document.getElementById('theme-btn');
+  btn.textContent = t === 'dark' ? '☀️' : '🌙';
+  const toggle = document.getElementById('settings-dark-toggle');
+  if (toggle) toggle.checked = (t === 'dark');
+  localStorage.setItem('tv_theme', t);
+}
+function toggleTheme() {
+  const current = document.body.getAttribute('data-theme');
+  setTheme(current === 'dark' ? 'light' : 'dark');
+}
+document.getElementById('theme-btn').addEventListener('click', toggleTheme);
+
+// ---- STORAGE ----
+function loadFromStorage() {
+  currentUser = JSON.parse(localStorage.getItem('tv_user') || 'null');
+  savedCompanies = JSON.parse(localStorage.getItem('tv_saved') || '[]');
+  myRequirements = JSON.parse(localStorage.getItem('tv_requirements') || '[]');
+  myProducts = JSON.parse(localStorage.getItem('tv_products') || '[]');
+  chatConversations = JSON.parse(localStorage.getItem('tv_chats') || '{}');
+}
+function saveToStorage() {
+  localStorage.setItem('tv_saved', JSON.stringify(savedCompanies));
+  localStorage.setItem('tv_requirements', JSON.stringify(myRequirements));
+  localStorage.setItem('tv_products', JSON.stringify(myProducts));
+  localStorage.setItem('tv_chats', JSON.stringify(chatConversations));
+}
+function getUsers() {
+  return JSON.parse(localStorage.getItem('tv_users') || '[]');
+}
+function saveUsers(users) {
+  localStorage.setItem('tv_users', JSON.stringify(users));
+}
+
+// ---- NAV ----
+function initNavScroll() {
+  window.addEventListener('scroll', () => {
+    document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 20);
+  });
+}
+function scrollToTop() { window.scrollTo({top:0,behavior:'smooth'}); return false; }
+function scrollTo(selector) {
+  const el = document.querySelector(selector);
+  if (el) el.scrollIntoView({behavior:'smooth'});
+}
+document.getElementById('hamburger-btn').addEventListener('click', () => {
+  document.getElementById('mobile-nav').classList.toggle('open');
+});
+function closeMobileNav() {
+  document.getElementById('mobile-nav').classList.remove('open');
+}
+
+// ---- ANIMATIONS ----
+function initScrollAnimations() {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((e, i) => {
+      if (e.isIntersecting) {
+        setTimeout(() => e.target.classList.add('visible'), i * 80);
+        observer.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+  document.querySelectorAll('.fade-in-up, .scale-in').forEach(el => observer.observe(el));
+}
+function initCounterAnimations() {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        animateCounter(e.target);
+        observer.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.5 });
+  document.querySelectorAll('.counter').forEach(el => observer.observe(el));
+}
+function animateCounter(el) {
+  const target = parseInt(el.dataset.count);
+  const duration = 1800;
+  const start = performance.now();
+  function step(now) {
+    const p = Math.min((now - start) / duration, 1);
+    const eased = 1 - Math.pow(1 - p, 3);
+    el.textContent = Math.floor(eased * target);
+    if (p < 1) requestAnimationFrame(step);
+    else el.textContent = target;
+  }
+  requestAnimationFrame(step);
+}
+function animateHeroCounters() {
+  document.querySelectorAll('[data-count]').forEach(el => {
+    const target = parseInt(el.dataset.count);
+    const duration = 2000;
+    const start = performance.now();
+    function step(now) {
+      const p = Math.min((now - start) / duration, 1);
+      const eased = 1 - Math.pow(1 - p, 3);
+      let val = Math.floor(eased * target);
+      if (target >= 1000000) el.textContent = (val/1000000).toFixed(1) + 'M+';
+      else if (target >= 1000) el.textContent = (val/1000).toFixed(0) + 'K+';
+      else el.textContent = val + '+';
+      if (p < 1) requestAnimationFrame(step);
+    }
+    setTimeout(() => requestAnimationFrame(step), 400);
+  });
+}
+
+// ---- FILTERS ----
+function initFilterTags() {
+  document.querySelectorAll('#filter-tags-container .filter-tag').forEach(tag => {
+    tag.addEventListener('click', () => {
+      document.querySelectorAll('#filter-tags-container .filter-tag').forEach(t => t.classList.remove('active'));
+      tag.classList.add('active');
+      activeFilter = tag.dataset.filter;
+      renderCompanies();
+    });
+  });
+  document.querySelectorAll('#location-tags .filter-tag').forEach(tag => {
+    tag.addEventListener('click', () => {
+      if (tag.classList.contains('active')) {
+        tag.classList.remove('active');
+        activeLocation = '';
+      } else {
+        document.querySelectorAll('#location-tags .filter-tag').forEach(t => t.classList.remove('active'));
+        tag.classList.add('active');
+        activeLocation = tag.dataset.location;
+      }
+      renderCompanies();
+    });
+  });
+}
+function initSearchInput() {
+  const input = document.getElementById('main-search');
+  let timer;
+  input.addEventListener('input', () => {
+    clearTimeout(timer);
+    timer = setTimeout(() => { searchQuery = input.value; renderCompanies(); }, 200);
+  });
+  input.addEventListener('keydown', e => { if(e.key==='Enter') performSearch(); });
+}
+function performSearch() {
+  searchQuery = document.getElementById('main-search').value;
+  renderCompanies();
+  const el = document.getElementById('marketplace');
+  if (el) el.scrollIntoView({behavior:'smooth'});
+}
+
+// ---- RENDER COMPANIES ----
+function renderCompanies() {
+  let filtered = COMPANIES.filter(c => {
+    const matchType = activeFilter === 'all' || c.type === activeFilter;
+    const matchLoc = !activeLocation || c.location.toLowerCase().includes(activeLocation.toLowerCase());
+    const q = searchQuery.toLowerCase();
+    const matchSearch = !q || c.name.toLowerCase().includes(q) || c.industry.toLowerCase().includes(q) ||
+      c.location.toLowerCase().includes(q) || c.products.some(p => p.toLowerCase().includes(q)) ||
+      c.type.toLowerCase().includes(q);
+    return matchType && matchLoc && matchSearch;
+  });
+  const sort = document.getElementById('sort-select')?.value || 'relevance';
+  if (sort === 'rating') filtered.sort((a,b) => b.rating - a.rating);
+  else if (sort === 'newest') filtered.sort((a,b) => a.yearsInBusiness - b.yearsInBusiness);
+  allCompanies = filtered;
+  const toShow = filtered.slice(0, Math.min(displayedCount, filtered.length));
+  document.getElementById('results-info').textContent = `Showing ${toShow.length} of ${filtered.length} verified businesses`;
+  const grid = document.getElementById('companies-grid');
+  if (filtered.length === 0) {
+    grid.innerHTML = `<div style="grid-column:1/-1;text-align:center;padding:60px 0;color:var(--tv-text-3);">
+      <div style="font-size:2.5rem;margin-bottom:12px;">🔍</div>
+      <div style="font-weight:600;font-size:1rem;color:var(--tv-text);">No companies found</div>
+      <div style="font-size:.85rem;margin-top:6px;">Try adjusting your search or filters</div>
+    </div>`;
+    return;
+  }
+  grid.innerHTML = toShow.map(c => companyCardHTML(c)).join('');
+  document.getElementById('load-more-btn').style.display = filtered.length <= displayedCount ? 'none' : '';
+  initScrollAnimations();
+}
+function loadMoreCompanies() {
+  displayedCount += 8;
+  renderCompanies();
+}
+document.getElementById('sort-select').addEventListener('change', () => renderCompanies());
+
+function getBadges(c) {
+  const b = [];
+  if (c.verified) b.push(`<span class="badge badge-blue">✅ Verified</span>`);
+  if (c.premium) b.push(`<span class="badge badge-yellow">⭐ Premium</span>`);
+  if (c.exporter) b.push(`<span class="badge badge-green">🚢 Exporter</span>`);
+  const typeColors = {manufacturer:'blue',wholesaler:'purple',distributor:'orange',exporter:'green',supplier:'blue',retailer:'orange'};
+  b.push(`<span class="badge badge-${typeColors[c.type]||'blue'}">${c.type.charAt(0).toUpperCase()+c.type.slice(1)}</span>`);
+  return b.slice(0,3).join('');
+}
+
+function companyCardHTML(c) {
+  const isSaved = savedCompanies.includes(c.id);
+  const stars = '★'.repeat(Math.floor(c.rating)) + (c.rating % 1 >= .5 ? '½' : '');
+  return `
+  <div class="company-card fade-in-up" onclick="openCompanyProfile(${c.id})">
+    <div class="card-banner" style="background:${c.banner}">
+      <div class="card-logo">${c.logo}</div>
+    </div>
+    <div class="card-body">
+      <div class="card-header-row">
+        <div class="card-name">${c.name}</div>
+        <button class="btn btn-icon" onclick="event.stopPropagation();toggleSave(${c.id})" title="${isSaved?'Remove':'Save'}" aria-label="${isSaved?'Unsave':'Save'}">
+          ${isSaved ? '🔖' : '🔖'}
+        </button>
+      </div>
+      <div class="card-industry">${c.industry}</div>
+      <div class="card-tags">${c.products.slice(0,3).map(p=>`<span class="card-tag">${p}</span>`).join('')}${c.products.length>3?`<span class="card-tag">+${c.products.length-3}</span>`:''}</div>
+      <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:10px;">${getBadges(c)}</div>
+      <div class="card-meta">
+        <span class="card-location">📍 ${c.location.split(',')[0]}</span>
+        <span class="card-response">⚡ ${c.response}</span>
+      </div>
+      <div style="font-size:.75rem;color:var(--tv-text-3);margin-bottom:12px;">
+        <span style="color:#f59e0b;">${'★'.repeat(Math.floor(c.rating))}</span> ${c.rating} · ${c.reviews} reviews
+      </div>
+      <div class="card-footer">
+        <button class="btn btn-primary btn-sm" style="flex:1;" onclick="event.stopPropagation();openCompanyProfile(${c.id})">View Profile</button>
+        <button class="btn btn-secondary btn-sm" onclick="event.stopPropagation();startChat(${c.id})" aria-label="Chat">💬</button>
+      </div>
+    </div>
+  </div>`;
+}
+
+// ---- RENDER INDUSTRIES ----
+function renderIndustries() {
+  document.getElementById('industries-grid').innerHTML = INDUSTRIES.map(ind => `
+    <div class="industry-card fade-in-up" onclick="filterByIndustry('${ind.name}')">
+      <div class="industry-icon">${ind.icon}</div>
+      <div class="industry-name">${ind.name}</div>
+      <div class="industry-count">${ind.count} companies</div>
+    </div>
+  `).join('');
+}
+function filterByIndustry(name) {
+  document.getElementById('main-search').value = name;
+  searchQuery = name;
+  renderCompanies();
+  document.getElementById('marketplace').scrollIntoView({behavior:'smooth'});
+}
+
+// ---- RENDER TESTIMONIALS ----
+function renderTestimonials() {
+  document.getElementById('testimonials-grid').innerHTML = TESTIMONIALS.map(t => `
+    <div class="testimonial-card fade-in-up">
+      <div class="t-stars">${'★'.repeat(t.stars)}</div>
+      <p class="t-text">"${t.text}"</p>
+      <div class="t-author">
+        <div class="t-avatar" style="background:${t.color};">${t.name.charAt(0)}</div>
+        <div>
+          <div class="t-name">${t.name}</div>
+          <div class="t-role">${t.role} · ${t.location}</div>
+        </div>
+      </div>
+    </div>
+  `).join('');
+}
+
+// ---- RENDER FAQs ----
+function renderFAQs() {
+  document.getElementById('faq-list').innerHTML = FAQS.map((f,i) => `
+    <div class="faq-item" id="faq-${i}">
+      <button class="faq-q" onclick="toggleFaq(${i})" aria-expanded="false">
+        ${f.q}
+        <span class="faq-arrow">▼</span>
+      </button>
+      <div class="faq-a"><p>${f.a}</p></div>
+    </div>
+  `).join('');
+}
+function toggleFaq(i) {
+  const item = document.getElementById(`faq-${i}`);
+  const isOpen = item.classList.contains('open');
+  document.querySelectorAll('.faq-item').forEach(el => el.classList.remove('open'));
+  if (!isOpen) item.classList.add('open');
+}
+
+// ---- SAVE COMPANY ----
+function toggleSave(id) {
+  if (!currentUser) { showToast('Please login to save companies.','info'); openAuth('login'); return; }
+  const idx = savedCompanies.indexOf(id);
+  if (idx === -1) { savedCompanies.push(id); showToast('Company saved! ✓','success'); }
+  else { savedCompanies.splice(idx,1); showToast('Company removed from saved.','info'); }
+  saveToStorage();
+  renderCompanies();
+}
+
+// ---- OPEN COMPANY PROFILE ----
+function openCompanyProfile(id) {
+  const c = COMPANIES.find(x => x.id === id);
+  if (!c) return;
+  const isSaved = savedCompanies.includes(c.id);
+  const certs = c.certs.map(cert => `<span class="cert-badge">✅ ${cert}</span>`).join('');
+  const products = c.products.map(p => `<div class="product-chip-mini">${p}</div>`).join('');
+  const showContact = !!currentUser;
+  document.getElementById('profile-modal-content').innerHTML = `
+    <div class="profile-banner" style="background:${c.banner}">
+      <div class="profile-logo">${c.logo}</div>
+      <div class="profile-actions-row">
+        <button class="btn btn-sm btn-outline-white" onclick="toggleSave(${c.id});renderProfileSaveBtn(${c.id})">
+          ${isSaved ? '🔖 Saved' : '+ Save'}
+        </button>
+        <button class="btn btn-sm btn-outline-white" onclick="shareProfile('${c.name}')">↗ Share</button>
+      </div>
+    </div>
+    <div class="profile-body">
+      <h2 class="profile-name">${c.name}</h2>
+      <div class="profile-industry">${c.industry} · ${c.location}</div>
+      <div class="profile-badges">${getBadges(c)}</div>
+      <p class="profile-desc">${c.description}</p>
+      <div class="profile-info-grid">
+        <div class="profile-info-item"><div class="profile-info-label">Founded</div><div class="profile-info-value">${new Date().getFullYear() - c.yearsInBusiness} (${c.yearsInBusiness} years)</div></div>
+        <div class="profile-info-item"><div class="profile-info-label">Employees</div><div class="profile-info-value">${c.employees}</div></div>
+        <div class="profile-info-item"><div class="profile-info-label">Response Time</div><div class="profile-info-value" style="color:var(--tv-green);">⚡ ${c.response}</div></div>
+        <div class="profile-info-item"><div class="profile-info-label">Rating</div><div class="profile-info-value"><span style="color:#f59e0b;">${'★'.repeat(Math.floor(c.rating))}</span> ${c.rating} (${c.reviews} reviews)</div></div>
+        ${showContact ? `
+        <div class="profile-info-item"><div class="profile-info-label">Email</div><div class="profile-info-value"><a href="mailto:${c.email}">${c.email}</a></div></div>
+        <div class="profile-info-item"><div class="profile-info-label">Phone</div><div class="profile-info-value"><a href="tel:${c.phone}">${c.phone}</a></div></div>
+        <div class="profile-info-item"><div class="profile-info-label">Website</div><div class="profile-info-value"><a href="#" target="_blank">${c.website}</a></div></div>
+        ` : `<div class="profile-info-item" style="grid-column:1/-1;"><div style="background:var(--tv-accent-light);border:1px dashed var(--tv-accent-2);border-radius:var(--tv-radius);padding:14px;font-size:.85rem;color:var(--tv-accent-2);text-align:center;"><a href="#" style="color:var(--tv-accent-2);font-weight:600;text-decoration:none;" onclick="closeModal('profile-modal');openAuth('login');return false;">🔓 Login to view contact details</a> — No OTP required.</div></div>`}
+      </div>
+      <div class="profile-section-title">Products & Services</div>
+      <div class="products-grid-mini">${products}</div>
+      <div class="profile-section-title">Certifications</div>
+      <div class="cert-list">${certs}</div>
+      <div class="profile-footer">
+        <button class="btn btn-primary" style="flex:1;" onclick="startChat(${c.id});closeModal('profile-modal')">💬 Chat with ${c.name.split(' ')[0]}</button>
+        <button class="btn btn-secondary" onclick="closeModal('profile-modal');setTimeout(()=>openModal('req-modal'),200)">📋 Send RFQ</button>
+      </div>
+    </div>
+  `;
+  openModal('profile-modal');
+}
+function shareProfile(name) {
+  const text = `Check out ${name} on TradeVerse — India's B2B marketplace.`;
+  if (navigator.share) navigator.share({title:'TradeVerse', text, url: window.location.href});
+  else { navigator.clipboard?.writeText(window.location.href); showToast('Link copied to clipboard!','success'); }
+}
+
+// ---- MODALS ----
+function openModal(id) {
+  document.getElementById(id).classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+function closeModal(id) {
+  document.getElementById(id).classList.remove('open');
+  document.body.style.overflow = '';
+}
+document.querySelectorAll('.modal-overlay').forEach(overlay => {
+  overlay.addEventListener('click', e => { if (e.target === overlay) closeModal(overlay.id); });
+});
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') document.querySelectorAll('.modal-overlay.open').forEach(m => closeModal(m.id));
+});
+
+// ---- AUTH ----
+function openAuth(tab) {
+  if (currentUser) { openDashboard(); return; }
+  openModal('auth-modal');
+  switchAuthTab(tab);
+}
+function switchAuthTab(tab) {
+  document.getElementById('login-form').style.display = tab === 'login' ? 'block' : 'none';
+  document.getElementById('signup-form').style.display = tab === 'signup' ? 'block' : 'none';
+  document.getElementById('forgot-form').style.display = 'none';
+  document.getElementById('tab-login').classList.toggle('active', tab === 'login');
+  document.getElementById('tab-signup').classList.toggle('active', tab === 'signup');
+}
+function showForgotPassword() {
+  document.getElementById('login-form').style.display = 'none';
+  document.getElementById('forgot-form').style.display = 'block';
+}
+function handleLogin() {
+  const email = document.getElementById('login-email').value.trim();
+  const pass = document.getElementById('login-password').value;
+  document.getElementById('login-email-err').classList.remove('show');
+  document.getElementById('login-pass-err').classList.remove('show');
+  if (!email || !email.includes('@')) { document.getElementById('login-email-err').classList.add('show'); return; }
+  if (!pass) { document.getElementById('login-pass-err').classList.add('show'); return; }
+  const users = getUsers();
+  const user = users.find(u => u.email.toLowerCase() === email.toLowerCase());
+  if (!user) { document.getElementById('login-email-err').textContent = 'No account found with this email.'; document.getElementById('login-email-err').classList.add('show'); return; }
+  if (user.password !== pass) { document.getElementById('login-pass-err').classList.add('show'); return; }
+  loginUser(user);
+}
+function handleGuestLogin() {
+  const guest = { fname:'Demo', lname:'User', email:'demo@tradeverse.in', businessType:'buyer', location:'Mumbai', company:'Demo Business', joined: new Date().toLocaleDateString() };
+  loginUser(guest);
+}
+function loginUser(user) {
+  currentUser = user;
+  localStorage.setItem('tv_user', JSON.stringify(user));
+  closeModal('auth-modal');
+  updateNavAuth();
+  showToast(`Welcome back, ${user.fname || user.email}! 👋`, 'success');
+  renderCompanies();
+}
+function handleSignup() {
+  const fname = document.getElementById('reg-fname').value.trim();
+  const lname = document.getElementById('reg-lname').value.trim();
+  const email = document.getElementById('reg-email').value.trim();
+  const pass = document.getElementById('reg-password').value;
+  const btype = document.getElementById('reg-business-type').value;
+  const loc = document.getElementById('reg-location').value.trim();
+  const company = document.getElementById('reg-company').value.trim();
+  document.getElementById('reg-email-err').classList.remove('show');
+  document.getElementById('reg-general-err').classList.remove('show');
+  if (!fname || !email || !pass || !btype) { document.getElementById('reg-general-err').classList.add('show'); return; }
+  if (!email.includes('@')) { document.getElementById('reg-email-err').textContent = 'Please enter a valid email.'; document.getElementById('reg-email-err').classList.add('show'); return; }
+  if (pass.length < 6) { document.getElementById('reg-general-err').textContent = 'Password must be at least 6 characters.'; document.getElementById('reg-general-err').classList.add('show'); return; }
+  const users = getUsers();
+  if (users.find(u => u.email.toLowerCase() === email.toLowerCase())) {
+    document.getElementById('reg-email-err').textContent = 'This email is already registered.';
+    document.getElementById('reg-email-err').classList.add('show'); return;
+  }
+  const user = { fname, lname, email, password: pass, businessType: btype, location: loc, company, joined: new Date().toLocaleDateString() };
+  users.push(user);
+  saveUsers(users);
+  loginUser(user);
+  showToast('Account created successfully! Welcome to TradeVerse 🎉', 'success');
+}
+function handleForgotPassword() {
+  const email = document.getElementById('forgot-email').value.trim();
+  if (!email.includes('@')) { showToast('Please enter a valid email.', 'error'); return; }
+  showToast('Password reset link sent to ' + email, 'success');
+  switchAuthTab('login');
+}
+function logout() {
+  currentUser = null;
+  localStorage.removeItem('tv_user');
+  updateNavAuth();
+  closeDashboard();
+  showToast('Logged out successfully.', 'info');
+  renderCompanies();
+}
+function updateNavAuth() {
+  const authBtns = document.getElementById('nav-auth-btns');
+  const userMenu = document.getElementById('nav-user-menu');
+  if (currentUser) {
+    authBtns.classList.add('hidden');
+    userMenu.classList.remove('hidden');
+    userMenu.style.display = 'flex';
+    document.getElementById('nav-username').textContent = currentUser.fname || currentUser.email.split('@')[0];
+  } else {
+    authBtns.classList.remove('hidden');
+    userMenu.style.display = 'none';
+  }
+}
+
+// ---- DASHBOARD ----
+function openDashboard() {
+  if (!currentUser) { openAuth('login'); return; }
+  document.getElementById('dashboard-overlay').classList.add('open');
+  document.body.style.overflow = 'hidden';
+  populateDashboard();
+}
+function closeDashboard() {
+  document.getElementById('dashboard-overlay').classList.remove('open');
+  document.body.style.overflow = '';
+}
+function switchDashPage(page) {
+  document.querySelectorAll('.dash-page').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.dash-nav-item').forEach(n => n.classList.remove('active'));
+  document.getElementById(`page-${page}`).classList.add('active');
+  document.querySelector(`.dash-nav-item[data-page="${page}"]`)?.classList.add('active');
+  if (page === 'saved') renderSavedCompanies();
+  if (page === 'products') renderSellerProducts();
+  if (page === 'requirements') renderRequirements();
+  if (page === 'leads') renderLeads();
+  if (page === 'notifications' || page === 'overview') renderNotifications();
+  if (page === 'chats') renderDashChats();
+}
+function populateDashboard() {
+  if (!currentUser) return;
+  const u = currentUser;
+  const initials = (u.fname||u.email||'?').charAt(0).toUpperCase();
+  document.getElementById('dash-avatar').textContent = initials;
+  document.getElementById('dash-name').textContent = `${u.fname||''} ${u.lname||''}`.trim() || u.email;
+  document.getElementById('dash-type').textContent = u.businessType ? u.businessType.charAt(0).toUpperCase()+u.businessType.slice(1) : 'Business User';
+  document.getElementById('dash-greeting-name').textContent = u.fname || 'there';
+  document.getElementById('profile-page-avatar').textContent = initials;
+  document.getElementById('profile-page-name').textContent = `${u.fname||''} ${u.lname||''}`.trim() || u.email;
+  document.getElementById('profile-page-email').textContent = u.email;
+  document.getElementById('p-fname').value = u.fname || '';
+  document.getElementById('p-lname').value = u.lname || '';
+  document.getElementById('p-company').value = u.company || '';
+  document.getElementById('p-location').value = u.location || '';
+  if (u.businessType) document.getElementById('p-btype').value = u.businessType;
+  document.getElementById('ds-saved').textContent = savedCompanies.length;
+  document.getElementById('ds-reqs').textContent = myRequirements.length;
+  renderNotifications();
+  renderActivityChart();
+}
+function saveProfile() {
+  currentUser.fname = document.getElementById('p-fname').value;
+  currentUser.lname = document.getElementById('p-lname').value;
+  currentUser.company = document.getElementById('p-company').value;
+  currentUser.location = document.getElementById('p-location').value;
+  currentUser.businessType = document.getElementById('p-btype').value;
+  localStorage.setItem('tv_user', JSON.stringify(currentUser));
+  updateNavAuth();
+  populateDashboard();
+  showToast('Profile updated successfully! ✓', 'success');
+}
+
+// ---- NOTIFICATIONS DATA ----
+const NOTIFICATIONS = [
+  { icon:'💬', bg:'#dbeafe', text:'Mehta Steel & Alloys replied to your inquiry.', time:'2 hours ago' },
+  { icon:'📋', bg:'#dcfce7', text:'Your requirement for Steel Pipes received 5 new responses.', time:'4 hours ago' },
+  { icon:'✅', bg:'#fef9c3', text:'Your account has been verified. Premium badge activated.', time:'1 day ago' },
+  { icon:'🔖', bg:'#f3e8ff', text:'Kapoor Agro Exports viewed your profile.', time:'2 days ago' },
+  { icon:'📦', bg:'#fff7ed', text:'New supplier matched your saved requirement: Hydraulic Pumps.', time:'3 days ago' },
+];
+function renderNotifications() {
+  const all = NOTIFICATIONS.map(n => `
+    <div class="notif-item">
+      <div class="notif-icon" style="background:${n.bg};">${n.icon}</div>
+      <div class="notif-text">${n.text}</div>
+      <div class="notif-time">${n.time}</div>
+    </div>`).join('');
+  const recent = document.getElementById('recent-notifs');
+  if (recent) recent.innerHTML = all;
+  const allEl = document.getElementById('all-notifs-list');
+  if (allEl) allEl.innerHTML = all;
+}
+function renderSavedCompanies() {
+  const el = document.getElementById('saved-companies-list');
+  if (!savedCompanies.length) { el.innerHTML = '<p style="color:var(--tv-text-3);font-size:.88rem;">No saved companies yet. Browse the marketplace and click Save.</p>'; return; }
+  el.innerHTML = savedCompanies.map(id => {
+    const c = COMPANIES.find(x => x.id === id);
+    if (!c) return '';
+    return `<div class="saved-company-item">
+      <div class="saved-company-logo">${c.logo}</div>
+      <div class="saved-company-info">
+        <div class="saved-company-name">${c.name}</div>
+        <div class="saved-company-industry">${c.industry} · ${c.location}</div>
+      </div>
+      <button class="btn btn-secondary btn-sm" onclick="openCompanyProfile(${c.id});closeDashboard()">View</button>
+      <button class="btn btn-sm" style="color:var(--tv-red);" onclick="toggleSave(${c.id});renderSavedCompanies()">Remove</button>
+    </div>`;
+  }).join('');
+}
+function renderRequirements() {
+  const el = document.getElementById('requirements-list');
+  if (!myRequirements.length) { el.innerHTML = '<p style="color:var(--tv-text-3);font-size:.88rem;">No requirements posted yet. Post your requirement to receive quotes from suppliers.</p>'; return; }
+  el.innerHTML = myRequirements.map((r,i) => `
+    <div class="req-card">
+      <div class="req-card-title">📦 ${r.product}</div>
+      <div class="req-card-meta">
+        <span class="req-meta-item">📍 ${r.location}</span>
+        <span class="req-meta-item">📊 ${r.quantity}</span>
+        <span class="req-meta-item">💰 ${r.budget}</span>
+        <span class="req-meta-item">⏰ ${r.timeline}</span>
+        <button class="btn btn-danger btn-sm" onclick="deleteRequirement(${i})">Delete</button>
+      </div>
+    </div>`).join('');
+}
+function deleteRequirement(i) {
+  myRequirements.splice(i,1);
+  saveToStorage();
+  renderRequirements();
+  showToast('Requirement deleted.','info');
+}
+function renderSellerProducts() {
+  const grid = document.getElementById('seller-products-grid');
+  if (!myProducts.length) { grid.innerHTML = '<p style="color:var(--tv-text-3);font-size:.88rem;grid-column:1/-1;">No products yet. Add your first product above.</p>'; return; }
+  grid.innerHTML = myProducts.map((p,i) => `
+    <div class="seller-product-card">
+      <div class="seller-product-name">${p.name}</div>
+      <div class="seller-product-price">${p.price || 'Price on request'}</div>
+      <div style="font-size:.77rem;color:var(--tv-text-3);margin-bottom:8px;">${p.desc}</div>
+      <div class="seller-product-actions">
+        <button class="btn btn-danger btn-sm" onclick="deleteProduct(${i})">Delete</button>
+      </div>
+    </div>`).join('');
+}
+function addProduct() {
+  const name = document.getElementById('prod-name').value.trim();
+  const price = document.getElementById('prod-price').value.trim();
+  const desc = document.getElementById('prod-desc').value.trim();
+  if (!name) { showToast('Product name is required.','error'); return; }
+  myProducts.push({name, price, desc});
+  saveToStorage();
+  document.getElementById('prod-name').value = '';
+  document.getElementById('prod-price').value = '';
+  document.getElementById('prod-desc').value = '';
+  renderSellerProducts();
+  showToast('Product added! ✓','success');
+}
+function deleteProduct(i) {
+  myProducts.splice(i,1);
+  saveToStorage();
+  renderSellerProducts();
+  showToast('Product deleted.','info');
+}
+const DEMO_LEADS = [
+  { buyer:'Arjun Traders', product:'SS Pipes 304', location:'Chennai', date:'01 Jan 2025' },
+  { buyer:'M/s Omega Industries', product:'Steel Channels', location:'Pune', date:'29 Dec 2024' },
+  { buyer:'Ram Exports Ltd.', product:'Steel Plates 6mm', location:'Mumbai', date:'26 Dec 2024' },
+  { buyer:'Bright Fabricators', product:'MS Rods 12mm', location:'Delhi', date:'22 Dec 2024' },
+];
+function renderLeads() {
+  document.getElementById('leads-table-body').innerHTML = DEMO_LEADS.map(l => `
+    <tr>
+      <td><strong>${l.buyer}</strong></td>
+      <td>${l.product}</td>
+      <td>📍 ${l.location}</td>
+      <td>${l.date}</td>
+      <td><button class="btn btn-primary btn-sm" onclick="showToast('Chat opened!','success')">Reply</button></td>
+    </tr>`).join('');
+}
+function renderDashChats() {
+  const el = document.getElementById('dash-chat-list');
+  const convs = Object.keys(chatConversations);
+  if (!convs.length) { el.innerHTML = '<p style="color:var(--tv-text-3);font-size:.88rem;">No chats yet. Browse companies and start a conversation.</p>'; return; }
+  el.innerHTML = convs.map(id => {
+    const c = COMPANIES.find(x => x.id == id);
+    const msgs = chatConversations[id] || [];
+    const last = msgs[msgs.length-1];
+    if (!c) return '';
+    return `<div class="chat-list-item" onclick="startChat(${c.id})">
+      <div class="chat-list-avatar" style="background:var(--tv-gradient-1);">${c.logo}</div>
+      <div class="chat-list-info">
+        <div class="chat-list-name">${c.name}</div>
+        <div class="chat-list-preview">${last ? last.text : 'Start a conversation...'}</div>
+      </div>
+    </div>`;
+  }).join('');
+}
+
+function renderActivityChart() {
+  const canvas = document.getElementById('activity-chart');
+  if (!canvas) return;
+  const ctx = canvas.getContext('2d');
+  const data = [12,19,8,24,15,30,22];
+  const days = ['Mon','Tue','Wed','Thu','Fri','Sat','Sun'];
+  const w = canvas.width = canvas.offsetWidth || 600;
+  const h = canvas.height = 120;
+  const max = Math.max(...data);
+  const isDark = document.body.getAttribute('data-theme') === 'dark';
+  ctx.clearRect(0,0,w,h);
+  const bw = (w - 40) / data.length;
+  data.forEach((v,i) => {
+    const bh = (v/max) * (h - 30);
+    const x = 20 + i * bw + bw * .15;
+    const y = h - 20 - bh;
+    const grad = ctx.createLinearGradient(0,y,0,h-20);
+    grad.addColorStop(0,'rgba(37,99,235,.8)');
+    grad.addColorStop(1,'rgba(37,99,235,.15)');
+    ctx.fillStyle = grad;
+    ctx.beginPath();
+    ctx.roundRect(x, y, bw * .7, bh, 4);
+    ctx.fill();
+    ctx.fillStyle = isDark ? 'rgba(255,255,255,.4)' : 'rgba(0,0,0,.4)';
+    ctx.font = '10px DM Sans, sans-serif';
+    ctx.textAlign = 'center';
+    ctx.fillText(days[i], x + bw * .35, h - 4);
+  });
+}
+
+// ---- POST REQUIREMENT ----
+function submitRequirement() {
+  if (!currentUser) { closeModal('req-modal'); openAuth('login'); return; }
+  const product = document.getElementById('req-product').value.trim();
+  const quantity = document.getElementById('req-qty').value.trim();
+  const budget = document.getElementById('req-budget').value.trim();
+  const location = document.getElementById('req-loc').value.trim();
+  const timeline = document.getElementById('req-timeline').value;
+  const desc = document.getElementById('req-desc').value.trim();
+  if (!product || !location) { showToast('Product and location are required.','error'); return; }
+  myRequirements.push({ product, quantity, budget, location, timeline, desc, date: new Date().toLocaleDateString() });
+  saveToStorage();
+  closeModal('req-modal');
+  showToast('Requirement posted! Suppliers will respond soon. ✓','success');
+  ['req-product','req-qty','req-budget','req-loc','req-desc'].forEach(id => { document.getElementById(id).value = ''; });
+  document.getElementById('req-timeline').value = '';
+}
+
+// ---- CHAT ----
+function initChatListView() {
+  renderChatList();
+  const input = document.getElementById('chat-message-input');
+  input.addEventListener('keydown', e => { if(e.key==='Enter') sendMessage(); });
+}
+function toggleChat() {
+  document.getElementById('chat-overlay').classList.toggle('open');
+  document.getElementById('chat-notif-badge').style.display = 'none';
+  if (!document.getElementById('chat-overlay').classList.contains('open')) {
+    backToChatList();
+  }
+}
+function renderChatList() {
+  const list = document.getElementById('chat-list-view');
+  const convIds = Object.keys(chatConversations);
+  if (!convIds.length) {
+    list.innerHTML = `<div style="padding:32px 20px;text-align:center;color:var(--tv-text-3);">
+      <div style="font-size:2rem;margin-bottom:12px;">💬</div>
+      <div style="font-weight:600;margin-bottom:6px;color:var(--tv-text);">No conversations yet</div>
+      <div style="font-size:.82rem;">Browse companies and start chatting directly.</div>
+    </div>`;
+    return;
+  }
+  list.innerHTML = convIds.map(id => {
+    const c = COMPANIES.find(x => x.id == id);
+    const msgs = chatConversations[id] || [];
+    const last = msgs[msgs.length-1];
+    if (!c) return '';
+    const colors = ['#1d4ed8','#7c3aed','#15803d','#dc2626','#0891b2'];
+    const col = colors[c.id % colors.length];
+    return `<div class="chat-list-item" onclick="openChatConversation(${c.id})">
+      <div class="chat-list-avatar" style="background:${col};">${c.logo}</div>
+      <div class="chat-list-info">
+        <div class="chat-list-name">${c.name}</div>
+        <div class="chat-list-preview">${last ? (last.sender === 'user' ? 'You: ' : '') + last.text : 'No messages yet'}</div>
+      </div>
+      <div class="chat-list-time">${last ? last.time : ''}</div>
+    </div>`;
+  }).join('');
+}
+function startChat(companyId) {
+  if (!currentUser) { showToast('Please login to chat with suppliers.','info'); openAuth('login'); return; }
+  const c = COMPANIES.find(x => x.id === companyId);
+  if (!c) return;
+  if (!chatConversations[companyId]) {
+    chatConversations[companyId] = [{ text: `Hello! I'm interested in your products. Can you share more details?`, sender:'user', time: getTime() }];
+    addAutoReply(companyId, `Hello! Thank you for reaching out to ${c.name}. I'm ${c.name.split(' ')[0]}, happy to assist. What product are you interested in?`);
+    saveToStorage();
+  }
+  document.getElementById('chat-overlay').classList.add('open');
+  openChatConversation(companyId);
+}
+function openChatConversation(id) {
+  const c = COMPANIES.find(x => x.id == id);
+  if (!c) return;
+  currentChatCompany = c;
+  document.getElementById('chat-list-view').style.display = 'none';
+  document.getElementById('chat-messages-view').classList.add('active');
+  document.getElementById('chat-back-btn').style.display = 'flex';
+  document.getElementById('chat-header-name').textContent = c.name;
+  document.getElementById('chat-header-status').textContent = 'Online · ' + c.response;
+  document.getElementById('chat-header-avatar').textContent = c.logo;
+  renderMessages(id);
+}
+function backToChatList() {
+  currentChatCompany = null;
+  document.getElementById('chat-list-view').style.display = '';
+  document.getElementById('chat-messages-view').classList.remove('active');
+  document.getElementById('chat-back-btn').style.display = 'none';
+  document.getElementById('chat-header-name').textContent = 'TradeVerse Chat';
+  document.getElementById('chat-header-status').textContent = 'All Conversations';
+  document.getElementById('chat-header-avatar').textContent = '💬';
+  renderChatList();
+}
+function renderMessages(id) {
+  const msgs = chatConversations[id] || [];
+  const c = COMPANIES.find(x => x.id == id);
+  const area = document.getElementById('messages-area');
+  area.innerHTML = msgs.map(m => {
+    const isSent = m.sender === 'user';
+    return `<div class="msg ${isSent ? 'sent' : 'received'}">
+      ${!isSent ? `<div class="msg-avatar" style="background:var(--tv-gradient-1);">${c ? c.logo : '?'}</div>` : ''}
+      <div class="msg-content">
+        <div class="msg-bubble">${m.text}</div>
+        <div class="msg-time">${m.time}</div>
+      </div>
+      ${isSent ? `<div class="msg-avatar" style="background:var(--tv-accent-2);">${(currentUser?.fname||'U').charAt(0)}</div>` : ''}
+    </div>`;
+  }).join('');
+  area.scrollTop = area.scrollHeight;
+}
+function sendMessage() {
+  if (!currentChatCompany) return;
+  const input = document.getElementById('chat-message-input');
+  const text = input.value.trim();
+  if (!text) return;
+  const id = currentChatCompany.id;
+  if (!chatConversations[id]) chatConversations[id] = [];
+  chatConversations[id].push({ text, sender:'user', time: getTime() });
+  input.value = '';
+  saveToStorage();
+  renderMessages(id);
+  const replies = [
+    `Thanks for your message! Our team will review and get back to you with a detailed quotation shortly.`,
+    `Great question! We can definitely accommodate your requirements. What quantity are you looking for?`,
+    `We have excellent stock available right now. Would you like a sample before placing a bulk order?`,
+    `Noted. Our export team handles this regularly. Can you share the destination country for shipping rates?`,
+    `Absolutely, we can customize as per your specifications. Minimum order quantity is 500 units.`,
+    `We're ISO certified and all products come with test certificates. Happy to share our product catalogue.`,
+  ];
+  setTimeout(() => {
+    addAutoReply(id, replies[Math.floor(Math.random() * replies.length)]);
+  }, 1200 + Math.random() * 800);
+}
+function addAutoReply(id, text) {
+  if (!chatConversations[id]) chatConversations[id] = [];
+  chatConversations[id].push({ text, sender:'company', time: getTime() });
+  saveToStorage();
+  if (currentChatCompany && currentChatCompany.id == id) renderMessages(id);
+  else renderChatList();
+}
+function getTime() {
+  const now = new Date();
+  return now.getHours().toString().padStart(2,'0') + ':' + now.getMinutes().toString().padStart(2,'0');
+}
+
+// ---- ADMIN ----
+function openAdmin() {
+  populateAdminPanel();
+  openModal('admin-modal');
+}
+function populateAdminPanel() {
+  const users = getUsers();
+  document.getElementById('adm-users-count').textContent = users.length;
+  document.getElementById('adm-reqs-count').textContent = myRequirements.length;
+  document.getElementById('admin-users-body').innerHTML = users.length ? users.map((u,i) => `
+    <tr><td>${i+1}</td><td>${u.fname||''} ${u.lname||''}</td><td>${u.email}</td><td><span class="badge badge-blue">${u.businessType||'N/A'}</span></td><td>${u.location||'N/A'}</td><td>${u.joined||'N/A'}</td></tr>`).join('') :
+    '<tr><td colspan="6" style="text-align:center;color:var(--tv-text-3);">No registered users yet (demo accounts not counted).</td></tr>';
+  document.getElementById('admin-companies-body').innerHTML = COMPANIES.slice(0,10).map((c,i) => `
+    <tr><td>${i+1}</td><td>${c.logo} ${c.name}</td><td>${c.industry}</td><td>${c.location}</td><td><span class="badge badge-blue">${c.type}</span></td><td><span class="badge badge-green">Active</span></td></tr>`).join('');
+  document.getElementById('admin-reqs-body').innerHTML = myRequirements.length ? myRequirements.map((r,i) => `
+    <tr><td>${i+1}</td><td>${r.product}</td><td>${r.quantity||'N/A'}</td><td>${r.budget||'N/A'}</td><td>${r.location}</td><td>${r.timeline||'N/A'}</td></tr>`).join('') :
+    '<tr><td colspan="6" style="text-align:center;color:var(--tv-text-3);">No requirements posted yet.</td></tr>';
+  setTimeout(renderAdminChart, 100);
+}
+function switchAdminTab(el, id) {
+  document.querySelectorAll('.admin-tab-content').forEach(t => t.style.display = 'none');
+  document.getElementById(id).style.display = 'block';
+  document.querySelectorAll('#admin-modal .filter-tag').forEach(t => t.classList.remove('active'));
+  el.classList.add('active');
+  if (id === 'admin-stats') setTimeout(renderAdminChart, 100);
+}
+function renderAdminChart() {
+  const canvas = document.getElementById('admin-chart');
+  if (!canvas) return;
+  const ctx = canvas.getContext('2d');
+  const months = ['Jul','Aug','Sep','Oct','Nov','Dec','Jan'];
+  const data = [2400,3100,2800,4200,3600,5100,4800];
+  const w = canvas.width = canvas.offsetWidth || 600;
+  const h = canvas.height = 140;
+  const max = Math.max(...data);
+  const isDark = document.body.getAttribute('data-theme') === 'dark';
+  ctx.clearRect(0,0,w,h);
+  const pts = data.map((v,i) => [40 + (i/(data.length-1))*(w-60), h-30-(v/max*(h-50))]);
+  const grad = ctx.createLinearGradient(0,0,0,h);
+  grad.addColorStop(0,'rgba(37,99,235,.3)');
+  grad.addColorStop(1,'rgba(37,99,235,0)');
+  ctx.beginPath();
+  ctx.moveTo(pts[0][0],pts[0][1]);
+  pts.forEach(([x,y]) => ctx.lineTo(x,y));
+  ctx.lineTo(pts[pts.length-1][0],h-30);
+  ctx.lineTo(pts[0][0],h-30);
+  ctx.closePath();
+  ctx.fillStyle = grad;
+  ctx.fill();
+  ctx.beginPath();
+  ctx.moveTo(pts[0][0],pts[0][1]);
+  pts.forEach(([x,y]) => ctx.lineTo(x,y));
+  ctx.strokeStyle = '#2563eb';
+  ctx.lineWidth = 2.5;
+  ctx.stroke();
+  pts.forEach(([x,y]) => {
+    ctx.beginPath(); ctx.arc(x,y,4,0,Math.PI*2);
+    ctx.fillStyle = '#2563eb'; ctx.fill();
+    ctx.strokeStyle = '#fff'; ctx.lineWidth = 1.5; ctx.stroke();
+  });
+  months.forEach((m,i) => {
+    ctx.fillStyle = isDark ? 'rgba(255,255,255,.4)' : 'rgba(0,0,0,.4)';
+    ctx.font = '11px DM Sans, sans-serif';
+    ctx.textAlign = 'center';
+    ctx.fillText(m, pts[i][0], h - 8);
+  });
+}
+
+// ---- TOAST ----
+function showToast(msg, type='info') {
+  const el = document.createElement('div');
+  el.className = `toast ${type}`;
+  el.textContent = msg;
+  document.getElementById('toast-container').appendChild(el);
+  setTimeout(() => {
+    el.style.opacity = '0'; el.style.transform = 'translateY(10px)';
+    setTimeout(() => el.remove(), 300);
+  }, 3200);
+}
+
+// Show chat notification badge if logged in
+setTimeout(() => {
+  if (!currentUser) {
+    document.getElementById('chat-notif-badge').style.display = 'flex';
+  }
+}, 3000);
+
+// ---- ACCESSIBILITY ----
+document.querySelectorAll('[onclick]').forEach(el => {
+  if (!el.getAttribute('role') && el.tagName !== 'BUTTON' && el.tagName !== 'A') {
+    el.setAttribute('role', 'button');
+    el.setAttribute('tabindex', '0');
+    el.addEventListener('keydown', e => { if(e.key==='Enter'||e.key===' ') el.click(); });
+  }
+});
+</script>
+</body>
+</html>
